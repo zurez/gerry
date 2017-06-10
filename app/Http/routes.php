@@ -22,4 +22,5 @@ Route::post('login','AdminController@post_login');
 Route::get('industries','PageController@show_industries');
 Route::get('case/{id?}','PageController@show_cases');
 Route::get('mission','PageController@show_mission');
+Route::get('team','PageController@show_team');
 Route::get("/",'PageController@landing');

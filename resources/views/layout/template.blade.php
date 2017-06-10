@@ -180,7 +180,7 @@
 			        </li>
 
 			        <li class="menu-item">
-			          <a href="page-team.html">Team<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="{{url('team')}}">Team<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
 			   
@@ -350,7 +350,7 @@
 	        	          </li>
 
 	        	          <li class="menu-item">
-	        	            <a href="page-team.html">Team</a>
+	        	            <a href="{{url('team')}}">Team</a>
 	        	          </li>
 
 	        	       

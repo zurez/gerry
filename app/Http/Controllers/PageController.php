@@ -34,4 +34,9 @@ class PageController extends Controller
     {
     	return view('pages.mission');
     }
+    public function show_team()
+    {
+    	# code...
+    	return view('pages.team');
+    }
 }

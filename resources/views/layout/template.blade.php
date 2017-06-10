@@ -152,19 +152,6 @@
 			      </ul>
 			    </li>
 
-			    <li class="menu-item menu-item-has-children">
-			      <a href="learning-all.html">Learning<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-
-			      <ul class="sub-menu">
-			        <li class="menu-item">
-			          <a href="learning-all.html">All Courses<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="learning-01.html">Single Course<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-			      </ul>
-			    </li>
 
 			    <li class="menu-item menu-item-has-children">
 			      <a href="blog-all.html">Blog<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>

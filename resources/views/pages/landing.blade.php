@@ -2,21 +2,22 @@
 @section('content')
 
 			<article class="page">
-			  <section class="fw-section with-overlay bg-parallax padding-top-8x padding-bottom-8x" data-jarallax-video="https://youtu.be/23NM6wSXKCk" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url(assets/img/demo-marketing-video.jpg);">
+			  <section class="fw-section with-overlay bg-parallax padding-top-8x padding-bottom-8x" data-jarallax-video="{{asset('assets/vid/Slow_Typer.mp4')}}" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url(assets/vid/Slow_Typer.jpg);">
 			    <span class="overlay" style="opacity: 0.4; background-color: #131e3f;"></span>
 
 			    <div class="container">
 	          <div class="text-block huge-text">
 	            <h1 style="text-align: center;">
-	              <span class="text-light text-semibold">StartApp Consulting</span>
+	              <span class="text-light text-semibold">Cognitive Research</span>
 	            </h1>
 	          </div>
 
 	          <div class="row">
 	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
 	              <div class="text-block">
-	                <h4 style="text-align: center;">
-	                  <span class="text-light text-thin">Transform your culture and operations to execute more efficiently, champion the customer, and achieve optimal performance.</span>
+	              <h4 style="text-align: center;">
+	                  <span class="text-light text-thin">Helping application developers & their investors, SME's & their professional advisors to utilise technology and experienced commercial consultants to help them grow.</span>
+	                
 	                </h4>
 	              </div>
 	            </div>
@@ -89,7 +90,7 @@
 	                </div>
 
 	                <h3 class="icon-box-title">
-	                  Advertising
+	                  News Gathering & Monitoring
 	                </h3>
 
 	                <div class="icon-box-description">
@@ -133,7 +134,7 @@
 	                </div>
 
 	                <h3 class="icon-box-title">
-	                  Marketing Audit
+	                  Marketing & Onboarding
 	                </h3>
 
 	                <div class="icon-box-description">
@@ -175,7 +176,7 @@
 	                </div>
 
 	                <h3 class="icon-box-title">
-	                  Sustainability
+	                 	Succession Planning
 	                </h3>
 
 	                <div class="icon-box-description">
@@ -196,7 +197,7 @@
 	                </div>
 
 	                <h3 class="icon-box-title">
-	                  Private Equity
+	                  Structured Finance
 	                </h3>
 
 	                <div class="icon-box-description">
@@ -290,11 +291,7 @@
 	                <span class="teammate-info">CEO, <a href="#">Bain &amp; Company</a></span>
 	                <span class="teammate-info">Ph.D. in bioengineering. Investor in Collective Health and LendUp.</span>
 
-	                <div class="social-bar sb-border sb-rounded sb-dark-skin text-center">
-	                  <a class="social-btn" href="#"><i class="socicon-twitter"></i></a>
-	                  <a class="social-btn" href="#"><i class="socicon-facebook"></i></a>
-	                  <a class="social-btn" href="#"><i class="socicon-linkedin"></i></a>
-	                </div>
+	            
 	              </div>
 	            </div>
 
@@ -310,11 +307,7 @@
 	                <span class="teammate-info">CEO, <a href="#">Nielsen</a></span>
 	                <span class="teammate-info">Ph.D. in bioengineering. Investor in Collective Health and LendUp.</span>
 
-	                <div class="social-bar sb-border sb-rounded sb-dark-skin text-center">
-	                  <a class="social-btn" href="#"><i class="socicon-twitter"></i></a>
-	                  <a class="social-btn" href="#"><i class="socicon-facebook"></i></a>
-	                  <a class="social-btn" href="#"><i class="socicon-linkedin"></i></a>
-	                </div>
+	            
 	              </div>
 	            </div>
 
@@ -330,11 +323,7 @@
 	                <span class="teammate-info">CEO, <a href="#">Cunfluence</a></span>
 	                <span class="teammate-info">Ph.D. in bioengineering. Investor in Collective Health and LendUp.</span>
 
-	                <div class="social-bar sb-border sb-rounded sb-dark-skin text-center">
-	                  <a class="social-btn" href="#"><i class="socicon-twitter"></i></a>
-	                  <a class="social-btn" href="#"><i class="socicon-facebook"></i></a>
-	                  <a class="social-btn" href="#"><i class="socicon-linkedin"></i></a>
-	                </div>
+	            
 	              </div>
 	            </div>
 	          </div>
@@ -427,7 +416,7 @@
 	              <div class="padding-top-2x visible-md visible-sm"></div>
 
 			          <div class="text-center">
-			            <a class="btn btn-transparent btn-rounded btn-light btn-nl waves-effect waves-light margin-top-3x margin-bottom-3x" href="#">Become a partner</a>
+			            <a class="btn btn-transparent btn-rounded btn-light btn-nl waves-effect waves-light margin-top-3x margin-bottom-3x" href="#">Join the team</a>
 			          </div>
 			        </div>
 			      </div>

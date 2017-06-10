@@ -17,4 +17,21 @@ class PageController extends Controller
     {
     	return view('pages.landing');
     }
+
+    public function show_cases($id="")
+    {
+    	if ($id=="") {
+    		return view('pages.all_cases');
+    	}
+    	else{
+    		// $case=Case::find($id);
+    		// return view('pages.case')
+    		// ->with('case',$case);
+    	}
+    }
+
+    public function show_mission()
+    {
+    	return view('pages.mission');
+    }
 }

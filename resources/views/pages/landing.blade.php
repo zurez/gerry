@@ -35,7 +35,7 @@
 			  <section class="fw-section padding-top-3x padding-bottom-1x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            StartApp Services<small class="h4">Duis enim neque, scelerisque ullamcorper pretium et, accumsan vel est.</small>
+	            Cognire Services<small class="h4">Duis enim neque, scelerisque ullamcorper pretium et, accumsan vel est.</small>
 	          </h2>
 
 	          <div class="row">

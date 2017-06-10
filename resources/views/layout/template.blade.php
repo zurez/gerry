@@ -73,23 +73,23 @@
 		  <nav class="vertical-navigation">
 			  <ul class="menu">
 			    <li class="menu-item">
-			      <a href="index.html">Home<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			      <a href="{{url('/')}}">Home<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			    </li>
 
 			    <li class="menu-item current-menu-item">
-			      <a href="industries.html">Industries<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			      <a href="{{url('industries')}}">Industries<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			    </li>
 
 			    <li class="menu-item menu-item-has-children">
-			      <a href="service-all.html">Services<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			      <a href="{{url('service')}}">Services<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 
 			      <ul class="sub-menu">
 			        <li class="menu-item">
-			          <a href="service-all.html">All Services<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="{{url('service')}}">All Services<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
 			        <li class="menu-item">
-			          <a href="service-01.html">Accelerating Growth<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="service-01.html">Strategy<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
 			        <li class="menu-item">
@@ -97,7 +97,7 @@
 			        </li>
 
 			        <li class="menu-item">
-			          <a href="service-03.html">Advertising<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="service-03.html">Marketing & Onboarding<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
 			        <li class="menu-item">
@@ -105,7 +105,7 @@
 			        </li>
 
 			        <li class="menu-item">
-			          <a href="service-05.html">Corporate Finance<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="service-05.html">Accelerating Growth<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
 			        <li class="menu-item">
@@ -119,11 +119,11 @@
 			    </li>
 
 			    <li class="menu-item menu-item-has-children">
-			      <a href="studies-all.html">Case Studies<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			      <a href="{{url('case')}}">Case Studies<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 
 			      <ul class="sub-menu">
 			        <li class="menu-item">
-			          <a href="studies-all.html">All Cases<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="{{url('case')}}">All Cases<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
 			        <li class="menu-item">
@@ -154,16 +154,16 @@
 
 
 			    <li class="menu-item menu-item-has-children">
-			      <a href="blog-all.html">Blog<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			      <a href="{{url('blog')}}">Blog<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 
 			      <ul class="sub-menu">
 			        <li class="menu-item">
-			          <a href="blog-all.html">All Posts<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="{{url('blog')}}">All Posts<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
-			        <li class="menu-item">
+			    {{--     <li class="menu-item">
 			          <a href="blog-single.html">Single Post<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
+			        </li> --}}
 			      </ul>
 			    </li>
 
@@ -172,7 +172,7 @@
 
 			      <ul class="sub-menu">
 			        <li class="menu-item">
-			          <a href="page-mission.html">Our Mission<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="{{url('mission')}}">Our Mission<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
 			        <li class="menu-item">
@@ -183,9 +183,7 @@
 			          <a href="page-team.html">Team<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
-			        <li class="menu-item">
-			          <a href="page-charity.html">Charity<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
+			   
 
 			        <li class="menu-item">
 			          <a href="page-contacts.html">Contacts<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
@@ -232,7 +230,7 @@
 
 		      	<!-- Main Logo Column -->
 		        <div class="column">
-		          <a class="site-logo" href="index.html" rel="home">
+		          <a class="site-logo" href="{{url('/')}}" rel="home">
 		          	<img alt="" class="custom-logo"  src="{{asset('assets/img/logo.png')}}">
 		          </a>
 		        </div><!-- Main Logo Column END -->
@@ -244,23 +242,23 @@
 	        	  <nav class="main-navigation">
 	        	    <ul class="menu">
 	        	      <li class="menu-item">
-	        	        <a href="index.html">Home</a>
+	        	        <a href="{{url('/')}}">Home</a>
 	        	      </li>
 
 	        	      <li class="menu-item current-menu-item">
-	        	        <a href="industries.html">Industries</a>
+	        	        <a href="{{url('industries')}}">Industries</a>
 	        	      </li>
 
 	        	      <li class="menu-item menu-item-has-children">
-	        	        <a href="service-all.html">Services</a>
+	        	        <a href="{{url('service')}}">Services</a>
 
 	        	        <ul class="sub-menu">
 	        	          <li class="menu-item">
-	        	            <a href="service-all.html">All Services</a>
+	        	            <a href="{{url('service')}}">All Services</a>
 	        	          </li>
 
 	        	          <li class="menu-item">
-	        	            <a href="service-01.html">Accelerating Growth</a>
+	        	            <a href="service-01.html">Strategy</a>
 	        	          </li>
 
 	        	          <li class="menu-item">
@@ -268,7 +266,7 @@
 	        	          </li>
 
 	        	          <li class="menu-item">
-	        	            <a href="service-03.html">Advertising</a>
+	        	            <a href="service-03.html">Marketing & Onboarding</a>
 	        	          </li>
 
 	        	          <li class="menu-item">
@@ -276,7 +274,7 @@
 	        	          </li>
 
 	        	          <li class="menu-item">
-	        	            <a href="service-05.html">Corporate Finance</a>
+	        	            <a href="service-05.html">Accelerating Growth</a>
 	        	          </li>
 
 	        	          <li class="menu-item">
@@ -290,11 +288,11 @@
 	        	      </li>
 
 	        	      <li class="menu-item menu-item-has-children">
-	        	        <a href="studies-all.html">Case Studies</a>
+	        	        <a href="{{url('case')}}">Case Studies</a>
 
 	        	        <ul class="sub-menu">
 	        	          <li class="menu-item">
-	        	            <a href="studies-all.html">All Cases</a>
+	        	            <a href="{{url('case')}}">All Cases</a>
 	        	          </li>
 
 	        	          <li class="menu-item">
@@ -323,31 +321,19 @@
 	        	        </ul>
 	        	      </li>
 
+	
+
 	        	      <li class="menu-item menu-item-has-children">
-	        	        <a href="learning-all.html">Learning</a>
+	        	        <a href="{{url('blog')}}">Blog</a>
 
 	        	        <ul class="sub-menu">
 	        	          <li class="menu-item">
-	        	            <a href="learning-all.html">All Courses</a>
+	        	            <a href="{{url('blog')}}">All Posts</a>
 	        	          </li>
 
-	        	          <li class="menu-item">
-	        	            <a href="learning-01.html">Single Course</a>
-	        	          </li>
-	        	        </ul>
-	        	      </li>
-
-	        	      <li class="menu-item menu-item-has-children">
-	        	        <a href="blog-all.html">Blog</a>
-
-	        	        <ul class="sub-menu">
-	        	          <li class="menu-item">
-	        	            <a href="blog-all.html">All Posts</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
+	        	      {{--     <li class="menu-item">
 	        	            <a href="blog-single.html">Single Post</a>
-	        	          </li>
+	        	          </li> --}}
 	        	        </ul>
 	        	      </li>
 
@@ -356,7 +342,7 @@
 
 	        	        <ul class="sub-menu">
 	        	          <li class="menu-item">
-	        	            <a href="page-mission.html">Our Mission</a>
+	        	            <a href="{{url('mission')}}">Our Mission</a>
 	        	          </li>
 
 	        	          <li class="menu-item">
@@ -367,10 +353,7 @@
 	        	            <a href="page-team.html">Team</a>
 	        	          </li>
 
-	        	          <li class="menu-item">
-	        	            <a href="page-charity.html">Charity</a>
-	        	          </li>
-
+	        	       
 	        	          <li class="menu-item">
 	        	            <a href="page-contacts.html">Contacts</a>
 	        	          </li>
@@ -520,19 +503,19 @@
 		              <div class="menu-footer-menu-2-container">
 		                <ul class="menu">
 		                  <li class="menu-item">
-		                    <a href="#">Small Business Marketing</a>
+		                    <a href="#">Strategy</a>
 		                  </li>
 
 		                  <li class="menu-item">
-		                    <a href="#">Marketing Audit</a>
+		                    <a href="#">Consulting</a>
 		                  </li>
 
 		                  <li class="menu-item">
-		                    <a href="#">Corporate Marketing</a>
+		                    <a href="#">News Gathering & Monitoring</a>
 		                  </li>
 
 		                  <li class="menu-item">
-		                    <a href="#">Branding</a>
+		                    <a href="#">Advanced Analytics</a>
 		                  </li>
 
 		                  <li class="menu-item">
@@ -544,11 +527,11 @@
 		                  </li>
 
 		                  <li class="menu-item">
-		                    <a href="#">Advertising</a>
+		                    <a href="#">Marketing & Onboarding</a>
 		                  </li>
 
 		                  <li class="menu-item">
-		                    <a href="#">Corporate Finance</a>
+		                    <a href="#">Accelerating Growth</a>
 		                  </li>
 		                </ul>
 		              </div>
@@ -597,7 +580,7 @@
 			      <div class="row">
 			        <div class="col-sm-6">
 			          <p class="copyright-text">
-			            StartApp. Made with <i class="material-icons favorite_border"></i> by <a href="#">8Guild</a>
+			           {{-- Text --}}
 			          </p>
 			        </div>
 

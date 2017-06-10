@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Consulting</title>
+		<title>Cognires</title>
 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -226,30 +226,7 @@
 			      </div>
 
 			      <div class="column text-right">
-			        <nav class="topbar-menu">
-			          <ul class="menu">
-			            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706">
-			              <a href="#">Topbar Link</a>
-			            </li>
-
-			            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-707">
-			              <a href="#">Link Dropdown</a>
-			              <ul class="sub-menu">
-			                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-708">
-			                  <a href="#">Submenu Item</a>
-			                </li>
-
-			                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-709">
-			                  <a href="#">Submenu Item</a>
-			                </li>
-
-			                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-710">
-			                  <a href="#">Submenu Item</a>
-			                </li>
-			              </ul>
-			            </li>
-			          </ul>
-			        </nav>
+			      
 
 			        <div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
 			          <a class="social-btn" href="#"><i class="socicon-facebook"></i></a><a class="social-btn" href="#"><i class="socicon-telegram"></i></a><a class="social-btn" href="#"><i class="socicon-twitter"></i></a>
@@ -420,8 +397,7 @@
 		          	<!-- SIte Search Toggle -->
 		            <a class="site-search-btn tool" href="#"><i class="material-icons search"></i></a>
 
-		            <!-- Offcanvas Sidebar Toggle -->
-		            <a class="sidebar-btn tool" href="#"><i class="material-icons more_vert"></i></a>
+		          
 
 		            <!-- Topbar Mobile View Toggle -->
 		            <!-- Only Mobile view visible -->
@@ -432,9 +408,7 @@
 		            <a class="menu-btn tool" data-toggle="offcanvas" href="#"><i class="material-icons menu"></i></a>
 		          </div><!-- Header Toolbar END -->
 
-		          <div class="header-buttons">
-		             <a class="btn btn-solid btn-rounded btn-primary btn-default btn-block waves-effect waves-light" href="#">Buy Theme</a>
-		          </div>
+		    
 		        </div>
 		      </div>
 		    </div>

@@ -13,4 +13,8 @@ class PageController extends Controller
     {
     	return view('pages.industries');
     }
+    public function landing()
+    {
+    	return view('pages.landing');
+    }
 }

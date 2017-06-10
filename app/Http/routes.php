@@ -15,3 +15,5 @@ Route::group(['prefix'=>'admin'],function(){
 	Route::get('dashboard','AdminController@index');
 
 });
+
+Route::get('industries','PageController@show_industries');

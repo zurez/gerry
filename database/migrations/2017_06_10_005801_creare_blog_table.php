@@ -18,6 +18,7 @@ class CreareBlogTable extends Migration
             $table->string('title');
             $table->text('content');
             $table->integer('published');
+            $table->string('imagefilepath');
             $table->softdeletes();
             $table->timestamps();
         });

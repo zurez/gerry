@@ -34,9 +34,19 @@ class PageController extends Controller
     {
     	return view('pages.mission');
     }
+
     public function show_team()
     {
     	# code...
     	return view('pages.team');
+    }
+
+    public function show_service($id="")
+    {
+        if ($id=="") {
+            return view('pages.all_services');
+        }else{
+            return view('pages.service');
+        }
     }
 }

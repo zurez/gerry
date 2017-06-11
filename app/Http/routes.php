@@ -11,16 +11,21 @@
 |
 */
 
-Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
+Route::group(['prefix'=>'admin'],function(){
 	Route::get('dashboard','AdminController@index');
+
+	Route::get('blog/{action}/{id?}','AdminController@new_blog');
+	Route::post('save/blog','AdminController@save_blog');
+	Route::post('action/blog','AdminController@action_blog');
 
 });
 
-Route::get('logout','AdminController@logout');
-Route::get('login','AdminController@get_login');
-Route::post('login','AdminController@post_login');
+Route::get('logout','AuthController@getLogout');
+Route::get('login','Auth\AuthController@getLogin');
+Route::post('login','Auth\AuthController@postLogin');
 Route::get('industries','PageController@show_industries');
 Route::get('case/{id?}','PageController@show_cases');
 Route::get('mission','PageController@show_mission');
 Route::get('team','PageController@show_team');
+Route::get('service/{id?}','PageController@show_service');
 Route::get("/",'PageController@landing');

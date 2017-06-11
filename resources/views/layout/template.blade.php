@@ -548,29 +548,17 @@
 
 		              ?>
 		              <ul>
-		                <li>
-		                  <a href="#">Consultant-Client Relations</a> <span class="post-date">November 2, 2016</span>
+		              @foreach($news as $n)
+		              <?php
+		              	        $s= strtotime($n->created_at);
+        						$date= date("M d, Y ",$s);
+		              ?>
+		              			                <li>
+		                  <a href="{{'admin/blog',$n->id}}">{{$n->title}}</a> <span class="post-date">{{$date}}</span>
 		                </li>
+		              @endforeach
 
-		                <li>
-		                  <a href="#">Competition in Modular Clusters</a> <span class="post-date">November 2, 2016</span>
-		                </li>
-
-		                <li>
-		                  <a href="#">6 Steps to Getting Work Done</a> <span class="post-date">November 2, 2016</span>
-		                </li>
-
-		                <li>
-		                  <a href="#">The Pros and Cons of Venture</a> <span class="post-date">November 2, 2016</span>
-		                </li>
-
-		                <li>
-		                  <a href="#">5 Steps to Find a Business Mentor</a> <span class="post-date">November 2, 2016</span>
-		                </li>
-
-		                <li>
-		                  <a href="#">How to Set Fees for Your Services</a> <span class="post-date">November 2, 2016</span>
-		                </li>
+		            
 		              </ul>
 		            </section>
 		          </div>

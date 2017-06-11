@@ -49,4 +49,13 @@ class PageController extends Controller
             return view('pages.service');
         }
     }
+
+    public function show_blog($id="")
+    {
+        if ($id=="") {
+            return view('pages.all_blogs');
+        }else{
+            return view('pages.blog');
+        }
+    }
 }

@@ -29,3 +29,4 @@ Route::get('mission','PageController@show_mission');
 Route::get('team','PageController@show_team');
 Route::get('service/{id?}','PageController@show_service');
 Route::get("/",'PageController@landing');
+Route::get('blog/{id?}','PageController@show_blog');;

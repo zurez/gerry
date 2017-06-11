@@ -433,7 +433,7 @@
 	            </div>
 
 	            <div class="col-lg-6 col-md-6 col-sm-12 text-right tablet-center">
-	              <a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light" href="#">See all news&nbsp;<i class="material-icons trending_flat"></i></a>
+	              <a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light" href="{{url('blog')}}">See all news&nbsp;<i class="material-icons trending_flat"></i></a>
 	              <div class="padding-bottom-2x visible-sm visible-xs"></div>
 	            </div>
 	          </div>

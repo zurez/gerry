@@ -543,7 +543,10 @@
 		              <h3 class="widget-title">
 		                Latest News
 		              </h3>
+		              <?php
+		              		$news=DB::table('blog')->orderBy('created_at','DESC')->limit(5)->get();
 
+		              ?>
 		              <ul>
 		                <li>
 		                  <a href="#">Consultant-Client Relations</a> <span class="post-date">November 2, 2016</span>

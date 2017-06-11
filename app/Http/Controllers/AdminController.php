@@ -7,6 +7,7 @@ use App\Models\Blog;
 use App\User;
 use App\Http\Requests;
 use Auth;
+use DB;
 class AdminController extends Controller
 {
     public function index()
@@ -21,8 +22,8 @@ class AdminController extends Controller
     public function get_blog()
     {
     	Auth::login(User::find(1));
-        $blog=Blog::all();
-
+        $blog=Blog::leftJoin('users','blog.user_id','=','users.id')->get();
+        
     	return view('dashboard.blog_all')
             ->with('page_title','All Blogs')
             ->with('blogs',$blog)

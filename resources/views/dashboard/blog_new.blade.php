@@ -8,11 +8,11 @@
             <p class="help-block">Should be short and concise.</p>
         </div>
         <div class="form-group" style="position: static;">
-         	<div id="summernote">{!! $blog->content or 'Write your blog here..' !!}</div>
+         	<div id="summernote">{!! $content !!}</div>
         </div>
         <div class="checkbox" style="position: static;">
             <label>
-                <input id="blog_publish" type="checkbox"> <span>Publish</span>
+                <input id="blog_publish" type="checkbox" @if(isset($blog_id)) checked="checked"@endif> <span>Publish</span>
 
             </label>
         </div>
@@ -38,7 +38,10 @@
 			});
 			$('#blog_save').click(function(){
 				var url="{{url('admin/save/blog')}}";
-				var content=$('.summernote').eq(0).summernote('code');
+				var MyDiv2 = document.getElementsByClassName('note-editable');; m = MyDiv2[0];
+				var content=$('#summernote').eq(0).summernote('code');
+				var description=m.innerHTML;
+				
 				var title=$('#blog_title').val();
 				var publish=0;
 				var imagefile=$('#blog_image')[0].files[0];
@@ -52,6 +55,7 @@
 				formdata.append('title',title);
 				formdata.append('published',publish);
 				formdata.append('imagefile',imagefile);
+				formdata.append('description',description);
 				formdata.append('_token',"{{csrf_token()}}");
 				if (blog_id==0) {
 	

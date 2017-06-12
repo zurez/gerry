@@ -104,6 +104,7 @@ class AdminController extends Controller
             $blog->title=$title;
             $blog->published=$published;
             $blog->imagefilepath=$filename;
+            $blog->description=$r->description;
             $blog->user_id=Auth::user()->id;
             $blog->save();
             $ret["status"]="success";

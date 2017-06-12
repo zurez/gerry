@@ -5,7 +5,7 @@
 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+		<script type="text/javascript" src="{{asset('assets/js/vendor/jquery.js')}}"></script>
 		<!-- Favicon Images -->
 		<link rel="icon" href="{{asset('assets/img/favicon/cropped-favicon-32x32.png')}}" />
 		<link rel="icon" href="{{asset('assets/img/favicon/cropped-favicon-192x192.png')}}" />
@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="{{asset('assets/stylesheets/vendor/socicon.min.css')}}" type="text/css" media="screen" />
 		<link rel="stylesheet" href="{{asset('assets/stylesheets/vendor/bootstrap.min.css')}}" type="text/css" media="screen" />
 		<link rel="stylesheet" href="{{asset('assets/stylesheets/vendor/preloader.css')}}" type="text/css" media="screen" />
-
+			
 		<!-- *************************************************************************************** -->
 		<!-- Vendor Styles Section -->
 			<link rel="stylesheet" href="{{asset('assets/stylesheets/vendor/magnific-popup.min.css')}}" type="text/css" media="screen" />
@@ -31,7 +31,9 @@
 
 		<!-- Main Theme Style -->
 		<link rel="stylesheet" href="{{asset('assets/stylesheets/theme.min.css')}}" type="text/css" media="screen" />
-
+		 <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
+    {{-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"> --}}
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
 		<!-- Modernizr Scripts -->
 		<script type="text/javascript" src="{{asset('assets/js/vendor/modernizr.custom.js')}}"></script>
 
@@ -583,7 +585,7 @@
 		</main>
 		<!-- Scripts section -->
 		<!-- **************************************************************************************************************************** -->
-		<script type="text/javascript" src="{{asset('assets/js/vendor/jquery.js')}}"></script>
+	
 
 		<script type="text/javascript" src="{{asset('assets/js/vendor/aos.min.js')}}"></script>
 		<script type="text/javascript" src="{{asset('assets/js/vendor/jquery.waypoints.min.js')}}"></script>

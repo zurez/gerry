@@ -451,12 +451,12 @@
 	                  <div class="post-body">
 	                    <header class="post-header">
 	                      <div class="column">
-	                        <a class="post-date" href="#">{{$date}}</a>by
+	                        <a class="post-date" href="#">{{$date}}</a>by {{$n->display_name}}
 	                 
 	                      </div>
 
 	                      <div class="column">
-	                        <a class="post-comments" href="#">2&nbsp;<i class="material-icons chat_bubble"></i></a>
+	                        {{-- <a class="post-comments" href="#">2&nbsp;<i class="material-icons chat_bubble"></i></a> --}}
 	                      </div>
 	                    </header>
 
@@ -464,127 +464,24 @@
 	                      <a href="{{url('blog',$n->id)}}">{{$n->title}}</a>
 	                    </h3>
 
-	                    <p class="post-excerpt">
-	                      	{!!$n->content!!}
+	                    <p class="post-excerpt summernote">
+	                      	{!! $n->description !!}
 	                    </p>>
 	                  </div>
 	                </article>
 	              </div>
 	            </div>
 	          	@endforeach
-	            <div class="col-sm-4">
-	              <div class="blog-post-tile">
-	                <article class="post-tile">
-	                  <div class="post-body">
-	                    <header class="post-header">
-	                      <div class="column">
-	                        <a class="post-date" href="#">November 2, 2016</a>by
-	                        	<a href="#">8guild</a>&nbsp;in
-	                        	<a href="#" rel="category tag">Industry</a>,
-	                        	<a href="#" rel="category tag">Tech</a>
-	                      </div>
 
-	                      <div class="column">
-	                        <a class="post-comments" href="#">2&nbsp;<i class="material-icons chat_bubble"></i></a>
-	                      </div>
-	                    </header>
-
-	                    <h3 class="post-title">
-	                      <a href="#">6 Steps to Getting Work Done</a>
-	                    </h3>
-
-	                    <p class="post-excerpt">
-	                      Fusce et leo sed dui auctor dignissim sit amet at magna. Nam in tincidunt nibh, at hendrerit lorem. Praesent pulvinar risus ac velit imperdiet tincidunt
-	                    </p>
-
-	                    <footer class="post-footer">
-	                      <div class="tags-links">
-	                        <a href="#" rel="tag">Consulting</a>
-	                        <a href="#" rel="tag">Services</a>
-	                      </div>
-	                    </footer>
-	                  </div>
-	                </article>
-	              </div>
-	            </div>
-
-	            <div class="col-sm-4">
-	              <div class="blog-post-tile">
-	                <article class="post-tile">
-	                  <div class="post-body">
-	                    <header class="post-header">
-	                      <div class="column">
-	                        <a class="post-date" href="#">November 2, 2016</a>by
-	                        	<a href="#">8guild</a>&nbsp;in
-	                        	<a href="#" rel="category tag">Banks</a>,
-	                        	<a href="#" rel="category tag">Business</a>
-	                      </div>
-
-	                      <div class="column">
-	                        <a class="post-comments" href="#">0&nbsp;<i class="material-icons chat_bubble"></i></a>
-	                      </div>
-	                    </header>
-
-	                    <h3 class="post-title">
-	                      <a href="#">The Pros and Cons of Venture</a>
-	                    </h3>
-
-	                    <p class="post-excerpt">
-	                      Fusce et leo sed dui auctor dignissim sit amet at magna. Nam in tincidunt nibh, at hendrerit lorem. Praesent pulvinar risus ac velit imperdiet tincidunt
-	                    </p>
-
-	                    <footer class="post-footer">
-	                      <div class="tags-links">
-	                        <a href="#" rel="tag">Law</a>
-	                        <a href="#" rel="tag">Money</a>
-	                        <a href="#" rel="tag">Venture</a>
-	                      </div>
-	                    </footer>
-	                  </div>
-	                </article>
-	              </div>
-	            </div>
-
-	            <div class="col-sm-4">
-	              <div class="blog-post-tile">
-	                <article class="post-tile">
-	                  <div class="post-body">
-	                    <header class="post-header">
-	                      <div class="column">
-	                        <a class="post-date" href="#">November 2, 2016</a>by
-	                        	<a href="#">8guild</a>&nbsp;in
-	                        	<a href="#" rel="category tag">Banks</a>,
-	                        	<a href="#" rel="category tag">Financial</a>
-	                      </div>
-
-	                      <div class="column">
-	                        <a class="post-comments" href="#">0&nbsp;<i class="material-icons chat_bubble"></i></a>
-	                      </div>
-	                    </header>
-
-	                    <h3 class="post-title">
-	                      <a href="#">How To Make Financial Audit</a>
-	                    </h3>
-
-	                    <p class="post-excerpt">
-	                      Fusce et leo sed dui auctor dignissim sit amet at magna. Nam in tincidunt nibh, at hendrerit lorem. Praesent pulvinar risus ac velit imperdiet tincidunt
-	                    </p>
-
-	                    <footer class="post-footer">
-	                      <div class="tags-links">
-	                        <a href="#" rel="tag">Dashboard</a>
-	                        <a href="#" rel="tag">Job</a>
-	                        <a href="#" rel="tag">Law</a>
-	                      </div>
-	                    </footer>
-	                  </div>
-	                </article>
-	              </div>
-	            </div>
 	          </div>
 			    </div>
 			  </section>
 			</article>
+<script type="text/javascript">
+jQuery(function($) {
 
 
+});
+
+</script>
 @stop

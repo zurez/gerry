@@ -15,11 +15,15 @@ class PageController extends Controller
     }
     public function landing()
     {
-        $news=Blog::orderBy('created_at','DESC')->where('published','!=','0')->whereNull('deleted_at')->limit(3)->get();
+        $news=Blog::join('users','users.id','=','blog.user_id')->orderBy('blog.created_at','DESC')->where('blog.published','!=','0')->whereNull('blog.deleted_at')->limit(3)
+        ->select('blog.title','blog.id','users.display_name','blog.content','blog.created_at')
+        ->get();
     	return view('pages.landing')
         ->with('news',$news)
         ;
     }
+
+
 
     public function show_cases($id="")
     {
@@ -58,7 +62,10 @@ class PageController extends Controller
         if ($id=="") {
             return view('pages.all_blogs');
         }else{
-            return view('pages.blog');
+            $blog=Blog::find($id);
+            return view('pages.blog')
+            ->with('content',$blog->content)
+            ;
         }
     }
 }

@@ -8,7 +8,7 @@
             <p class="help-block">Should be short and concise.</p>
         </div>
         <div class="form-group" style="position: static;">
-         	<div id="summernote">{!! $content !!}</div>
+         	<div id="summernote">{!! $content or 'Write a new blog' !!}</div>
         </div>
         <div class="checkbox" style="position: static;">
             <label>

@@ -12,7 +12,9 @@ class AdminController extends Controller
 {
     public function index()
     {
-    	return view('layout.admin');
+    	return view('layout.admin')
+        ->with('page_title','Dashboard')
+        ;
     }
     public function logout()
     {

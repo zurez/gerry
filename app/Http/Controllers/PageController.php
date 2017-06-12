@@ -60,7 +60,13 @@ class PageController extends Controller
     public function show_blog($id="")
     {
         if ($id=="") {
-            return view('pages.all_blogs');
+            $blogs=Blog::join('users','users.id','=','blog.user_id')->where('blog.published','!=','0')->orderBy('blog.created_at','DESC')->select('blog.*','users.display_name')->get();
+            $older=Blog::join('users','users.id','=','blog.user_id')->where('blog.published','!=','0')->orderBy('blog.created_at','ASC')->select('blog.*','users.display_name')->get();
+
+            return view('pages.all_blogs')
+            ->with('blogs',$blogs)
+            ->with('older',$older)
+            ;
         }else{
             $blog=Blog::find($id);
             return view('pages.blog')

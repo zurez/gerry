@@ -20,7 +20,8 @@ class CreateServiceTable extends Migration
             $table->string('foot2');
             $table->integer('user_id');
             $table->string('title');
-            
+            $table->string('logo');
+            $table->softdeletes();
             $table->timestamps();
         });
     }

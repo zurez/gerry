@@ -335,7 +335,7 @@
 	          <div class="row">
 	            <div class="col-lg-6 col-md-6 col-sm-12 tablet-center">
 	              <h2 class="block-title text-dark text-left tablet-center">
-	                StartApp Case Studies<small class="h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sapien sapien. Morbi elementum.</small>
+	                 Case Studies<small class="h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sapien sapien. Morbi elementum.</small>
 	              </h2>
 	            </div>
 
@@ -428,7 +428,7 @@
 	          <div class="row">
 	            <div class="col-lg-6 col-md-6 col-sm-12">
 	              <h2 class="block-title text-dark text-left tablet-center">
-	                News<small class="h4">StartApp news</small>
+	                News<small class="h4"> news</small>
 	              </h2>
 	            </div>
 
@@ -464,8 +464,9 @@
 	                      <a href="{{url('blog',$n->id)}}">{{$n->title}}</a>
 	                    </h3>
 
+
 	                    <p class="post-excerpt summernote">
-	                      	{!! $n->description !!}
+	                      	{{ strip_tags(substr($n->description,0,200)) }}
 	                    </p>>
 	                  </div>
 	                </article>

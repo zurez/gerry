@@ -16,7 +16,7 @@ class PageController extends Controller
     public function landing()
     {
         $news=Blog::join('users','users.id','=','blog.user_id')->orderBy('blog.created_at','DESC')->where('blog.published','!=','0')->whereNull('blog.deleted_at')->limit(3)
-        ->select('blog.title','blog.id','users.display_name','blog.content','blog.created_at')
+        ->select('blog.title','blog.id','blog.description','users.display_name','blog.content','blog.created_at')
         ->get();
     	return view('pages.landing')
         ->with('news',$news)

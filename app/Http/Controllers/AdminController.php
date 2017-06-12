@@ -43,7 +43,7 @@ class AdminController extends Controller
     		$blog=Blog::find($id);
     		return view('dashboard.blog_new')
             ->with('page_title','Edit Blog')
-    		->with('content',$blog->content)
+    		->with('content',$blog->description)
     		->with('title',$blog->title)
             ->with('blog_id',$blog->id)
     		;
@@ -92,18 +92,23 @@ class AdminController extends Controller
 	    	$content=$r->content;
     		$title=$r->title;
             $published=$r->published;
+
+            if ($r->has('blog_id')) {
+                $blog=Blog::find($r->blog_id);
+            }else{ $blog= new Blog;}
+            try {
             $file = $r->file('imagefile');
             $filename=str_random(10).".png";
             $filepath=public_path('blog_images');
             $file->move($filepath,$filename);
-            if ($r->has('blog_id')) {
-                $blog=Blog::find($r->blog_id);
-            }else{ $blog= new Blog;}
-           
+            $blog->imagefilepath=$filename;
+            } catch (\Exception $e) {
+                
+            }
             $blog->content=$content;
             $blog->title=$title;
             $blog->published=$published;
-            $blog->imagefilepath=$filename;
+            
             $blog->description=$r->description;
             $blog->user_id=Auth::user()->id;
             $blog->save();

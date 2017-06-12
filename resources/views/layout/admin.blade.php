@@ -357,14 +357,19 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                            <?php 
+                                $serv=DB::table('service')->whereNull('deleted_at')->get();
+                            ?>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Services<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
+                                    <li>
+                                        <a href="{{url('service/new')}}">New Service</a>
+                                    </li>
+                                    @foreach($serv as $s)
+                                        <li>
+                                            <a href="{{url('service/edit',$s->id)}}">{{$s->title}}</a>
+                                        </li>
+                                    @endforeach
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

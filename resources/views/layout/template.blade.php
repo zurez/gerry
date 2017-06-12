@@ -544,7 +544,7 @@
 		                Latest News
 		              </h3>
 		              <?php
-		              		$news=DB::table('blog')->orderBy('created_at','DESC')->limit(5)->get();
+		              		$news=DB::table('blog')->where('published','!=','0')->whereNull('deleted_at')->orderBy('created_at','DESC')->limit(5)->get();
 
 		              ?>
 		              <ul>

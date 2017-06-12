@@ -19,13 +19,13 @@
 				}
 			?>
 			<tr>
-				<td>{{$b->id}}</td>
+				<td>{{$b->bid}}</td>
 				<td>{{$b->title}}</td>
 				<td>{{$b->display_name}}</td>
 				<td>
-					<a href="{{url('admin/blog/edit',$b->id)}}" target="_blank" class="btn btn-primary">Edit</a>
-					<button type="button" rel-id="{{$b->id}}" action="delete" class="btn btn-danger edit">Delete</button>
-					<button type="button" rel-id="{{$b->id}}" action="{{$state}}" class="btn btn-warning edit">{{ucfirst($state)}}</button>
+					<a href="{{url('admin/blog/edit',$b->bid)}}" target="_blank" class="btn btn-primary">Edit</a>
+					<button type="button" rel-id="{{$b->bid}}" action="delete" class="btn btn-danger edit">Delete</button>
+					<button type="button" rel-id="{{$b->bid}}" action="{{$state}}" class="btn btn-warning edit">{{ucfirst($state)}}</button>
 				</td>
 			</tr>
 		@endforeach

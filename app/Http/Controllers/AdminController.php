@@ -22,7 +22,7 @@ class AdminController extends Controller
     public function get_blog()
     {
     	Auth::login(User::find(1));
-        $blog=Blog::leftJoin('users','blog.user_id','=','users.id')->get();
+        $blog=Blog::leftJoin('users','blog.user_id','=','users.id')->select('blog.id as bid','blog.title as title','users.display_name')->get();
         
     	return view('dashboard.blog_all')
             ->with('page_title','All Blogs')

@@ -439,6 +439,39 @@
 	          </div>
 
 	          <div class="row">
+
+	          	@foreach($news as $n)
+		              <?php
+		              	        $s= strtotime($n->created_at);
+        						$date= date("M d, Y ",$s);
+		              ?>
+	            <div class="col-sm-4">
+	              <div class="blog-post-tile">
+	                <article class="post-tile">
+	                  <div class="post-body">
+	                    <header class="post-header">
+	                      <div class="column">
+	                        <a class="post-date" href="#">{{$date}}</a>by
+	                 
+	                      </div>
+
+	                      <div class="column">
+	                        <a class="post-comments" href="#">2&nbsp;<i class="material-icons chat_bubble"></i></a>
+	                      </div>
+	                    </header>
+
+	                    <h3 class="post-title">
+	                      <a href="{{url('blog',$n->id)}}">{{$n->title}}</a>
+	                    </h3>
+
+	                    <p class="post-excerpt">
+	                      	{!!$n->content!!}
+	                    </p>>
+	                  </div>
+	                </article>
+	              </div>
+	            </div>
+	          	@endforeach
 	            <div class="col-sm-4">
 	              <div class="blog-post-tile">
 	                <article class="post-tile">

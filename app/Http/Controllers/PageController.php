@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-
+use App\Models\Blog;
 class PageController extends Controller
 {
     //
@@ -15,7 +15,10 @@ class PageController extends Controller
     }
     public function landing()
     {
-    	return view('pages.landing');
+        $news=Blog::orderBy('created_at','DESC')->where('published','!=','0')->whereNull('deleted_at')->limit(3)->get();
+    	return view('pages.landing')
+        ->with('news',$news)
+        ;
     }
 
     public function show_cases($id="")

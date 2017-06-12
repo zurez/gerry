@@ -70,7 +70,7 @@ class PageController extends Controller
         }else{
             $blog=Blog::find($id);
             return view('pages.blog')
-            ->with('content',$blog->content)
+            ->with('blog',$blog)
             ;
         }
     }

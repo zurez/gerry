@@ -45,7 +45,7 @@ class AdminController extends Controller
     		$blog=Blog::find($id);
     		return view('dashboard.blog_new')
             ->with('page_title','Edit Blog')
-    		->with('content',$blog->description)
+    		->with('content',$blog->content)
     		->with('title',$blog->title)
             ->with('blog_id',$blog->id)
     		;
@@ -99,11 +99,16 @@ class AdminController extends Controller
                 $blog=Blog::find($r->blog_id);
             }else{ $blog= new Blog;}
             try {
-            $file = $r->file('imagefile');
-            $filename=str_random(10).".png";
-            $filepath=public_path('blog_images');
-            $file->move($filepath,$filename);
-            $blog->imagefilepath=$filename;
+                if (!is_null($file)) {
+                    # code...
+                $file = $r->file('imagefile');
+                $filename=str_random(10).".png";
+                $filepath=public_path('blog_images');
+
+                $file->move($filepath,$filename);
+                $blog->imagefilepath=$filename;
+                }
+
             } catch (\Exception $e) {
                 
             }
@@ -117,7 +122,7 @@ class AdminController extends Controller
             $ret["status"]="success";
             $ret['long_message']="Your blog was saved";
     	} catch (\Exception $e) {
-    		// return $e->getMessage();
+    		return $e->getMessage();
     	}
 
     	return response()->json($ret);

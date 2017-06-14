@@ -13,10 +13,14 @@
 
 Route::group(['prefix'=>'admin'],function(){
 	Route::get('dashboard','AdminController@index');
-
+	/*BLOG*/ 
 	Route::get('blog/{action}/{id?}','AdminController@new_blog');
 	Route::post('save/blog','AdminController@save_blog');
 	Route::post('action/blog','AdminController@action_blog');
+	/*SERVICE*/ 
+	Route::get('service/{action}/{id?}','AdminController@new_service');
+	Route::post('save/service','AdminController@save_service');
+	Route::post('action/service','AdminController@action_service');
 
 });
 
@@ -29,4 +33,4 @@ Route::get('mission','PageController@show_mission');
 Route::get('team','PageController@show_team');
 Route::get('service/{id?}','PageController@show_service');
 Route::get("/",'PageController@landing');
-Route::get('blog/{id?}','PageController@show_blog');;
+Route::get('blog/{id?}','PageController@show_blog');

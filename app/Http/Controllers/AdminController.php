@@ -132,5 +132,14 @@ class AdminController extends Controller
     {
         
     }
+
+    public function new_service($action,$id="")
+    {
+        if ($action=="new" and $id=="") {
+            return view('dashboard.service_new');
+        }else{
+            return "lol";
+        }
+    }
 }
 

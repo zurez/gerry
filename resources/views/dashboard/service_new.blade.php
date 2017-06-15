@@ -16,7 +16,7 @@
 				<div class="form-group">
 				  <label for="title" class="control-label col-sm-2">Title</label>
 				  <div class="col-sm-10">
-				    <input class="form-control" name="title" id="title" placeholder="placeholder" required="required" type="text">
+				    <input class="form-control" name="title" id="title" required="required" type="text" value="{{$service->title or ''}}">
 				    <p class="help-block">The title of your service.</p>
 				  </div>
 				</div>
@@ -24,7 +24,7 @@
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="column1">Column 1</label>
 				  <div class="col-sm-10">
-				    <textarea class="form-control" id="column1" name="column1" rows="7" required="required"></textarea>
+				    <textarea class="form-control" id="column1" name="column1" rows="7" required="required">{{$service->column1 or ''}}"</textarea>
 				    <p class="help-block">The column 1 of the service page.</p>
 				  </div>
 				</div>
@@ -33,7 +33,7 @@
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="column2">Column 2</label>
 				  <div class="col-sm-10">
-				    <textarea class="form-control" id="column2" name="column2" rows="7" required="required"></textarea>
+				    <textarea class="form-control" id="column2" name="column2" rows="7" required="required" >"{{$service->column2 or ''}}"</textarea>
 				    <p class="help-block">The column 2 of the service page.</p>
 				  </div>
 				</div>
@@ -42,7 +42,7 @@
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="footer1">Footer 1</label>
 				  <div class="col-sm-10">
-				    <textarea class="form-control" id="footer1" name="footer1" rows="7" required="required"></textarea>
+				    <textarea class="form-control" id="footer1" name="footer1" rows="7" required="required" >"{{$service->foot1 or ''}}"</textarea>
 				    <p class="help-block">The footer 1 of the service page.</p>
 				  </div>
 				</div>
@@ -51,7 +51,7 @@
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="footer2">Footer 2</label>
 				  <div class="col-sm-10">
-				    <textarea class="form-control" id="footer2" name="footer2" rows="7" required="required"></textarea>
+				    <textarea class="form-control" id="footer2" name="footer2" rows="7" required="required">"{{$service->foot2 or ''}}"</textarea>
 				    <p class="help-block">The footer 2 of the service page.</p>
 				  </div>
 				</div>
@@ -77,6 +77,7 @@
 
 				</fieldset>
 				</form>
+				<input type="hidden" id="service_id" value="{{$service_id or '0'}}">
 
     </div>
 </div>
@@ -88,20 +89,32 @@
 			$('#service_save').click(function(){
 				var url="{{url('admin/save/service')}}";
 				var service_id=$('#service_id').val();
-				data=$('#service').serialize();
+				formdata=new FormData();
+				formdata.append('title',$('#title').val());
+				formdata.append('column1',$('#column1').val());
+				formdata.append('column2',$('#column2').val());
+				formdata.append('footer1',$('#footer1').val());
+				formdata.append('footer2',$('#footer2').val());
+				formdata.append('imagefile',$('#service_logo')[0].files[0]);
+				// formdata.append();
+				// formdata.append();formdata.append();
+
+				// data=$('#service').serialize();
 				
 				if (service_id==0) {
 	
 				}else{
-					data+="&service_id="+service_id;
+					// data+="&service_id="+service_id;
+					formdata.append('service_id',service_id);
 				}
 				
 				// Ajax
 				$.ajax({
 					url:url,
 					type:'POST',
-					data:data,
-				
+					data:formdata,
+		            contentType: false,
+		            processData: false,
 		   
 		      
 					success:function(r){

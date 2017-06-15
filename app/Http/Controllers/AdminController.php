@@ -153,14 +153,14 @@ class AdminController extends Controller
 
     public function save_service(Request $r)
     {
-    
+
         $ret=array();
         $ret['status']="failure";
         $ret['long_message']="Your blog could not be saved";
         try {
            
             $title=$r->title;
-            dump($title);
+       
             $column1=$r->column1;
             $column2=$r->column2;
             $footer1=$r->footer1;
@@ -193,7 +193,7 @@ class AdminController extends Controller
             $service->user_id=Auth::user()->id;
             $service->save();
             $ret["status"]="success";
-            $ret['long_message']="Your blog was saved";
+            $ret['long_message']="Your service was saved";
         } catch (\Exception $e) {
             return $e->getMessage();
         }

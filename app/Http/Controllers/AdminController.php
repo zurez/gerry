@@ -145,6 +145,7 @@ class AdminController extends Controller
             if (!is_null($service)) {
             return view('dashboard.service_new')
             ->with('page_title','Edit Service')
+            ->with('service_id',$id)
             ->with('service',$service)
             ;
             }
@@ -191,6 +192,7 @@ class AdminController extends Controller
             $service->foot1=$footer1;
             $service->foot2=$footer2;
             $service->user_id=Auth::user()->id;
+            $service->deleted_at=Null;
             $service->save();
             $ret["status"]="success";
             $ret['long_message']="Your service was saved";

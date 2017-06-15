@@ -51,6 +51,9 @@
 		  })();
 		</script>
 	</head>
+        <?php
+			        $services=DB::table('service')->whereNull('deleted_at')->get();
+        ?>
 <body class="{{$body_class or "n"}}">
 	<!-- It Is Preloader Markup -->
 		<div class="loading-screen"><div class="spinner-wrap"><div class="spinner" id="spinner_one"></div><div class="spinner" id="spinner_two"></div><div class="spinner" id="spinner_three"></div><div class="spinner" id="spinner_four"></div></div></div>
@@ -90,67 +93,13 @@
 			          <a href="{{url('service')}}">All Services<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
-			        <li class="menu-item">
-			          <a href="service-01.html">Strategy<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			        @foreach($services as $s)
+			       	 <li class="menu-item">
+			          <a href="{{url('service',$s->id)}}">{{$s->title}}<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
+			        @endforeach
 
-			        <li class="menu-item">
-			          <a href="service-02.html">Advanced Analytics<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
 
-			        <li class="menu-item">
-			          <a href="service-03.html">Marketing & Onboarding<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="service-04.html">Consulting<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="service-05.html">Accelerating Growth<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="service-06.html">Digital Transformation<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="service-07.html">Sustainability<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-			      </ul>
-			    </li>
-
-			    <li class="menu-item menu-item-has-children">
-			      <a href="{{url('case')}}">Case Studies<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-
-			      <ul class="sub-menu">
-			        <li class="menu-item">
-			          <a href="{{url('case')}}">All Cases<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="studies-01.html">Mobile Venture<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="studies-02.html">Kalka Media<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="studies-03.html">Cash Inc.<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="studies-04.html">Alaska Enterprise<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="studies-05.html">Team Agency<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
-
-			        <li class="menu-item">
-			          <a href="studies-06.html">Must Group City Agency<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-			        </li>
 			      </ul>
 			    </li>
 
@@ -258,34 +207,13 @@
 	        	          <li class="menu-item">
 	        	            <a href="{{url('service')}}">All Services</a>
 	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="service-01.html">Strategy</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="service-02.html">Advanced Analytics</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="service-03.html">Marketing & Onboarding</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="service-04.html">Consulting</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="service-05.html">Accelerating Growth</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="service-06.html">Digital Transformation</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="service-07.html">Sustainability</a>
-	        	          </li>
+  			        @foreach($services as $s)
+			       	 <li class="menu-item">
+			          <a href="{{url('service',$s->id)}}">{{$s->title}}<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			        </li>
+			        @endforeach
+	        	        
+	        	          
 	        	        </ul>
 	        	      </li>
 

@@ -366,6 +366,7 @@
                         <li>
                             <?php 
                                 $serv=DB::table('service')->whereNull('deleted_at')->get();
+                               
                             ?>
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Services<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">

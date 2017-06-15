@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use App\Models\Service;
 use App\User;
 use App\Http\Requests;
 use Auth;
@@ -136,10 +137,68 @@ class AdminController extends Controller
     public function new_service($action,$id="")
     {
         if ($action=="new" and $id=="") {
-            return view('dashboard.service_new');
+            return view('dashboard.service_new')
+            ->with('page_title','New Service')
+            ;
         }else{
-            return "lol";
+            $service=Service::find($id);
+            if (!is_null($service)) {
+            return view('dashboard.service_new')
+            ->with('page_title','Edit Service')
+            ->with('service',$service)
+            ;
+            }
         }
+    }
+
+    public function save_service(Request $r)
+    {
+    
+        $ret=array();
+        $ret['status']="failure";
+        $ret['long_message']="Your blog could not be saved";
+        try {
+           
+            $title=$r->title;
+            dump($title);
+            $column1=$r->column1;
+            $column2=$r->column2;
+            $footer1=$r->footer1;
+            $footer2=$r->footer2;
+
+    
+
+            if ($r->has('service_id')) {
+                $service=Service::find($r->service_id);
+            }else{ $service= new Service;}
+            try {
+                if (!is_null($file)) {
+                    # code...
+                $file = $r->file('imagefile');
+                $filename=str_random(10).".png";
+                $filepath=public_path('service_images');
+
+                $file->move($filepath,$filename);
+                $service->logo=$filename;
+                }
+
+            } catch (\Exception $e) {
+                
+            }
+            $service->column1=$column1;
+            $service->title=$title;
+            $service->column2=$column2;
+            $service->foot1=$footer1;
+            $service->foot2=$footer2;
+            $service->user_id=Auth::user()->id;
+            $service->save();
+            $ret["status"]="success";
+            $ret['long_message']="Your blog was saved";
+        } catch (\Exception $e) {
+            return $e->getMessage();
+        }
+
+        return response()->json($ret);
     }
 }
 

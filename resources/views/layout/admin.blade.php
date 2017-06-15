@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
@@ -37,6 +37,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')}}"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js')}}/1.4.2/respond.min.js')}}"></script>
     <![endif]-->
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+});
+</script>
 
 </head>
 
@@ -363,11 +370,11 @@
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Services<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="{{url('service/new')}}">New Service</a>
+                                        <a href="{{url('admin/service/new')}}">New Service</a>
                                     </li>
                                     @foreach($serv as $s)
                                         <li>
-                                            <a href="{{url('service/edit',$s->id)}}">{{$s->title}}</a>
+                                            <a href="{{url('admin/service/edit',$s->id)}}">{{$s->title}}</a>
                                         </li>
                                     @endforeach
                             </ul>

@@ -2,77 +2,107 @@
 @section('admincontent')
 	<div class="row">
     <div class="col-md-12" style="display: block;">
-        <div class="form-group" style="position: static;">
-            <label for="service_title">Service Title</label>
-            <input class="form-control" id="service_title" value="{{$service->title or 'Enter a title for your service..'}}" type="text">
-            <p class="help-block">Should be short and concise.</p>
-        </div>
-        <div class="form-group" style="position: static;">
-         	<div id="summernote">{!! $content or 'Write a new service' !!}</div>
-        </div>
-        <div class="checkbox" style="position: static;">
-            <label>
-                <input id="service_publish" type="checkbox" @if(isset($service_id)) checked="checked"@endif> <span>Publish</span>
+    		<form class="form-horizontal" id="service">
+				<fieldset>
 
-            </label>
-        </div>
-        <div class="form-group" style="position: static;">
-            <label for="service_image">Image</label>
-            <input id="service_image" type="file" required="required">
-            <p class="help-block">This image would represent your service.</p>
-        </div>
-        <div class="form-group" style="padding-right: 20px; position: static;">
-            <button type="button" class="btn btn-primary" id="service_save">Save</button>
-        </div>
+
+				<!-- change col-sm-N to reflect how you would like your column spacing (http://getbootstrap.com/css/#forms-control-sizes) -->
+
+
+				<!-- Form Name -->
+		{{-- 		<legend>Form Name</legend> --}}
+
+				<!-- Text input http://getbootstrap.com/css/#forms -->
+				<div class="form-group">
+				  <label for="title" class="control-label col-sm-2">Title</label>
+				  <div class="col-sm-10">
+				    <input class="form-control" name="title" id="title" placeholder="placeholder" required="required" type="text">
+				    <p class="help-block">The title of your service.</p>
+				  </div>
+				</div>
+				<!-- Textarea http://getbootstrap.com/css/#textarea -->
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="column1">Column 1</label>
+				  <div class="col-sm-10">
+				    <textarea class="form-control" id="column1" name="column1" rows="7" required="required"></textarea>
+				    <p class="help-block">The column 1 of the service page.</p>
+				  </div>
+				</div>
+
+				<!-- Textarea http://getbootstrap.com/css/#textarea -->
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="column2">Column 2</label>
+				  <div class="col-sm-10">
+				    <textarea class="form-control" id="column2" name="column2" rows="7" required="required"></textarea>
+				    <p class="help-block">The column 2 of the service page.</p>
+				  </div>
+				</div>
+
+				<!-- Textarea http://getbootstrap.com/css/#textarea -->
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="footer1">Footer 1</label>
+				  <div class="col-sm-10">
+				    <textarea class="form-control" id="footer1" name="footer1" rows="7" required="required"></textarea>
+				    <p class="help-block">The footer 1 of the service page.</p>
+				  </div>
+				</div>
+
+				<!-- Textarea http://getbootstrap.com/css/#textarea -->
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="footer2">Footer 2</label>
+				  <div class="col-sm-10">
+				    <textarea class="form-control" id="footer2" name="footer2" rows="7" required="required"></textarea>
+				    <p class="help-block">The footer 2 of the service page.</p>
+				  </div>
+				</div>
+
+				<!-- File Button http://getbootstrap.com/css/#forms -->
+				<div class="form-group">
+				  <label for="service_logo" class="control-label col-sm-2">Service Logo</label>
+				  <div class="col-sm-10">
+				  <input id="service_logo" name="service_logo" required="required" type="file">
+				  <p class="help-block">The logo for your service page.</p>
+				  </div>
+				</div>
+				<input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
+				<!-- Button http://getbootstrap.com/css/#buttons -->
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="saveService">Save</label>
+				  <div class="text-right col-sm-10">
+				    <button type="button" id="service_save" name="saveService" class="btn btn-primary" aria-label="Save">Save</button>
+				    <p class="help-block">Save your content</p>
+				  </div>
+				</div>
+
+
+				</fieldset>
+				</form>
+
     </div>
 </div>
 
 <input type="hidden" value="{{$service_id or '0'}}" id="service_id">
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('#summernote').summernote({
-				  height: 300,                 // set editor height
-				  minHeight: null,             // set minimum height of editor
-				  maxHeight: null,             // set maximum height of editor
-				  focus: true                  // set focus to editable area after initializing summernote
-			});
+
 			$('#service_save').click(function(){
 				var url="{{url('admin/save/service')}}";
-				var MyDiv2 = document.getElementsByClassName('note-editable');; m = MyDiv2[0];
-				var content=$('#summernote').eq(0).summernote('code');
-				var description=m.innerHTML;
-				
-				var title=$('#service_title').val();
-				var publish=0;
-				var imagefile=$('#service_image')[0].files[0];
-
-				if ($('#service_publish').attr('checked')) {
-					publish=1;
-				}
 				var service_id=$('#service_id').val();
-				var formdata=new FormData();
-				formdata.append('content',content);
-				formdata.append('title',title);
-				formdata.append('published',publish);
-				formdata.append('imagefile',imagefile);
-				formdata.append('description',description);
-				formdata.append('_token',"{{csrf_token()}}");
+				data=$('#service').serialize();
+				
 				if (service_id==0) {
 	
 				}else{
-			
-					formdata.append('service_id',service_id);
-				console.log(formdata);
+					data+="&service_id="+service_id;
 				}
 				
 				// Ajax
 				$.ajax({
 					url:url,
 					type:'POST',
-					data:formdata,
+					data:data,
 				
-		            contentType: false,
-		            processData: false,
+		   
 		      
 					success:function(r){
 						alert(r.long_message);

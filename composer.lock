@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "005fd1098c4c09021b562e5fa66efea0",
-    "content-hash": "a787be2195b4e91e14ce5a0bbf9bb427",
+    "hash": "4d43b65265978aa75a5f27d9b7ca8f76",
+    "content-hash": "cf814e6cac39b0ae742421205dfc2897",
     "packages": [
         {
             "name": "bogardo/mailgun",

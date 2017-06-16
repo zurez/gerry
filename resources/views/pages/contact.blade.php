@@ -143,7 +143,7 @@
 	            <small class="h4">Drop us a line</small>
 	          </h2>
 
-	          <form>
+	          {!! Form::open(array('url'=>'contactus','method'=>'POST')) !!}
 	            <p>
 	              <textarea cols="40" name="message" placeholder="Your message" rows="4"></textarea>
 	            </p>
@@ -165,7 +165,7 @@
 	                <button class="btn btn-block btn-transparent btn-primary" style="margin-top: 0; outline: none;" type="submit">Send Message <i class="material-icons send"></i></button>
 	              </div>
 	            </div>
-	          </form>
+	          	{{ Form::close() }}
 			    </div>
 			  </section>
 

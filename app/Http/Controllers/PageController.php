@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Models\Blog;
+use App\Models\UserContact;
+use Session;
+use DB;
+
 class PageController extends Controller
 {
     //
@@ -78,5 +82,22 @@ class PageController extends Controller
     public function show_contact()
     {
         return view('pages.contact');
+    }
+
+    public function save_contact(Request $r)
+    {
+        try {
+            $n= new UserContact;
+            $n->name=$r->name;
+            $n->phone=$r->phone;
+            $n->email=$r->email;
+            $n->message=$r->message;
+            $n->save();
+            Session::flash('flash_message','Your message has been sent. Thank you for contacting');
+        } catch (\Exception $e) {
+            
+        }
+        
+        return redirect()->back();
     }
 }

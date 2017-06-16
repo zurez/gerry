@@ -35,3 +35,4 @@ Route::get('service/{id?}','PageController@show_service');
 Route::get("/",'PageController@landing');
 Route::get('blog/{id?}','PageController@show_blog');
 Route::get('contact','PageController@show_contact');
+Route::post('contactus','PageController@save_contact');

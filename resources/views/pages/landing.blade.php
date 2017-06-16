@@ -26,7 +26,7 @@
 	          <div class="row padding-top-1x">
 	            <div class="col-sm-12 text-center">
 	              <a class="btn btn-ghost btn-rounded btn-light btn-nl waves-effect waves-dark" href="service-all.html">Learn More</a>
-	              <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="page-contacts.html">Contact Us</a>
+	              <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="{{url('contact')}}">Contact Us</a>
 	            </div>
 			      </div>
 			    </div>
@@ -219,7 +219,7 @@
 			    <div class="container-fluid">
 			      <div class="row">
 			        <div class="col-lg-6 col-md-6 col-sm-12 padding-top-3x padding-bottom-2x" style="background-color: #183978; padding-left: 96px !important; padding-right: 96px !important;">
-                <form>
+                {!! Form::open(array('url'=>'contactus','method'=>'POST'))!!}
                   <div class="row home-contact-form">
                     <div class="col-sm-6" style="padding-right: 15px !important;">
                       <input name="name" placeholder="Your name" size="40" type="text" value="">

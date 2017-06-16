@@ -59,7 +59,9 @@
         <?php
 			        $services=DB::table('service')->whereNull('deleted_at')->get();
         ?>
-
+@if(Session::has('flash_message'))
+<p class="alert alert-info">{{ Session::get('flash_message') }}</p>
+@endif
 <body class="{{$body_class or "n"}}">
 	<!-- It Is Preloader Markup -->
 		<div class="loading-screen"><div class="spinner-wrap"><div class="spinner" id="spinner_one"></div><div class="spinner" id="spinner_two"></div><div class="spinner" id="spinner_three"></div><div class="spinner" id="spinner_four"></div></div></div>
@@ -517,9 +519,7 @@
 			  </div>
 			</footer><!-- Main Footer END -->
 		</main>
-		@if(Session::has('flash_message'))
-		<p class="alert alert-info">{{ Session::get('flash_message') }}</p>
-		@endif
+
 		<!-- Scripts section -->
 		<!-- **************************************************************************************************************************** -->
 	

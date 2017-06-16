@@ -1,6 +1,6 @@
 @extends('layout.template')
 @section('content')
-			<div class="page-title title-size-lg text-light" style="background-image: url(assets/img/demo-marketing-page-title.jpg);">
+			<div class="page-title title-size-lg text-light" style="background-image: url(assets/img/demo-marketing-page-title.jpg); background-color:#A12434; ">
 			  <div class="container">
 			    <div class="inner">
 			      <div class="column">

@@ -31,6 +31,11 @@
 
 		<!-- Main Theme Style -->
 		<link rel="stylesheet" href="{{asset('assets/stylesheets/theme.min.css')}}" type="text/css" media="screen" />
+		<style type="text/css">
+			.page-title{
+				background-color:#A12434;
+			}
+		</style>
 		 <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
     {{-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"> --}}
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
@@ -137,7 +142,7 @@
 			   
 
 			        <li class="menu-item">
-			          <a href="page-contacts.html">Contacts<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="{{url('contact')}}">Contacts<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 			      </ul>
 			    </li>
@@ -285,7 +290,7 @@
 
 	        	       
 	        	          <li class="menu-item">
-	        	            <a href="page-contacts.html">Contacts</a>
+	        	            <a href="{{url('contact')}}">Contacts</a>
 	        	          </li>
 	        	        </ul>
 	        	      </li>

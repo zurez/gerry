@@ -1,6 +1,6 @@
 @extends('layout.template')
 @section('content')
-			<div class="page-title title-size-lg text-light" style="background-image: url(assets/img/demo-marketing-page-title.jpg);">
+			<div class="page-title title-size-lg text-light" >
 			  <div class="container">
 			    <div class="inner">
 			      <div class="column">
@@ -28,9 +28,9 @@
 			  </div>
 			</div>
 
-			<div class="container padding-top-3x padding-bottom-3x">
+			<div class="container padding-top-3x padding-bottom-3x" >
 			  <div class="row">
-			    <div class="col-md-9 col-sm-8">
+			    <div class="col-md-9 col-sm-8" >
 			      <div class="masonry-grid col-2">
 			        <div class="gutter-sizer"></div>
 			        <div class="grid-sizer"></div>

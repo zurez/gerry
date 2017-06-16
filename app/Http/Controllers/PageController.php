@@ -74,4 +74,9 @@ class PageController extends Controller
             ;
         }
     }
+
+    public function show_contact()
+    {
+        return view('pages.contact');
+    }
 }

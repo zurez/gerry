@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<script type="text/javascript" src="{{asset('assets/js/vendor/jquery.js')}}"></script>
 		<!-- Favicon Images -->
-		<link rel="icon" href="{{asset('assets/img/favicon/cropped-favicon-32x32.png')}}" />
-		<link rel="icon" href="{{asset('assets/img/favicon/cropped-favicon-192x192.png')}}" />
+		<link rel="icon" href="{{asset('assets/img/favicon/logo.ico')}}" />
+		{{-- <link rel="icon" href="{{asset('assets/img/favicon/cropped-favicon-192x192.png')}}" /> --}}
 		<link rel="apple-touch-icon-precomposed" href="{{asset('assets/img/favicon/cropped-favicon-180x180.png')}}" />
 		<meta name="msapplication-TileImage" content="{{asset('assets/img/favicon/cropped-favicon-270x270.png')}}" />
 

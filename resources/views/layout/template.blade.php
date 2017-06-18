@@ -65,17 +65,6 @@
 <body class="{{$body_class or "n"}}">
 	<!-- It Is Preloader Markup -->
 		<div class="loading-screen"><div class="spinner-wrap"><div class="spinner" id="spinner_one"></div><div class="spinner" id="spinner_two"></div><div class="spinner" id="spinner_three"></div><div class="spinner" id="spinner_four"></div></div></div>
-				<!-- Site Search Form -->
-		<div class="site-search-form">
-			<div class="inner">
-				<span class="close-btn"><i class="material-icons clear"></i></span>
-
-				<form method="get" class="search-box" autocomplete="off">
-					<input type="text" name="s" placeholder="Search" value="">
-					<button type="submit"><i class="material-icons search"></i></button>
-				</form>
-			</div>
-		</div><!-- Site Serch Form END -->
 
 		<!-- Offcanvas Sidebar Mobile Menu -->
 		<aside class="off-canvas-menu">
@@ -165,7 +154,7 @@
 			    <div class="inner">
 			      <div class="column">
 			        <p class="additional-info">
-			          <i class="material-icons phone"></i> 1-518-474-5766 &nbsp;&nbsp;&nbsp;Call Us 24/7
+			          <i class="material-icons phone"></i> 02-081-448-696  &nbsp;&nbsp;&nbsp;Call Us 24/7
 			        </p>
 			      </div>
 
@@ -335,7 +324,7 @@
 		          <div class="col-md-3 col-sm-6">
 		            <section class="widget widget_startapp_site_info">
 		              <a href="#">
-		              	<img alt="" src="assets/img/logo-light.png">
+		              	<img alt="" class="custom-logo"  src="{{asset('assets/img/logo.png')}}">
 		              </a>
 		              <p>
 		                Cras quis sem ut sapien efficitur tempus et ut metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam aliquam pretium lectus quis bibendum.
@@ -359,7 +348,7 @@
 		                </div>
 
 		                <div class="contact-info">
-		                  <span>New York, NY 10001</span>
+		                  <span>London, UK</span>
 		                </div>
 		              </div>
 
@@ -369,7 +358,7 @@
 		                </div>
 
 		                <div class="contact-info">
-		                  <span>001 800 8080</span>
+		                  <span>02-081-448-696</span>
 		                </div>
 		              </div>
 
@@ -379,7 +368,7 @@
 		                </div>
 
 		                <div class="contact-info">
-		                  <span>info@8guild.com</span>
+		                  <span> info@cognires.co.uk</span>
 		                </div>
 		              </div>
 		            </section>

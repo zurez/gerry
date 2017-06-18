@@ -124,7 +124,7 @@
 			        </li>
 
 			        <li class="menu-item">
-			          <a href="page-work.html">How We Work<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="{{url('work')}}">How We Work<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			        </li>
 
 			        <li class="menu-item">
@@ -162,7 +162,7 @@
 			      
 
 			        <div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
-			          <a class="social-btn" href="#"><i class="socicon-facebook"></i></a><a class="social-btn" href="#"><i class="socicon-telegram"></i></a><a class="social-btn" href="#"><i class="socicon-twitter"></i></a>
+			          <a class="social-btn" href="#"><i class="socicon-linkedin"></i></a><a class="social-btn" href="#"><i class="socicon-telegram"></i></a><a class="social-btn" href="#"><i class="socicon-twitter"></i></a>
 			        </div>
 
 			        <div class="toolbar">
@@ -273,7 +273,7 @@
 	        	          </li>
 
 	        	          <li class="menu-item">
-	        	            <a href="page-work.html">How We Work</a>
+	        	            <a href="{{url('work')}}">How We Work</a>
 	        	          </li>
 
 	        	          <li class="menu-item">
@@ -331,8 +331,8 @@
 		              </p>
 
 		              <div class="social-bar sb-solid-bg sb-square sb-dark-skin text-left">
-		                <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip" href="#" title="Facebook"><i class="socicon-facebook"></i></a>
-		                <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip" href="#" title="Foursquare"><i class="socicon-foursquare"></i></a>
+		                <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip" href="#" title="twitter"><i class="socicon-twitter"></i></a>
+		              
 		                <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip" href="#" title="LinkedIn"><i class="socicon-linkedin"></i></a>
 		              </div>
 		            </section>

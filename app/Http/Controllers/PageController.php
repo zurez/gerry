@@ -41,6 +41,11 @@ class PageController extends Controller
     	}
     }
 
+    public function show_work()
+    {
+        return view('pages.work');
+    }
+    
     public function show_mission()
     {
     	return view('pages.mission');

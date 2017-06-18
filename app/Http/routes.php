@@ -36,3 +36,4 @@ Route::get("/",'PageController@landing');
 Route::get('blog/{id?}','PageController@show_blog');
 Route::get('contact','PageController@show_contact');
 Route::post('contactus','PageController@save_contact');
+Route::get('work','PageController@show_work');

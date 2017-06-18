@@ -1,6 +1,6 @@
 @extends('layout.template')
 @section('content')
-			<div class="page-title title-size-lg text-light" style="background-image: url(assets/img/demo-marketing-page-title.jpg);">
+			<div class="page-title title-size-lg text-light">
 			  <div class="container">
 			    <div class="inner">
 			      <div class="column">
@@ -115,7 +115,7 @@
 			        <div class="col-sm-8">
 			          <div class="text-block">
 			            <h4>
-			              <span class="text-light">Aenean vulputate porta enim, sit amet ornare erat egestas sed. Suspendisse congue est vel tempus tristique. Aenean eu scelerisque arcu, ut fringilla nunc. Nulla placerat porttitor mi sit.</span>
+			              <span class="text-light">Our mission is to helps application vendors and their investors, SMEs and their professional advisors to grow by utilising technology and providing experienced commercial advice.  </span>
 			            </h4>
 
 			            <div class="col-sm-8">

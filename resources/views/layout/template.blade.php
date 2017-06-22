@@ -404,36 +404,22 @@
 		              <div class="menu-footer-menu-1-container">
 		                <ul class="menu">
 		                  <li class="menu-item">
-		                    <a href="#">IT &#038; Biotechnology</a>
+		                    <a href="#">Financial & Professional Services </a>
 		                  </li>
 
 		                  <li class="menu-item">
-		                    <a href="#">Shipping &#038; Logistics</a>
+		                    <a href="#">Food & Beverages</a>
 		                  </li>
 
 		                  <li class="menu-item">
-		                    <a href="#">Health &#038; Pharmaceutical</a>
+		                    <a href="#">Hotel & Tourism </a>
 		                  </li>
 
 		                  <li class="menu-item">
-		                    <a href="#">Social Media</a>
+		                    <a href="#">Student & Accomodation </a>
 		                  </li>
 
-		                  <li class="menu-item">
-		                    <a href="#">Aviation &#038; Travel</a>
-		                  </li>
 
-		                  <li class="menu-item">
-		                    <a href="#">Private Equity</a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Natural Resources</a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Technology</a>
-		                  </li>
 		                </ul>
 		              </div>
 		            </section>

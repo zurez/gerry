@@ -5,7 +5,7 @@
 			    <div class="inner">
 			      <div class="column">
 			        <h1>
-			          Mobile Venture
+			          {{$case->client or 'Client Name Missing'}}
 			        </h1>
 			      </div>
 
@@ -20,7 +20,7 @@
 		          	<i class="material-icons keyboard_arrow_right"></i>
 
 		          	<span property="itemListElement" typeof="ListItem">
-		          		<span property="name">Mobile Venture</span>
+		          		<span property="name">{{$case->client or 'Client Name Missing'}}</span>
 		          	</span>
 			        </div>
 			      </div>
@@ -33,7 +33,7 @@
 			    <div class="container">
 			      <div class="row">
 			        <div class="col-lg-8 col-md-8 col-sm-12">
-			          <div class="text-block">
+			          <div class="cs_headline">
 			            <h4>
 			              Investigating Customer Experience to Improve Performance
 			            </h4>

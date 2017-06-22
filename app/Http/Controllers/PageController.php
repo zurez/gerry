@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Models\Blog;
+use App\Models\Cases as CaseStudies;
 use App\Models\UserContact;
 use Session;
 use DB;
@@ -36,8 +37,8 @@ class PageController extends Controller
     	}
     	else{
 
-    		$case=Case::where('client',$id)->first();
-    		return view('pages.case')
+    		$case=CaseStudies::where('client',$id)->first();
+    		return view('pages.cases')
     		->with('case',$case);
     	}
     }

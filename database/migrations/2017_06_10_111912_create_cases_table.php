@@ -28,6 +28,8 @@ class CreateCasesTable extends Migration
             $table->text('plan');
             $table->text('result');
             $table->text('award');
+            $table->text('content');
+        
             $table->integer('user_id');
             $table->enum('featured',['yes','no']);
             $table->softdeletes();

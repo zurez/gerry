@@ -35,9 +35,10 @@ class PageController extends Controller
     		return view('pages.all_cases');
     	}
     	else{
-    		// $case=Case::find($id);
-    		// return view('pages.case')
-    		// ->with('case',$case);
+
+    		$case=Case::where('client',$id)->first();
+    		return view('pages.case')
+    		->with('case',$case);
     	}
     }
 

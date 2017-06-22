@@ -406,7 +406,8 @@
 			        <div class="col-sm-8">
 			          <div class="text-block">
 			            <h4>
-			              <span class="text-light">Cras quis sem ut sapien efficitur tempus et ut metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam aliquam pretium lectus quis bibendum. Nam bibendum facilisis laoreet.</span>
+			              <span class="text-dark">ARE YOU LOOKING FOR A DIFFERENT WORK EXPERIENCE?</span> <br>
+			              <span class="text-light">We can offer you the freedom to always do the right thing for your customers, unburdened by unncecessary bureaucracy, overbearing management or internal politics. We're looking for agents of change, people with the ideas, experience and the ability to produce real outcomes and make a real difference to the future of our client's business.</span>
 			            </h4>
 			          </div>
 			        </div>

@@ -35,6 +35,27 @@
 			.page-title{
 				background-color:#A12434;
 			}
+
+
+			.cs_headline{
+			        font-family:Georgia,serif;
+				color:#4E443C;
+				font-variant: small-caps; text-transform: none; font-weight: 100; margin-bottom: 0;
+			}
+
+			.cs_para{
+			        font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+			        font-size: 14px;
+			        margin-top: .5em; color: #666;
+			}
+
+			.cs_para_start{
+			        font-family:Georgia,serif;
+				font-size: .8em;
+			        font-weight: bold;
+				text-transform:uppercase;
+				letter-spacing:2px;
+			} 
 		</style>
 		 <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
     {{-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"> --}}
@@ -327,7 +348,7 @@
 		              	<img alt="" class="custom-logo"  src="{{asset('assets/img/logo.png')}}">
 		              </a>
 		              <p>
-		                Cras quis sem ut sapien efficitur tempus et ut metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam aliquam pretium lectus quis bibendum.
+		                Helping application developers & their investors, SME's & their professional advisors to utilise technology and experienced commercial consultants to help them grow.
 		              </p>
 
 		              <div class="social-bar sb-solid-bg sb-square sb-dark-skin text-left">

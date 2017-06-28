@@ -95,7 +95,7 @@
 
 	                <div class="icon-box-description">
 	                  <p>
-	                    <span class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sapien sapien. Morbi elementum</span>
+	                    <span class="text-gray">News gathering and curation helps us listen, benchmark and understand our market before engaging. </span>
 	                  </p>
 	                  <a class="btn btn-link btn-rounded btn-primary btn-sm" href="service-01.html">Learn More</a>
 	                </div>

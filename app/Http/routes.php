@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['prefix'=>'admin'],function(){
+Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	Route::get('dashboard','AdminController@index');
 	/*BLOG*/ 
 	Route::get('blog/{action}/{id?}','AdminController@new_blog');

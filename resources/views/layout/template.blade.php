@@ -113,7 +113,7 @@
 
 			        @foreach($services as $s)
 			       	 <li class="menu-item">
-			          <a href="{{url('service',$s->id)}}">{{$s->title}}<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="{{url('service',$s->id)}}">{{$s->title}}</a>
 			        </li>
 			        @endforeach
 
@@ -227,7 +227,7 @@
 	        	          </li>
   			        @foreach($services as $s)
 			       	 <li class="menu-item">
-			          <a href="{{url('service',$s->id)}}">{{$s->title}}<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			          <a href="{{url('service',$s->id)}}">{{$s->title}}</a>
 			        </li>
 			        @endforeach
 	        	        
@@ -488,7 +488,7 @@
         						$date= date("M d, Y ",$s);
 		              ?>
 		              			                <li>
-		                  <a href="{{'admin/blog',$n->id}}">{{$n->title}}</a> <span class="post-date">{{$date}}</span>
+		                  <a href="{{url('blog',$n->id)}}">{{$n->title}}</a> <span class="post-date">{{$date}}</span>
 		                </li>
 		              @endforeach
 

@@ -32,7 +32,17 @@
 			  <section class="fw-section padding-top-3x padding-bottom-3x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            We Are Experts In <small class="h4">Aenean vulputate porta enim, sit amet ornare erat egestas sed. Suspendisse congue est vel.</small>
+	            We Are Currently <small class="h4">interested in working with vendors who have solution in the following disciplines:
+
+Mobile property management (PMS) solutions for hotel and accommodation providers of all kinds.
+
+Customer experience management (CXM) solutions that can serve multiple industries.
+
+Customer data platform providers (CDP)
+
+Configure, Price , Quote (CPQ) that can serve professional services organisations as well as the traditional complex sales organisations. 
+
+</small>
 	          </h2>
 
 	          <div class="row">

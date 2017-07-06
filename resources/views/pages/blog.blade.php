@@ -93,62 +93,7 @@
 			              </div>
 			            </section><!-- Widget END -->
 
-			            <!-- Widget Start -->
-			            <section class="related-posts">
-			              <h4 class="text-gray margin-bottom-2x">
-			                Related Posts
-			              </h4>
-
-			              <div class="related-post-entry">
-			                <header class="post-header">
-			                  <div class="column">
-			                    <a class="post-date" href="#">October 29, 2016</a>by
-			                    <a href="#">8guild</a>&nbsp;in
-			                    <a href="#" rel="category tag">Investment</a>
-			                  </div>
-
-			                  <div class="column"></div>
-			                </header>
-
-			                <h3 class="post-title">
-			                  <a href="#">3 Easy Ways to Be Creative</a>
-			                </h3>
-			              </div>
-
-			              <div class="related-post-entry">
-			                <header class="post-header">
-			                  <div class="column">
-			                    <a class="post-date" href="#">October 29, 2016</a>by
-			                    <a href="#">8guild</a>&nbsp;in
-			                    <a href="#">Investment</a>
-			                  </div>
-
-			                  <div class="column"></div>
-			                </header>
-
-			                <h3 class="post-title">
-			                  <a href="#">How Online Banks Work</a>
-			                </h3>
-			              </div>
-
-			              <div class="related-post-entry">
-			                <header class="post-header">
-			                  <div class="column">
-			                    <a class="post-date" href="#">October 29, 2016</a>by
-			                    <a href="#">8guild</a>&nbsp;in
-			                    <a href="#">Business</a>,
-			                    <a href="#">Investment</a>
-			                  </div>
-
-			                  <div class="column"></div>
-			                </header>
-
-			                <h3 class="post-title">
-			                  <a href="#">Choose the Right Way</a>
-			                </h3>
-			              </div>
-			            </section><!-- Widget END -->
-			          </div><!-- Post Footer END -->
+			    
 
 			
 			      
@@ -163,7 +108,7 @@
               <!-- Widget Start -->
               <section class="widget widget_startapp_author"">
                 <h2 class="widget-title">
-                  Blog Author
+                  
                 </h2>
 
                 <div class="startapp-author text-left">

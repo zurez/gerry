@@ -22,6 +22,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	Route::post('save/service','AdminController@save_service');
 	Route::post('action/service','AdminController@action_service');
 
+	Route::get('page/new/{category}','AdminController@show_save_page');
+
 });
 
 Route::get('logout','AuthController@getLogout');

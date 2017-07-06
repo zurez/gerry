@@ -202,5 +202,12 @@ class AdminController extends Controller
 
         return response()->json($ret);
     }
+
+    public function show_save_page($category)
+    {
+        return view('dashboard.page_new')
+        ->with('title','New '.ucfirst($category))
+        ->with('category',$category);
+    }
 }
 

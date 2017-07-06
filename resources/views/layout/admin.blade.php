@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Cognitive Research Admin Page</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -303,6 +303,20 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                        {{-- Custom --}}
+                        <li>
+                            <a href="#"><i class="fa fa-table fa-fw"></i>Services<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{url('admin/page/all/service')}}">All Services</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('admin/page/new/service')}}">New Service</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        {{-- Ends --}}
                         <li>
                             <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>

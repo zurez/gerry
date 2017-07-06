@@ -152,7 +152,7 @@ class AdminController extends Controller
         }
     }
 
-    public function save_service(Request $r)
+    public function save_page(Request $r)
     {
 
         $ret=array();
@@ -162,10 +162,10 @@ class AdminController extends Controller
            
             $title=$r->title;
        
-            $column1=$r->column1;
-            $column2=$r->column2;
-            $footer1=$r->footer1;
-            $footer2=$r->footer2;
+            $short_desc=$r->short_desc;
+            $long_desc=$r->long_desc;
+            $category=$r->category;
+            // $footer2=$r->footer2;
 
     
 
@@ -206,8 +206,10 @@ class AdminController extends Controller
     public function show_save_page($category)
     {
         return view('dashboard.page_new')
-        ->with('title','New '.ucfirst($category))
+        ->with('page_title','New '.ucfirst($category))
         ->with('category',$category);
     }
+
+ 
 }
 

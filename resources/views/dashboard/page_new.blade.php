@@ -2,7 +2,7 @@
 @section('admincontent')
 	<div class="row">
     <div class="col-md-12" style="display: block;">
-    		<form class="form-horizontal" id="service">
+    		<form class="form-horizontal" id="page">
 				<fieldset>
 
 
@@ -67,7 +67,7 @@
     </div>
 </div>
 
-<input type="hidden" value="{{$page_id or '0'}}" id="page_id">
+{{-- <input type="hidden" value="{{$page_id or '0'}}" id="page_id"> --}}
 	<script type="text/javascript">
 		$(document).ready(function(){
 
@@ -78,8 +78,8 @@
 				formdata.append('title',$('#title').val());
 				formdata.append('short_desc',$('#short_desc').val());
 				formdata.append('long_desc',$('#long_desc').val());
-				formdata.append('footer1',$('#footer1').val());
-				formdata.append('footer2',$('#footer2').val());
+				formdata.append('category',$('#category').val());
+				// formdata.append('footer2',$('#footer2').val());
 				formdata.append('logo',$('#logo')[0].files[0]);
 				// formdata.append();
 				// formdata.append();formdata.append();

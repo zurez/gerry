@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Models\Blog;
+use App\Models\Page;
 use App\Models\Cases as CaseStudies;
 use App\Models\UserContact;
 use Session;
@@ -68,7 +69,13 @@ class PageController extends Controller
         if ($id=="") {
             return view('pages.all_services');
         }else{
-            return view('pages.service');
+            $page=Page::find($id);
+            $services=Page::where('category','service')->where('id','!=',$id)->get();
+            return view('pages.service')
+            ->with('page',$page)
+            ->with('services',$services)
+
+            ;
         }
     }
 

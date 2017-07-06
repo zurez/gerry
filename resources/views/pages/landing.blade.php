@@ -39,6 +39,32 @@
 	          </h2>
 
 	          <div class="row">
+	          	<?php
+	          		$services=DB::table('page')->where('category','service')->whereNull('deleted_at')
+	          		->get();
+	          	?>
+	          	@foreach($services as $s)
+	          	<div class="col-lg-3 col-md-3 col-sm-6">
+	              <div class="icon-box icon-box-vertical icon-box-dark icon-box-bg-enabled icon-box-type-image bg-hover hover-scale-down text-center">
+	                <span class="icon-box-backdrop" style="background-color: #0a0a0a;"></span>
+
+	                <div class="icon-box-icon">
+	                  <img alt="" src="{{asset('page_images/'.$s->logo)}}">
+	                </div>
+
+	                <h3 class="icon-box-title">
+	                  {{$s->title}}
+	                </h3>
+
+	                <div class="icon-box-description">
+	                  <p>
+	                    <span class="text-gray">{{$s->short_desc}}</span>
+	                  </p>
+	                  <a class="btn btn-link btn-rounded btn-primary btn-sm" href="{{url('service',$s->id)}}">Learn More</a>
+	                </div>
+	              </div>
+	            </div>
+	          	@endforeach
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-vertical icon-box-dark icon-box-bg-enabled icon-box-type-image bg-hover hover-scale-down text-center">
 	                <span class="icon-box-backdrop" style="background-color: #0a0a0a;"></span>

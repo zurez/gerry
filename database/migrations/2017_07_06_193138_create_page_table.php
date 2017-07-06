@@ -23,7 +23,7 @@ class CreatePageTable extends Migration
             $table->string('image1');
             $table->enum('publish',['yes','no']);
             $table->string('category');
-            $table->integer('user_id')->unsigne();
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
             $table->softdeletes();
         });

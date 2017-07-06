@@ -60,7 +60,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Admin Panel</a>
+                <a class="navbar-brand" href="{{url('admin/stats')}}">Admin Panel</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -277,7 +277,7 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
+                      {{--   <li class="sidebar-search">
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
@@ -287,12 +287,12 @@
                             </span>
                             </div>
                             <!-- /input-group -->
+                        </li> --}}
+                        <li>
+                            <a href="{{url('admin/stats')}}"><i class="fa fa-dashboard fa-fw"></i> Statistics</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Blogs<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-edit fa-fw"></i>Blogs<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="{{url('admin/blog/all')}}">All Blogs</a>
@@ -305,7 +305,7 @@
                         </li>
                         {{-- Custom --}}
                         <li>
-                            <a href="#"><i class="fa fa-table fa-fw"></i>Services<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i>Services<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="{{url('admin/page/all/service')}}">All Services</a>
@@ -318,13 +318,13 @@
                         </li>
                         {{-- Ends --}}
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a href="tables.html"><i class="fa fa-industry fa-fw"></i>Industries</a>
                         </li>
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i>Emails<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="panels-wells.html">Panels and Wells</a>
@@ -374,24 +374,6 @@
                                     </ul>
                                     <!-- /.nav-third-level -->
                                 </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <?php 
-                                $serv=DB::table('service')->whereNull('deleted_at')->get();
-                               
-                            ?>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Services<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="{{url('admin/service/new')}}">New Service</a>
-                                    </li>
-                                    @foreach($serv as $s)
-                                        <li>
-                                            <a href="{{url('admin/service/edit',$s->id)}}">{{$s->title}}</a>
-                                        </li>
-                                    @endforeach
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

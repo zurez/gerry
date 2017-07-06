@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Blog;
-use App\Models\Service;
+use App\Models\Page;
 use App\User;
 use App\Http\Requests;
 use Auth;
@@ -24,7 +24,7 @@ class AdminController extends Controller
     }
     public function get_blog()
     {
-    	Auth::login(User::find(1));
+    	// Auth::login(User::find(1));
         $blog=Blog::leftJoin('users','blog.user_id','=','users.id')->select('blog.id as bid','blog.title as title','users.display_name')->get();
         
     	return view('dashboard.blog_all')
@@ -141,12 +141,12 @@ class AdminController extends Controller
             ->with('page_title','New Service')
             ;
         }else{
-            $service=Service::find($id);
-            if (!is_null($service)) {
+            $page=Service::find($id);
+            if (!is_null($page)) {
             return view('dashboard.service_new')
             ->with('page_title','Edit Service')
             ->with('service_id',$id)
-            ->with('service',$service)
+            ->with('service',$page)
             ;
             }
         }
@@ -169,31 +169,31 @@ class AdminController extends Controller
 
     
 
-            if ($r->has('service_id')) {
-                $service=Service::find($r->service_id);
-            }else{ $service= new Service;}
+            if ($r->has('page_id')) {
+                $page=Page::find($r->page_id);
+            }else{ $page= new Page;}
             try {
                 if (!is_null($file)) {
                     # code...
-                $file = $r->file('imagefile');
+                $file = $r->file('logo');
                 $filename=str_random(10).".png";
-                $filepath=public_path('service_images');
+                $filepath=public_path('page_images');
 
                 $file->move($filepath,$filename);
-                $service->logo=$filename;
+                $page->logo=$filename;
                 }
 
             } catch (\Exception $e) {
                 
             }
-            $service->column1=$column1;
-            $service->title=$title;
-            $service->column2=$column2;
-            $service->foot1=$footer1;
-            $service->foot2=$footer2;
-            $service->user_id=Auth::user()->id;
-            $service->deleted_at=Null;
-            $service->save();
+            $page->short_desc=$short_desc;
+            $page->title=$title;
+            $page->long_desc=$long_desc;
+            $page->category=$category;
+            // $page->foot2=$footer2;
+            $page->user_id=Auth::user()->id;
+            $page->deleted_at=Null;
+            $page->save();
             $ret["status"]="success";
             $ret['long_message']="Your service was saved";
         } catch (\Exception $e) {
@@ -210,6 +210,13 @@ class AdminController extends Controller
         ->with('category',$category);
     }
 
- 
+    public function show_page_all($category)
+    {
+        $page=Page::leftJoin('users','page.user_id','=','users.id')->select('page.id as bid','page.title as title','users.display_name')->get();
+        return view('dashboard.page_all')
+        ->with('page_title','All '.ucfirst($category))
+        ->with('pages',$page)
+        ;
+    }
 }
 

@@ -10,7 +10,7 @@ use App\Models\Cases as CaseStudies;
 use App\Models\UserContact;
 use Session;
 use DB;
-
+use Auth;
 class PageController extends Controller
 {
     //
@@ -29,7 +29,11 @@ class PageController extends Controller
     }
 
 
-
+    public function getLogout()
+    {
+        Auth::logout();
+        return redirect('/');
+    }
     public function show_cases($id="")
     {
     	if ($id=="") {

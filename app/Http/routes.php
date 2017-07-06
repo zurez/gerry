@@ -19,14 +19,15 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	Route::post('action/blog','AdminController@action_blog');
 	/*SERVICE*/ 
 	Route::get('service/{action}/{id?}','AdminController@new_service');
-	Route::post('save/service','AdminController@save_service');
+	Route::post('page/save','AdminController@save_page');
 	Route::post('action/service','AdminController@action_service');
 
 	Route::get('page/new/{category}','AdminController@show_save_page');
+	Route::get('page/all/{category}','AdminController@show_page_all');
 
 });
 
-Route::get('logout','AuthController@getLogout');
+Route::get('logout','PageController@getLogout');
 Route::get('login','Auth\AuthController@getLogin');
 Route::post('login','Auth\AuthController@postLogin');
 Route::get('industries','PageController@show_industries');

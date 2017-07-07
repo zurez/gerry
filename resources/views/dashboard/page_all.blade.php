@@ -23,7 +23,7 @@
 				<td>{{$b->title}}</td>
 				<td>{{$b->display_name}}</td>
 				<td>
-					<a href="{{url('admin/blog/edit',$b->bid)}}" target="_blank" class="btn btn-primary">Edit</a>
+					<a href="{{url('admin/page/edit',$b->bid)}}" target="_blank" class="btn btn-primary">Edit</a>
 					<button type="button" rel-id="{{$b->bid}}" action="delete" class="btn btn-danger edit">Delete</button>
 					{{-- <button type="button" rel-id="{{$b->bid}}" action="{{$state}}" class="btn btn-warning edit">{{ucfirst($state)}}</button> --}}
 				</td>

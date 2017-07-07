@@ -21,9 +21,11 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	Route::get('service/{action}/{id?}','AdminController@new_service');
 	Route::post('page/save','AdminController@save_page');
 	Route::post('action/service','AdminController@action_service');
-
+	Route::get('email/{action}','AdminController@email');
 	Route::get('page/new/{category}','AdminController@show_save_page');
 	Route::get('page/all/{category}','AdminController@show_page_all');
+	Route::get('page/edit/{page_id}','AdminController@edit_page');
+
 
 });
 

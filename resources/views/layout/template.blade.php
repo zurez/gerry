@@ -79,6 +79,7 @@
 	</head>
         <?php
 			        $services=DB::table('page')->where('category',"service")->whereNull('deleted_at')->get();
+			        $cases=DB::table('page')->where('category',"case")->whereNull('deleted_at')->get();
         ?>
 @if(Session::has('flash_message'))
 <p class="alert alert-info">{{ Session::get('flash_message') }}</p>
@@ -242,30 +243,11 @@
 	        	          <li class="menu-item">
 	        	            <a href="{{url('case')}}">All Cases</a>
 	        	          </li>
-
+	        	          @foreach($cases as $c)
 	        	          <li class="menu-item">
-	        	            <a href="studies-01.html">Mobile Venture</a>
+	        	            <a href="{{url('case/',$id)}}">{{$c->id}}</a>
 	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="studies-02.html">Kalka Media</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="studies-03.html">Cash Inc.</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="studies-04.html">Alaska Enterprise</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="studies-05.html">Team Agency</a>
-	        	          </li>
-
-	        	          <li class="menu-item">
-	        	            <a href="studies-06.html">Must Group City Agency</a>
-	        	          </li>
+	        	          @endforeach
 	        	        </ul>
 	        	      </li>
 

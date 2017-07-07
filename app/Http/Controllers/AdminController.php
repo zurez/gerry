@@ -151,7 +151,16 @@ class AdminController extends Controller
             }
         }
     }
-
+    public function edit_page($id)
+    {
+        $page=Page::find($id);
+        return view('dashboard.page_new')
+        ->with('page',$page)
+        ->with('page_id',$id)
+        ->with('category',$page->category)
+        ->with('page_title','Edit '.ucfirst($page->category))
+        ;
+    }
     public function save_page(Request $r)
     {
 
@@ -216,6 +225,26 @@ class AdminController extends Controller
         return view('dashboard.page_all')
         ->with('page_title','All '.ucfirst($category))
         ->with('pages',$page)
+        ;
+    }
+
+    public function email($type)
+    {
+        $emails=array();
+        switch ($type) {
+            case 'inbound':
+                $emails=DB::table('usercontact')->orderBy('created_at','Desc')->get();
+                break;
+            case 'outbound':
+                # code...
+                break;
+            default:
+                # code...
+                break;
+        }
+        return view('dashboard.emails')
+        ->with('emails',$emails)
+        ->with('page_title',ucfirst($type)." Emails")
         ;
     }
 }

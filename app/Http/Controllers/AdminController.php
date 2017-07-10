@@ -111,7 +111,7 @@ class AdminController extends Controller
                 }
 
             } catch (\Exception $e) {
-                
+                dump($e);
             }
             $blog->content=$content;
             $blog->title=$title;

@@ -292,7 +292,7 @@
 			    </div>
 			  </section>
 
-			  <section class="fw-section padding-top-3x">
+		{{-- <section class="fw-section padding-top-3x">
 			    <div class="container">
 	          <div class="row">
 	            <div class="col-lg-6 col-md-6 col-sm-12">
@@ -354,9 +354,9 @@
 	            </div>
 	          </div>
 			    </div>
-			  </section>
+			  </section> --}}
 
-			  <section class="fw-section padding-top-1x padding-bottom-2x">
+			 {{--  <section class="fw-section padding-top-1x padding-bottom-2x">
 			    <div class="container">
 	          <div class="row">
 	            <div class="col-lg-6 col-md-6 col-sm-12 tablet-center">
@@ -448,7 +448,7 @@
 			        </div>
 			      </div>
 			    </div>
-			  </section>
+			  </section> --}}
 
 			  <section class="fw-section padding-top-3x padding-bottom-3x">
 			    <div class="container">

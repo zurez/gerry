@@ -101,7 +101,7 @@
 			    </li>
 
 			    <li class="menu-item current-menu-item">
-			      <a href="{{url('industries')}}">Industries<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			      <a href="{{url('industries')}}">Sector<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			    </li>
 
 			    <li class="menu-item menu-item-has-children">
@@ -216,7 +216,7 @@
 	        	      </li>
 
 	        	      <li class="menu-item current-menu-item">
-	        	        <a href="{{url('industries')}}">Industries</a>
+	        	        <a href="{{url('industries')}}">Sector</a>
 	        	      </li>
 
 	        	      <li class="menu-item menu-item-has-children">
@@ -380,7 +380,7 @@
 		          <div class="col-md-3 col-sm-6">
 		            <section class="widget widget_nav_menu">
 		              <h3 class="widget-title">
-		                Industries
+		                Sector
 		              </h3>
 
 		              <div class="menu-footer-menu-1-container">

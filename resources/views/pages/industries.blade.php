@@ -5,7 +5,7 @@
 			    <div class="inner">
 			      <div class="column">
 			        <h1>
-			          Industries
+			          Sector
 			        </h1>
 			      </div>
 
@@ -20,7 +20,7 @@
 		          	<i class="material-icons keyboard_arrow_right"></i>
 
 		          	<span property="itemListElement" typeof="ListItem">
-		          		<span property="name">Industries</span>
+		          		<span property="name">Sector</span>
 		          	</span>
 			        </div>
 			      </div>

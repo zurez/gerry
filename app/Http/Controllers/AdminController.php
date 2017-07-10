@@ -95,7 +95,7 @@ class AdminController extends Controller
 	    	$content=$r->content;
     		$title=$r->title;
             $published=$r->published;
-
+            $file = $r->file('imagefile');
             if ($r->has('blog_id')) {
                 $blog=Blog::find($r->blog_id);
             }else{ $blog= new Blog;}

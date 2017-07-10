@@ -35,7 +35,7 @@
 			  <section class="fw-section padding-top-3x padding-bottom-1x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            Cognire Services<small class="h4">the hand that rocks the cradle.</small>
+	            Cognitive Services<small class="h4">the hand that rocks the cradle.</small>
 	          </h2>
 
 	          <div class="row">

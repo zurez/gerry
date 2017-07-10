@@ -129,7 +129,7 @@ Configure, Price , Quote (CPQ) that can serve professional services organisation
 	        </div>
 			  </section>
 
-			  <section class="fw-section padding-bottom-4x">
+			{{--   <section class="fw-section padding-bottom-4x">
 			    <div class="container">
 			      <div class="row">
 			        <div class="col-sm-6">
@@ -241,6 +241,6 @@ Configure, Price , Quote (CPQ) that can serve professional services organisation
 			        </div>
 			      </div>
 			    </div>
-			  </section>
+			  </section> --}}
 			</article>
 @stop

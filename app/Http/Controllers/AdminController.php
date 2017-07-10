@@ -176,7 +176,7 @@ class AdminController extends Controller
             $category=$r->category;
             // $footer2=$r->footer2;
 
-    
+            $file = $r->file('logo');
 
             if ($r->has('page_id')) {
                 $page=Page::find($r->page_id);

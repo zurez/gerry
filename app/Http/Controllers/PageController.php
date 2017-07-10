@@ -43,7 +43,7 @@ class PageController extends Controller
     	else{
 
     		$case=CaseStudies::where('client',$id)->first();
-    		return view('pages.cases')
+    		return view('pages.single_case')
     		->with('case',$case);
     	}
     }

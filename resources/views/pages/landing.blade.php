@@ -25,7 +25,7 @@
 
 	          <div class="row padding-top-1x">
 	            <div class="col-sm-12 text-center">
-	              <a class="btn btn-ghost btn-rounded btn-light btn-nl waves-effect waves-dark" href="service-all.html">Learn More</a>
+	              <a class="btn btn-ghost btn-rounded btn-light btn-nl waves-effect waves-dark" href="{{url('service')}}">Learn More</a>
 	              <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="{{url('contact')}}">Contact Us</a>
 	            </div>
 			      </div>

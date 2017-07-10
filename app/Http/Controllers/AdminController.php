@@ -115,7 +115,7 @@ class AdminController extends Controller
             }
             $blog->content=$content;
             $blog->title=$title;
-            $blog->published=$published;
+            $blog->published=1;
             
             $blog->description=$r->description;
             $blog->user_id=Auth::user()->id;

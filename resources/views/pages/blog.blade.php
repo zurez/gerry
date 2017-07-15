@@ -1,5 +1,9 @@
 @extends('layout.template')
 @section('content')
+<?php
+$user=DB::table('users')->leftJoin('userdetails as ud','ud.user_id','=','users.id')
+            ->where('users.id',1)->first();
+?>
 			<section class="single-cover-image bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url({{asset('blog_images/'.$blog->imagefilepath)}}); height: 500px;">
 			</section><!-- Page Title Start END -->
 
@@ -48,7 +52,7 @@
 			          <!-- Post Footer -->
 			          <div class="container">
 
-			            <div class="post-share-buttons">
+			         {{--    <div class="post-share-buttons">
 			              <div class="column">
 			                <a class="startapp-share-twitter" href="#"><i class="socicon-twitter"></i> Share on Twitter</a>
 			              </div>
@@ -64,31 +68,30 @@
 			              <div class="column">
 			                <a class="startapp-share-pinterest" href="#"><i class="socicon-pinterest"></i> Share on Pinterest</a>
 			              </div>
-			            </div>
+			            </div> --}}
 
 			            <!-- Widget Start -->
 			            <section class="post-author">
 			              <div class="post-author-thumb">
 			                <a href="#">
-			                	<img alt="" src="assets/img/demo-marketing-author.jpg">
+			                	<img alt="" src="{{asset('page_images/'.$user->display_pic)}}">
 			                </a>
 			              </div>
 
 			              <div class="post-author-info">
 			                <h3 class="post-author-name">
-			                  <a href="#">{{$blog->display_name}}</a>
+			                  <a href="#">{{$user->display_name}}</a>
 			                </h3>
 
 			                <p>
-			                  SaaS &amp; Enterprise, Finance and Payments, “Intelligent Software”, Consumer<br>
-			                  Palo Alto
+			                  {{$user->bio}}
 			                </p>
 
 			                <div class="social-bar sb-border sb-rounded sb-dark-skin inline">
-			                  <a class="social-btn" href="#"><i class="socicon-instagram"></i></a>
-			                  <a class="social-btn" href="#"><i class="socicon-linkedin"></i></a>
-			                  <a class="social-btn" href="#"><i class="socicon-odnoklassniki"></i></a>
-			                  <a class="social-btn" href="#"><i class="socicon-facebook"></i></a>
+			                
+			                  <a class="social-btn" href="{{$user->linkedin}}" target="_blank"><i class="socicon-linkedin"></i></a>
+			                  
+			                  <a class="social-btn" href="{{$user->twitter}}" target="_blank"><i class="socicon-twitter"></i></a>
 			                </div>
 			              </div>
 			            </section><!-- Widget END -->
@@ -108,21 +111,20 @@
               <!-- Widget Start -->
               <section class="widget widget_startapp_author"">
                 <h2 class="widget-title">
-                  
+                  {{$user->display_name}}
                 </h2>
 
                 <div class="startapp-author text-left">
-                  <img alt="demo-marketing-author" src="assets/img/demo-marketing-author.jpg">
-
+                  <img alt="author" src="{{asset('page_images/'.$user->display_pic)}}">
                   <p>
-                    SaaS &amp; Enterprise, Finance and Payments, “Intelligent Software”, ConsumerPalo Alto
+                    {{$user->bio}}
                   </p>
 
                   <div class="social-bar sb-border sb-rounded sb-dark-skin inline">
-                    <a class="social-btn" href="#"><i class="socicon-instagram"></i></a>
-                    <a class="social-btn" href="#"><i class="socicon-linkedin"></i></a>
-                    <a class="social-btn" href="#"><i class="socicon-odnoklassniki"></i></a>
-                    <a class="social-btn" href="#"><i class="socicon-facebook"></i></a>
+                    
+                    <a class="social-btn" href="{{$user->linkedin}}" target="_blank"><i class="socicon-linkedin"></i></a>
+                  {{--   <a class="social-btn" href="#"><i class="socicon-odnoklassniki"></i></a>
+ --}}                    <a class="social-btn" href="{{$user->twitter}}"><i class="socicon-twitter"></i></a>
                   </div>
                 </div>
               </section><!-- Widget END -->
@@ -133,45 +135,29 @@
                 <h2 class="widget-title">
                   Recent Posts
                 </h2>
+                <?php 
+			          	$older= DB::table('blog')->orderBy('created_at','DESC')->limit(5)->get();
+			          ?>
+                @foreach($older as $n)
+  		              <?php
+		              	        $s= strtotime($n->created_at);
+        						$date= date("M d, Y ",$s);
+		              ?>
+				        <div class="post-item">
+				         <a class="post-item-thumb" href="{{url('blog',$n->id)}}">
+                  			<img alt="" src="{{asset('blog_images/'.$n->imagefilepath)}}">
+                  		</a>
+		                  <div class="post-item-info">
+		                    <span class="post-item-date">{{$date}}</span>
+		                    <h3 class="post-item-title">
+		                       <a href="{{url('blog',$n->id)}}" rel="bookmark">{{$n->title}}</a>
+		                    </h3>
+		                  </div>
 
-                <div class="post-item">
-                  <a class="post-item-thumb" href="blog-single-post-right-sidebar.html">
-                  	<img alt="" src="assets/img/demo-blog-list-05-150x150.jpg">
-                  </a>
-
-                  <div class="post-item-info">
-                    <span class="post-item-date">October 29</span>
-                    <h3 class="post-item-title">
-                      <a href="blog-single-post-right-sidebar.html" rel="bookmark">Incredible City View</a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="post-item">
-                  <a class="post-item-thumb" href="blog-single-post-right-sidebar.html">
-                  	<img alt="" src="assets/img/demo-blog-list-04-150x150.jpg">
-                  </a>
-
-                  <div class="post-item-info">
-                    <span class="post-item-date">October 29</span>
-                    <h3 class="post-item-title">
-                      <a href="blog-single-post-right-sidebar.html" rel="bookmark">Thoughts About Car Concepts</a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="post-item">
-                  <a class="post-item-thumb" href="blog-single-post-right-sidebar.html">
-                  	<img alt="" src="assets/img/demo-blog-list-03-150x150.jpg">
-                  </a>
-
-                  <div class="post-item-info">
-                    <span class="post-item-date">October 29</span>
-                    <h3 class="post-item-title">
-                      <a href="blog-single-post-right-sidebar.html" rel="bookmark">Drones and Delivery</a>
-                    </h3>
-                  </div>
-                </div>
+                 
+			      		</div>
+			          @endforeach
+       
               </section><!-- Widget END -->
 
 

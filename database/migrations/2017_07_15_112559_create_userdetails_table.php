@@ -15,6 +15,7 @@ class CreateUserdetailsTable extends Migration
         Schema::create('userdetails', function (Blueprint $table) {
             $table->increments('id');
             $table->string('display_pic');
+            $table->string('bio');
             $table->string('facebook');
             $table->string('linkedin');
             $table->string('twitter');

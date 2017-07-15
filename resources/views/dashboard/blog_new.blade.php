@@ -1,5 +1,6 @@
 @extends('layout.admin')
 @section('admincontent')
+
 	<div class="row">
     <div class="col-md-12" style="display: block;">
         <div class="form-group" style="position: static;">

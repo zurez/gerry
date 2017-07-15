@@ -1,5 +1,10 @@
 @extends('layout.template')
 @section('content')
+<?php
+
+$user=DB::table('users')->leftJoin('userdetails as ud','ud.user_id','=','users.id')
+            ->where('users.id',1)->first();
+?>
 			<div class="page-title title-size-lg text-light" >
 			  <div class="container">
 			    <div class="inner">
@@ -91,13 +96,13 @@
 
 			        <section class="widget widget_startapp_author">
 			          <h2 class="widget-title">
-			            Blog Author
+			            {{$user->display_name}}
 			          </h2>
 
 			          <div class="startapp-author text-left">
-			            <img alt="" src="assets/img/demo-marketing-author.jpg">
+			            <img alt="" src="{{asset('page_images/'.$user->display_pic)}}">
 			            <p>
-			              SaaS &amp; Enterprise, Finance and Payments, “Intelligent Software”, ConsumerPalo Alto
+			              {{$user->bio}}
 			            </p>
 
 
@@ -110,6 +115,9 @@
 			          </h2>
 
 			          <ul>
+			          <?php 
+			          	$older= DB::table('blog')->orderBy('created_at','DESC')->limit(5)->get();
+			          ?>
 			          @foreach($older as $n)
   		              <?php
 		              	        $s= strtotime($n->created_at);

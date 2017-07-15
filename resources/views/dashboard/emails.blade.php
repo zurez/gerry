@@ -19,7 +19,7 @@
   <tbody>
     @foreach($emails as $e)
   
-    <tr class="clickable-row" href="{{url('admin/read/inbound',$e->id)}}">
+    <tr class="clickable-row" rel-name="{{$e->name}}" >
       
       <td><input type="checkbox"> <a href="#"><i class="icon-star-empty"></i></a></td>
       <td><strong>{{$e->name}}</strong></td>
@@ -32,11 +32,13 @@
     @endforeach
   </tbody>
 </table>
+
 <script type="text/javascript">
   $(document).ready(function(){
     $('#emails').DataTable();
     $(".clickable-row").click(function() {
-        window.location = $(this).data("href");
+        // window.location = $(this).data("href");
+
     });
   });
 </script>

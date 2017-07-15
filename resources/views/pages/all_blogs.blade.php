@@ -71,7 +71,7 @@ $user=DB::table('users')->leftJoin('userdetails as ud','ud.user_id','=','users.i
 			                  <a href="#" rel="tag">Mentor</a>
 			                  <a href="#" rel="tag">Venture</a>
 			                </div>
-			              </footer --}}>
+			              </footer --}}
 			            </div>
 			          </article>
 			        </div>
@@ -115,9 +115,6 @@ $user=DB::table('users')->leftJoin('userdetails as ud','ud.user_id','=','users.i
 			          </h2>
 
 			          <ul>
-			          <?php 
-			          	$older= DB::table('blog')->orderBy('created_at','DESC')->limit(5)->get();
-			          ?>
 			          @foreach($older as $n)
   		              <?php
 		              	        $s= strtotime($n->created_at);

@@ -5,7 +5,8 @@
     <div class="col-md-12" style="display: block;">
         <div class="form-group" style="position: static;">
             <label for="blog_title">Blog Title</label>
-            <input class="form-control" id="blog_title" value="{{$blog->title or 'Enter a title for your blog..'}}" type="text">
+           
+            <input class="form-control" id="blog_title" value="{{$title or 'Enter a title for your blog..'}}" type="text">
             <p class="help-block">Should be short and concise.</p>
         </div>
         <div class="form-group" style="position: static;">

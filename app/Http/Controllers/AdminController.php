@@ -18,11 +18,64 @@ class AdminController extends Controller
         $global=DB::table('global')->first();
         // $form_data2=DB::table('users')->leftJoin('userdetails','userdetails.user_id','=','users.id')->where('users.id',$user_id);
            	return view('dashboard.settings')
-        ->with('page_title','Dashboard')
+        ->with('page_title','Settings')
         ->with('form_data',$global)
         ;
     }
 
+    public function show_profile_settings()
+    {
+        $user_id=Auth::user()->id;
+        $data=User::leftJoin('userdetails as ud','ud.user_id','=','users.id')
+            ->where('users.id',$user_id)->first()->toArray();
+        return view('dashboard.profile_setting')
+        ->with('page_title','Profile')
+        ->with('form_data',$data)
+        ;
+    }
+
+    public function save_profile_settings(Request $r)
+    {
+        try {
+            $user=User::find(Auth::user()->id);
+            $user->name=$r->name;
+            $user->display_name=$r->display_name;
+            $user->email=$r->email;
+            $user->save();
+            $file=$r->file('display_pic');
+            $uarray= [
+                'facebook'=>$r->facebook,
+                'twitter'=>$r->twitter,
+                'linkedin'=>$r->linkedin
+
+                ];
+            if (!is_null($file)) {
+                    # code...
+
+                $filename=str_random(10).".png";
+                $filepath=public_path('page_images');
+
+                $file->move($filepath,$filename);
+                $uarray['display_pic']=$filename;
+                
+            }
+            /*Check if userdetails exists otherwise create*/
+            $ud=DB::table('userdetails')->where('user_id',$user->id)->first();
+            if (!is_null($ud)) {
+                 # code...
+                DB::table('userdetails')->where('user_id',$user->id)
+            ->update($uarray);
+             } else{
+                $uarray['user_id']=$user->id;
+                DB::table('userdetails')
+            ->insert($uarray);
+             }
+            
+        } catch (\Exception $e) {
+            dump($e);
+        }
+        return redirect()->back();
+    }
     public function save_page_settings(Request $request)
     {
         // dd($request);

@@ -29,6 +29,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 
 	/*SETTINGS*/
 	Route::post('settings/site','AdminController@save_page_settings'); 
+	Route::get('settings/profile','AdminController@show_profile_settings'); 
+	Route::post('settings/profile','AdminController@save_profile_settings'); 
 
 
 });

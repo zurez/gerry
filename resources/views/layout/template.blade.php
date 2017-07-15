@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<title>Cognitive Research(UK)</title>
-
+		<?php
+		$g= DB::table('global')->first();
+		?>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<script type="text/javascript" src="{{asset('assets/js/vendor/jquery.js')}}"></script>
@@ -176,7 +178,7 @@
 			    <div class="inner">
 			      <div class="column">
 			        <p class="additional-info">
-			          <i class="material-icons phone"></i> 02-081-448-696  &nbsp;&nbsp;&nbsp;Call Us 24/7
+			          <i class="material-icons phone"></i>{{$g->phone}}  &nbsp;&nbsp;&nbsp;Call Us 24/7
 			        </p>
 			      </div>
 
@@ -184,7 +186,7 @@
 			      
 
 			        <div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
-			          <a class="social-btn" href="#"><i class="socicon-linkedin"></i></a><a class="social-btn" href="#"><i class="socicon-telegram"></i></a><a class="social-btn" href="#"><i class="socicon-twitter"></i></a>
+			          <a class="social-btn" href="{{$g->linkedin}}"><i class="socicon-linkedin"></i></a><a class="social-btn" href="{{$g->twitter}}"><i class="socicon-twitter"></i></a>
 			        </div>
 
 			        <div class="toolbar">
@@ -334,9 +336,9 @@
 		              </p>
 
 		              <div class="social-bar sb-solid-bg sb-square sb-dark-skin text-left">
-		                <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip" href="#" title="twitter"><i class="socicon-twitter"></i></a>
+		                <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip" href="{{$g->twitter}}" title="twitter"><i class="socicon-twitter"></i></a>
 		              
-		                <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip" href="#" title="LinkedIn"><i class="socicon-linkedin"></i></a>
+		                <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip" href="{{$g->linkedin}}" title="LinkedIn"><i class="socicon-linkedin"></i></a>
 		              </div>
 		            </section>
 
@@ -361,7 +363,7 @@
 		                </div>
 
 		                <div class="contact-info">
-		                  <span>02-081-448-696</span>
+		                  <span>{{$g->phone}}</span>
 		                </div>
 		              </div>
 
@@ -371,7 +373,7 @@
 		                </div>
 
 		                <div class="contact-info">
-		                  <span> info@cognires.co.uk</span>
+		                  <span> {{$g->email}}</span>
 		                </div>
 		              </div>
 		            </section>

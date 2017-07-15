@@ -37,10 +37,10 @@ class AdminController extends Controller
             $g->email=$request->email;
             /*Image Handling*/
             $file=$request->file('landing_image');
-            dump($file);
+
             if (!is_null($file)) {
                     # code...
-                dump("yolo");
+
                 $filename=str_random(10).".png";
                 $filepath=public_path('page_images');
 
@@ -51,7 +51,7 @@ class AdminController extends Controller
         } catch (\Exception $e) {
             dump($e);
         }
-        // return redirect()->back();
+        return redirect()->back();
     }
 
     public function logout()

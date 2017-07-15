@@ -248,7 +248,7 @@
 			    <div class="container-fluid">
 			      <div class="row">
 			        <div class="col-lg-6 col-md-6 col-sm-12 padding-top-3x padding-bottom-2x" style="background-color: #183978; padding-left: 96px !important; padding-right: 96px !important;">
-                {!! Form::open(array('url'=>'contactus','method'=>'POST'))!!}
+              {!! Form::open(array('url'=>'contactus','method'=>'POST')) !!}
                   <div class="row home-contact-form">
                     <div class="col-sm-6" style="padding-right: 15px !important;">
                       <input name="name" placeholder="Your name" size="40" type="text" value="">
@@ -263,7 +263,8 @@
                     <input name="email" placeholder="Your email" size="40" type="email" value="">
 
                     <textarea cols="40" name="message" placeholder="Your message" rows="4"></textarea>
-                    <a href="#" class="btn btn-ghost btn-light" style="margin-top: 0; outline: none;" type="submit">Send Message <i class="material-icons send"></i></a>
+
+                    <input type="submit"  class="btn btn-ghost btn-light" style="margin-top: 0; outline: none;" type="submit">Send Message <i class="material-icons send"></i></a>
                   </p>
                 </form>
 			        </div>

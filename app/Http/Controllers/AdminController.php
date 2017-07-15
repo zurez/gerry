@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Blog;
 use App\Models\Page;
+use App\Models\Globals;
 use App\User;
 use App\Http\Requests;
 use Auth;
@@ -13,10 +14,46 @@ class AdminController extends Controller
 {
     public function index()
     {
-    	return view('layout.admin')
+        $user_id=Auth::user()->id;
+        $global=DB::table('global')->first();
+        // $form_data2=DB::table('users')->leftJoin('userdetails','userdetails.user_id','=','users.id')->where('users.id',$user_id);
+           	return view('dashboard.settings')
         ->with('page_title','Dashboard')
+        ->with('form_data',$global)
         ;
     }
+
+    public function save_page_settings(Request $request)
+    {
+        // dd($request);
+
+        try {
+            $g=Globals::find('1');
+            
+            $g->facebook=$request->facebook;
+            $g->twitter=$request->twitter;
+            $g->phone=$request->phone;
+            $g->linkedin=$request->linkedin;
+            $g->email=$request->email;
+            /*Image Handling*/
+            $file=$request->file('landing_image');
+            dump($file);
+            if (!is_null($file)) {
+                    # code...
+                dump("yolo");
+                $filename=str_random(10).".png";
+                $filepath=public_path('page_images');
+
+                $file->move($filepath,$filename);
+                $g->landing_image=$filename;
+            }
+            $g->save();
+        } catch (\Exception $e) {
+            dump($e);
+        }
+        // return redirect()->back();
+    }
+
     public function logout()
     {
     	Auth::logout();

@@ -13,6 +13,7 @@
 
 Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	Route::get('dashboard','AdminController@index');
+	
 	/*BLOG*/ 
 	Route::get('blog/{action}/{id?}','AdminController@new_blog');
 	Route::post('save/blog','AdminController@save_blog');
@@ -25,6 +26,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	Route::get('page/new/{category}','AdminController@show_save_page');
 	Route::get('page/all/{category}','AdminController@show_page_all');
 	Route::get('page/edit/{page_id}','AdminController@edit_page');
+
+	/*SETTINGS*/
+	Route::post('settings/site','AdminController@save_page_settings'); 
 
 
 });

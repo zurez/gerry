@@ -1,8 +1,11 @@
 @extends('layout.template')
 @section('content')
-
+	<?php
+	$g= DB::table('global')->first();
+	$img=asset('page_images/'.$g->landing_image);
+	?>
 			<article class="page">
-			  <section class="fw-section with-overlay bg-parallax padding-top-8x padding-bottom-8x" data-jarallax-video="{{asset('assets/vid/Slow_Typer.mp4')}}" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url(assets/vid/Slow_Typer.jpg);">
+			  <section class="fw-section with-overlay bg-parallax padding-top-8x padding-bottom-8x" data-jarallax-video="{{asset('assets/vid/Slow_Typer-obs.mp4')}}" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url({{$img}});">
 			    <span class="overlay" style="opacity: 0.4; background-color: #131e3f;"></span>
 
 			    <div class="container">

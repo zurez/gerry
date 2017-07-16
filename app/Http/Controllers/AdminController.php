@@ -274,6 +274,7 @@ class AdminController extends Controller
             try {
                 if (!is_null($file)) {
                     # code...
+
                 $file = $r->file('logo');
                 $filename=str_random(10).".png";
                 $filepath=public_path('page_images');
@@ -283,7 +284,7 @@ class AdminController extends Controller
                 }
 
             } catch (\Exception $e) {
-                
+                dump($e);
             }
             $page->short_desc=$short_desc;
             $page->title=$title;

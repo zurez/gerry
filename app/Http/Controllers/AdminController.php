@@ -295,7 +295,7 @@ class AdminController extends Controller
             $page->deleted_at=Null;
             $page->save();
             $ret["status"]="success";
-            $ret['long_message']="Your service was saved";
+            $ret['long_message']="Your ".$category." was saved";
         } catch (\Exception $e) {
             return $e->getMessage();
         }

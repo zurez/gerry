@@ -231,7 +231,7 @@ class AdminController extends Controller
             ->with('page_title','New Service')
             ;
         }else{
-            $page=Service::find($id);
+            $page=Page::find($id);
             if (!is_null($page)) {
             return view('dashboard.service_new')
             ->with('page_title','Edit Service')

@@ -21,7 +21,7 @@
     <link href="{{asset('dist/css/sb-admin-2.css')}}" rel="stylesheet">
 
 
-
+    <link rel="stylesheet" type="text/css" href="{{asset('dropzone/dropzone.min.css')}}">
     <!-- Custom Fonts -->
     <link href="{{asset('vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
         <!-- jQuery -->
@@ -30,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
     <script src="{{asset('summernote/summernote.js')}}"></script>
     <script type="text/javascript" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="{{asset('dropzone/dropzone.min.js')}}"></script>
 
     <!-- HTML5 Shim and Respond.js')}} IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js')}} doesn't work if you view the page via file:// -->

@@ -59,9 +59,9 @@
 				letter-spacing:2px;
 			} 
 		</style>
-		 <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
+		 <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
     {{-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"> --}}
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
 		<!-- Modernizr Scripts -->
 		<script type="text/javascript" src="{{asset('assets/js/vendor/modernizr.custom.js')}}"></script>
 
@@ -420,37 +420,12 @@
 
 		              <div class="menu-footer-menu-2-container">
 		                <ul class="menu">
-		                  <li class="menu-item">
-		                    <a href="#">Strategy</a>
-		                  </li>
+		                      @foreach($services as $s)
+					       	 <li class="menu-item">
+					          <a href="{{url('service',$s->id)}}">{{$s->title}}</a>
+					        </li>
+					        @endforeach
 
-		                  <li class="menu-item">
-		                    <a href="#">Consulting</a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">News Gathering & Monitoring</a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Advanced Analytics</a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Digital Transformation</a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Acclerating Growth</a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Marketing & Onboarding</a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Accelerating Growth</a>
-		                  </li>
 		                </ul>
 		              </div>
 		            </section>

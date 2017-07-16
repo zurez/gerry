@@ -1,6 +1,6 @@
 @extends('layout.template')
 @section('content')
-			<div class="page-title title-size-lg text-light" style="background-image: url(assets/img/demo-marketing-page-title.jpg);">
+			<div class="page-title title-size-lg text-light">
 			  <div class="container">
 			    <div class="inner">
 			      <div class="column">
@@ -39,90 +39,27 @@
 	          <div class="portfolio-posts masonry-grid col-3 filter-grid" id="grid">
 	            <div class="gutter-sizer"></div>
 	            <div class="grid-sizer"></div>
-
+	            @foreach($case as $c)
 	            <div class="grid-item case-study cloud financial">
 	              <article class="portfolio-tile">
-	                <a class="portfolio-thumb" href="#"><img alt="" src="assets/img/demo-marketing-06.jpg"></a>
+	              <?php
+	              $rawi=unserialize($c->images)[0];
+	              $img=asset('page_images/'.$rawi);
+	              $title=$c->title;
+	              ?>
+	                <a class="portfolio-thumb" href="#"><img alt="" src="{{$img}}"></a>
 	                
 	                <div class="portfolio-info">
 	                  <h3 class="portfolio-title">
-	                    <a href="#">Must Group City Agency</a>
+	                    <a href="#">{{$title}}</a>
 	                  </h3>
 	                  
-	                  <a class="btn btn-sm btn-primary btn-ghost" href="#">View Project</a>
+	                  <a class="btn btn-sm btn-primary btn-ghost" href="{{url('case',$c->id)}}">View Project</a>
 	                </div>
 	              </article>
 	            </div>
-
-	            <div class="grid-item case-study devices financial">
-	              <article class="portfolio-tile">
-	                <a class="portfolio-thumb" href="#"><img alt="" src="assets/img/demo-marketing-04.jpg"></a>
-	                
-	                <div class="portfolio-info">
-	                  <h3 class="portfolio-title">
-	                    <a href="#">Mobile Venture</a>
-	                  </h3>
-	                  
-	                  <a class="btn btn-sm btn-primary btn-ghost" href="#">View Project</a>
-	                </div>
-	              </article>
-	            </div>
-
-	            <div class="grid-item case-study media">
-	              <article class="portfolio-tile">
-	                <a class="portfolio-thumb" href="#"><img alt="" src="assets/img/demo-marketing-05.jpg"></a>
-	                
-	                <div class="portfolio-info">
-	                  <h3 class="portfolio-title">
-	                    <a href="#">Kalka Media</a>
-	                  </h3>
-	                  
-	                  <a class="btn btn-sm btn-primary btn-ghost" href="#">View Project</a>
-	                </div>
-	              </article>
-	            </div>
-
-	            <div class="grid-item case-study devices">
-	              <article class="portfolio-tile">
-	                <a class="portfolio-thumb" href="#"><img alt="" src="assets/img/demo-marketing-02.jpg"></a>
-	                
-	                <div class="portfolio-info">
-	                  <h3 class="portfolio-title">
-	                    <a href="#">Cash Inc.</a>
-	                  </h3>
-	                  
-	                  <a class="btn btn-sm btn-primary btn-ghost" href="#">View Project</a>
-	                </div>
-	              </article>
-	            </div>
-
-	            <div class="grid-item case-study healthcare">
-	              <article class="portfolio-tile">
-	                <a class="portfolio-thumb" href="#"><img alt="" src="assets/img/demo-marketing-01.jpg"></a>
-	                
-	                <div class="portfolio-info">
-	                  <h3 class="portfolio-title">
-	                    <a href="#">Alaska Enterprise</a>
-	                  </h3>
-	                  
-	                  <a class="btn btn-sm btn-primary btn-ghost" href="#">View Project</a>
-	                </div>
-	              </article>
-	            </div>
-
-	            <div class="grid-item case-study media">
-	              <article class="portfolio-tile">
-	                <a class="portfolio-thumb" href="#"><img alt="" src="assets/img/demo-marketing-03.jpg"></a>
-
-	                <div class="portfolio-info">
-	                  <h3 class="portfolio-title">
-	                    <a href="#">Team Agency</a>
-	                  </h3>
-
-	                  <a class="btn btn-sm btn-primary btn-ghost" href="#">View Project</a>
-	                </div>
-	              </article>
-	            </div>
+	            @endforeach
+	         
 	          </div>
 			    </div>
 			  </section>

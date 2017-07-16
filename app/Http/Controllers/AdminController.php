@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Blog;
 use App\Models\Page;
+use App\Models\Cases;
 use App\Models\Globals;
 use App\User;
 use App\Http\Requests;
@@ -303,9 +304,50 @@ class AdminController extends Controller
         return response()->json($ret);
     }
 
-    public function show_save_page($category)
+    public function save_case(Request $r)
     {
-        return view('dashboard.page_new')
+        // dd($r);
+        try {
+            $all_files=$r->files;
+            // $pdf=$r->file('document');
+            $images=array();
+            $title=$r->title;
+            $c= new Cases;
+            $c->title=$title;
+            $c->description=$r->description;
+
+            foreach ($all_files as $af) {
+                
+                $filename=str_random(10).".png";
+                $filepath=public_path('page_images');
+                $af->move($filepath,$filename);
+                array_push($images,$filename);
+            }
+            $c->images=serialize($images);
+            $pdfname=str_random(10).".pdf";
+            $pdfpath=public_path('page_images');
+            // dd($pdf);
+            // $pdf->move($pdfpath,$pdfname);
+            $c->pdf=$pdf;
+            $c->save();
+
+        } catch (\Exception $e) {
+         dump($e);   
+        }
+    }
+
+    public function show_save_page($category)
+    {   
+        switch ($category) {
+            case 'case':
+                $viewfile="dashboard.case_new";
+                break;
+            
+            default:
+                $viewfile='dashboard.page_new';
+                break;
+        }
+        return view($viewfile)
         ->with('page_title','New '.ucfirst($category))
         ->with('category',$category);
     }

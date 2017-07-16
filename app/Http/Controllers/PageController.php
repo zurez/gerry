@@ -38,11 +38,14 @@ class PageController extends Controller
     public function show_cases($id="")
     {
     	if ($id=="") {
-    		return view('pages.all_cases');
+            $cases=CaseStudies::orderBy('created_at','DESC')->limit(6)->get();
+    		return view('pages.all_cases')
+            ->with('case',$cases);
+            
     	}
     	else{
 
-    		$case=CaseStudies::where('client',$id)->first();
+    		$case=CaseStudies::where('id',$id)->first();
     		return view('pages.single_case')
     		->with('case',$case);
     	}

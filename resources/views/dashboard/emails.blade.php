@@ -19,7 +19,7 @@
   <tbody>
     @foreach($emails as $e)
   
-    <tr class="clickable-row" rel-name="{{$e->name}}" >
+    <tr class="clickable-row" rel-msg="{{$e->message}}" >
       
       <td><input type="checkbox"> <a href="#"><i class="icon-star-empty"></i></a></td>
       <td><strong>{{$e->name}}</strong></td>
@@ -33,10 +33,34 @@
   </tbody>
 </table>
 
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Message</h4>
+      </div>
+      <div class="modal-body">
+        <p id="modal_e_message"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 <script type="text/javascript">
   $(document).ready(function(){
     $('#emails').DataTable();
     $(".clickable-row").click(function() {
+      var message=$(this).attr('rel-msg');
+      $('#modal_e_message').text(message);
+      $('#myModal').modal('show');
         // window.location = $(this).data("href");
 
     });

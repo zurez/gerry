@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use Mailgun;
+use Mail;
 class EmailController extends Controller
 {
     public function index()
@@ -16,21 +16,31 @@ class EmailController extends Controller
     public function send_mail(Request $r)
     {
     	try {
-	    	$emails=explode(',',$r->emails);
-	    	$cooked_emails=[];
-	    	foreach ($emails as $email {
-	    		$cooked_emails[$email]=array();
-	    	}
-	    	$subject=$r->subject;
-	    	$content=[
-	    		'content'=>$r->content
-	    	];
-	    	Mailgun::send('layout.email',$content,function($message){
-	    		$message->to($cooked_emails);
-	    	});
-    	} catch (\Exception $e) {
+    		$file=fopen($r->csv,"r");
+    		// dump($file);
+    		$body=$r->body;
+    		$subject=$r->subject;
+    		$cooked_emails=[];
+    		while(!feof($file))
+			  {
+			  $email=fgetcsv($file);
+			  
+			  if (!is_null($email)) {
+			  	Mail::send('layout.email',['body'=>$body],function($message) use($email,$subject){
+	    		$message->to($email[0])->subject($subject);
+	    			});
+			  }
+			  
+			 
+			  }
     		
+	    	
+	    	
+    	} catch (\Exception $e) {
+    		// dump($e);
     	}
+    	echo "Mail Sent. Redirecting you back.";
+    	return redirect()->back();
     }
     
 }

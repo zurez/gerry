@@ -326,8 +326,12 @@ class AdminController extends Controller
                 $emails=DB::table('usercontact')->orderBy('created_at','Desc')->get();
                 break;
             case 'outbound':
-                # code...
+                return view('dashboard.sendmail')
+
+        ->with('page_title',ucfirst($type)."Send Email")
+        ;
                 break;
+
             default:
                 # code...
                 break;

@@ -313,6 +313,7 @@ class AdminController extends Controller
     public function show_page_all($category)
     {
         $page=Page::leftJoin('users','page.user_id','=','users.id')->select('page.id as bid','page.title as title','users.display_name')->get();
+       
         return view('dashboard.page_all')
         ->with('page_title','All '.ucfirst($category))
         ->with('pages',$page)

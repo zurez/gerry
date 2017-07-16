@@ -338,10 +338,10 @@
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Case Studies<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="">All Cases</a>
+                                    <a href="{{url('admin/page/all/case')}}">All Cases</a>
                                 </li>
                                 <li>
-                                    <a href="#">New Case</a>
+                                    <a href="{{url('admin/page/new/case')}}">New Case</a>
                                 </li>
                                
                             </ul>

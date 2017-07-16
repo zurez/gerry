@@ -247,7 +247,7 @@
 	        	          </li>
 	        	          @foreach($cases as $c)
 	        	          <li class="menu-item">
-	        	            <a href="{{url('case/',$c->id)}}">{{$c->id}}</a>
+	        	            <a href="{{url('case',$c->id)}}">{{$c->title}}</a>
 	        	          </li>
 	        	          @endforeach
 	        	        </ul>

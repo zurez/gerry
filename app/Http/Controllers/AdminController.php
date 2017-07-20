@@ -329,7 +329,7 @@ class AdminController extends Controller
             $pdfpath=public_path('page_images');
             // dd($pdf);
             // $pdf->move($pdfpath,$pdfname);
-            $c->pdf=$pdf;
+            // $c->pdf=$pdf;
             $c->save();
 
         } catch (\Exception $e) {

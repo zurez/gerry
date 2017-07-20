@@ -40,7 +40,7 @@ $ignore=["created_at","deleted_at","id","updated_at","landing_image"];
 <div class="form-group">
   <label class="col-md-4 control-label" for="file">Images(Select Multiple)</label>
   <div class="col-md-4">
-    <input id="file" name="file" class="input-file" type="file" multiple="multiple">
+    <input id="file" name="file[]" class="input-file" type="file" multiple="multiple">
   </div>
 </div>
 

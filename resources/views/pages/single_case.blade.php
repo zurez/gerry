@@ -8,7 +8,7 @@
 	    <div class="inner">
 	      <div class="column">
 	        <h1>
-	          {{$case->client or 'Client Name Missing'}}
+	          {{$case->title or 'Client Name Missing'}}
 	        </h1>
 	      </div>
 

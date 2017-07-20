@@ -309,24 +309,26 @@ class AdminController extends Controller
     {
         // dd($r);
         try {
-            $all_files=$r->files;
+            $all_files=$r->file;
             // $pdf=$r->file('document');
             $images=array();
             $title=$r->title;
             $c= new Cases;
             $c->title=$title;
             $c->description=$r->description;
-
+            $i=0;
+      
             foreach ($all_files as $af) {
-
-                $filename=str_random(10).".png";
+        
+                $filename=$i.".png";
                 $filepath=public_path('page_images');
                 $af->move($filepath,$filename);
                 array_push($images,$filename);
+                $i++;
             }
             $c->images=serialize($images);
             $pdfname=str_random(10).".pdf";
-            $pdfpath=public_path('page_images');
+            // $pdfpath=public_path('page_images');
             // dd($pdf);
             // $pdf->move($pdfpath,$pdfname);
             // $c->pdf=$pdf;
@@ -335,6 +337,8 @@ class AdminController extends Controller
         } catch (\Exception $e) {
          dump($e);   
         }
+        echo "Success";
+        // return redirect()->back();
     }
 
     public function show_save_page($category)

@@ -317,10 +317,10 @@ class AdminController extends Controller
             $c->title=$title;
             $c->description=$r->description;
             $i=0;
-      
+            $time=time();
             foreach ($all_files as $af) {
         
-                $filename=$i.".png";
+                $filename=$time."_".$i.".png";
                 $filepath=public_path('page_images');
                 $af->move($filepath,$filename);
                 array_push($images,$filename);

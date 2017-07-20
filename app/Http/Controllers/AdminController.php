@@ -338,7 +338,7 @@ class AdminController extends Controller
          dump($e);   
         }
         echo "Success";
-        // return redirect()->back();
+        return redirect()->back();
     }
 
     public function show_save_page($category)

@@ -39,14 +39,6 @@
 	              <img alt="" src="{{asset('page_images/'.$i)}}">
 	            </figure>
 	          @endforeach
-
-	            <figure class="carousel-item">
-	              <img alt="" src="assets/img/ph-carousel-05.jpg">
-	            </figure>
-
-	            <figure class="carousel-item">
-	              <img alt="" src="assets/img/ph-carousel-06.jpg">
-	            </figure>
 	          </div>
 			    </div>
 			  </section>

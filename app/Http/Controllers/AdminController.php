@@ -47,7 +47,8 @@ class AdminController extends Controller
             $uarray= [
                 'facebook'=>$r->facebook,
                 'twitter'=>$r->twitter,
-                'linkedin'=>$r->linkedin
+                'linkedin'=>$r->linkedin,
+                'bio'=>$r->bio
 
                 ];
             if (!is_null($file)) {
@@ -317,7 +318,7 @@ class AdminController extends Controller
             $c->description=$r->description;
 
             foreach ($all_files as $af) {
-                
+
                 $filename=str_random(10).".png";
                 $filepath=public_path('page_images');
                 $af->move($filepath,$filename);
@@ -354,7 +355,16 @@ class AdminController extends Controller
 
     public function show_page_all($category)
     {
-        $page=Page::leftJoin('users','page.user_id','=','users.id')->select('page.id as bid','page.title as title','users.display_name')->where('page.category',$category)->get();
+        switch ($category) {
+            case 'case':
+                $page=Cases::all();
+                break;
+            
+            default:
+                $page=Page::leftJoin('users','page.user_id','=','users.id')->select('page.id as bid','page.title as title','users.display_name')->where('page.category',$category)->get();
+                break;
+        }
+        
 
         return view('dashboard.page_all')
         ->with('page_title','All '.ucfirst($category))

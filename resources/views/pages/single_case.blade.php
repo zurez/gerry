@@ -30,37 +30,25 @@
 	    </div>
 	  </div>
 	</div>
-	<section class="fw-section padding-bottom-4x">
-			    <div class="container">
-	          <h4 class="block-title text-dark text-left mobile-center">
-	          {{--   With Large Arrows --}}
-	          </h4>
+	<section class="fw-section layout-full section-no-gap padding-bottom-5x">
+			    <div class="container-fluid">
+	          <div class="image-carousel carousel-navs-rounded carousel-navs-sm carousel-navs-on-sides carousel-dark carousel-dots-outside carousel-dots-center without-captions" data-slick='{"arrows":true,"dots":true,"fade":false,"infinite":true,"autoplay":false,"autoplaySpeed":3000,"adaptiveHeight":false}'>
 
-	          <div class="image-carousel carousel-navs-rounded carousel-navs-lg carousel-navs-on-sides with-captions slick-initialized slick-slider" data-slick="{&quot;arrows&quot;:true,&quot;dots&quot;:false,&quot;fade&quot;:false,&quot;infinite&quot;:true,&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;adaptiveHeight&quot;:false}"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
-
-
-	            <div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 7980px; transform: translate3d(-1140px, 0px, 0px);" role="listbox">
-
-
-	            @foreach($images as $e)
-	            <figure class="carousel-item wp-caption slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1140px;" tabindex="-1">
-	              <img alt="" src="{{asset('page_images/'.$e)}}">
-	              <figcaption class="wp-caption-text">
-	                School at Nicaragua
-	              </figcaption>
+	          @foreach($images as $i)
+	            <figure class="carousel-item">
+	              <img alt="" src="{{asset('page_images/'.$i)}}">
 	            </figure>
-	              @endforeach  
-	            </div>
-	            </div>
+	          @endforeach
 
-	            
+	            <figure class="carousel-item">
+	              <img alt="" src="assets/img/ph-carousel-05.jpg">
+	            </figure>
 
-	            
-
-	            
-
-	            
-	          <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button></div>
+	            <figure class="carousel-item">
+	              <img alt="" src="assets/img/ph-carousel-06.jpg">
+	            </figure>
+	          </div>
 			    </div>
 			  </section>
+
 @stop

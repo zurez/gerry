@@ -41,12 +41,16 @@
 	            Cognitive Services<small class="h4">the hand that rocks the cradle.</small>
 	          </h2>
 
-	          <div class="row">
+	         
 	          	<?php
 	          		$services=DB::table('page')->where('category','service')->whereNull('deleted_at')
 	          		->get();
+	          		$i=0;
 	          	?>
+	          	<div class="row">
+
 	          	@foreach($services as $s)
+	          	@if($i%4==0)</div><div class="row">@endif
 	          	<div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-vertical icon-box-dark icon-box-bg-enabled icon-box-type-image bg-hover hover-scale-down text-center">
 	                <span class="icon-box-backdrop" style="background-color: #0a0a0a;"></span>
@@ -67,6 +71,9 @@
 	                </div>
 	              </div>
 	            </div>
+	            <?php
+	            	$i++;
+	            ?>
 	          	@endforeach
 	        
 	          </div>

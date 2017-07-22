@@ -13,6 +13,9 @@
 		{{-- <link rel="icon" href="{{asset('assets/img/favicon/cropped-favicon-192x192.png')}}" /> --}}
 		<link rel="apple-touch-icon-precomposed" href="{{asset('assets/img/favicon/cropped-favicon-180x180.png')}}" />
 		<meta name="msapplication-TileImage" content="{{asset('assets/img/favicon/cropped-favicon-270x270.png')}}" />
+		<meta name="Description" content="Cognitive Research is an enterprise that supports four basic services, new gathering service, business development for technology companies opening new markets either geographically or in new business sector, financial platform services for small businesses and acquisition activities in the SME sector.">
+		<meta name="Keywords" content="consulting,Acquisitions,Value-Add-Technology,News Monitoring & Curation,funding,united kingdom,finance,service,analytics,hotel, student,accomodations,business">
+		<meta charset="utf-8" name="Author" content="https://github.com/zurez">
 
 		<!-- Google Font Import -->
 		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">

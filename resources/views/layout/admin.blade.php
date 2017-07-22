@@ -304,6 +304,9 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                        <li>
+                            <a href="{{url('admin/dashboard')}}">Site Settings</a>
+                        </li>
                         {{-- Custom --}}
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i>Services<span class="fa arrow"></span></a>

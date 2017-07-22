@@ -1,6 +1,6 @@
 @extends('layout.template')
 @section('content')
-<div class="page-title title-size-lg text-light" style="background-image: url(assets/img/demo-marketing-page-title.jpg);">
+<div class="page-title title-size-lg text-light">
 			  <div class="container">
 			    <div class="inner">
 			      <div class="column">
@@ -34,182 +34,50 @@
 	          <h2 class="block-title text-dark text-center">
 	            What We Can Offer You<small class="h4">Curabitur id facilisis lorem, id consequat tortor. Cras sed arcu porta, semper diam quisl.</small>
 	          </h2>
+	          <?php
+	          $i=0;
+	           $services=DB::table('page')->where('category',"service")->whereNull('deleted_at')->get();
+	          ?>
 
 	          <div class="row">
+	          @foreach($services as $s)
+	          	<?php
+	          		$img=$s->logo;
+	          	?>
+	          	@if($i%4==0)</div><div class="row">@endif
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-09.png">
+	                  <img alt="" src="{{asset('page_images/'.$img)}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Consulting
+	                    {{$s->title}}
 	                  </h3>
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">Curabitur lacinia nisl lacus, sit amet placerat tortor ultrices eget. Ut turpis eros, scelerisque commodot.</span><br>
-	                      <a class="btn btn-sm btn-primary btn-link" href="#" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
+	                      <span class="text-gray">{{$s->short_desc}}.</span><br>
+	                      <a class="btn btn-sm btn-primary btn-link" href="{{url('page',$s->id)}}" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
 	                    </p>
 	                  </div>
 	                </div>
 	              </div>
 	            </div>
-
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-10.png">
-	                </div>
-
-	                <div class="icon-box-info-wrap">
-	                  <h3 class="icon-box-title">
-	                    Advertising
-	                  </h3>
-
-	                  <div class="icon-box-description">
-	                    <p>
-	                      <span class="text-gray">Curabitur lacinia nisl lacus, sit amet placerat tortor ultrices eget. Ut turpis eros, scelerisque commodot.<br></span>
-	                      <a class="btn btn-sm btn-primary btn-link" href="#" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
-	                    </p>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-11.png">
-	                </div>
-
-	                <div class="icon-box-info-wrap">
-	                  <h3 class="icon-box-title">
-	                    Advanced Analytics
-	                  </h3>
-
-	                  <div class="icon-box-description">
-	                    <p>
-	                      <span class="text-gray">Curabitur lacinia nisl lacus, sit amet placerat tortor ultrices eget. Ut turpis eros, scelerisque commodot.</span><br>
-	                      <a class="btn btn-sm btn-primary btn-link" href="#" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
-	                    </p>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-12.png">
-	                </div>
-
-	                <div class="icon-box-info-wrap">
-	                  <h3 class="icon-box-title">
-	                    Marketing Audit
-	                  </h3>
-
-	                  <div class="icon-box-description">
-	                    <p>
-	                      <span class="text-gray">Curabitur lacinia nisl lacus, sit amet placerat tortor ultrices eget. Ut turpis eros, scelerisque commodot.</span><br>
-	                      <a class="btn btn-sm btn-primary btn-link" href="#" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
-	                    </p>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
+	            <?php
+	            $i++;
+	            ?>
+	          @endforeach
+	         
+	          
 	          </div>
 
-	          <div class="row">
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-13.png">
-	                </div>
 
-	                <div class="icon-box-info-wrap">
-	                  <h3 class="icon-box-title">
-	                    Accelerating Growth
-	                  </h3>
-
-	                  <div class="icon-box-description">
-	                    <p>
-	                      <span class="text-gray">Curabitur lacinia nisl lacus, sit amet placerat tortor ultrices eget. Ut turpis eros, scelerisque commodot.</span><br>
-	                      <a class="btn btn-sm btn-primary btn-link" href="#" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
-	                    </p>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-14.png">
-	                </div>
-
-	                <div class="icon-box-info-wrap">
-	                  <h3 class="icon-box-title">
-	                    Digital Transformation
-	                  </h3>
-
-	                  <div class="icon-box-description">
-	                    <p>
-	                      <span class="text-gray">Curabitur lacinia nisl lacus, sit amet placerat tortor ultrices eget. Ut turpis eros, scelerisque commodot.</span><br>
-	                      <a class="btn btn-sm btn-primary btn-link" href="#" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
-	                    </p>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-15.png">
-	                </div>
-
-	                <div class="icon-box-info-wrap">
-	                  <h3 class="icon-box-title">
-	                    Corporate Finance
-	                  </h3>
-
-	                  <div class="icon-box-description">
-	                    <p>
-	                      <span class="text-gray">Curabitur lacinia nisl lacus, sit amet placerat tortor ultrices eget. Ut turpis eros, scelerisque commodot.</span><br>
-	                      <a class="btn btn-sm btn-primary btn-link" href="#" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
-	                    </p>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-16.png">
-	                </div>
-
-	                <div class="icon-box-info-wrap">
-	                  <h3 class="icon-box-title">
-	                    Sustainability
-	                  </h3>
-
-	                  <div class="icon-box-description">
-	                    <p>
-	                      <span class="text-gray">Curabitur lacinia nisl lacus, sit amet placerat tortor ultrices eget. Ut turpis eros, scelerisque commodot.</span><br>
-	                      <a class="btn btn-sm btn-primary btn-link" href="#" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
-	                    </p>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-	          </div>
 			    </div>
 			  </section>
 
-			  <section class="fw-section padding-top-2x padding-bottom-4x">
+{{-- 			  <section class="fw-section padding-top-2x padding-bottom-4x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
 	            Our Featured Clients<small class="h4">Cras ligula velit, mattis nec ligula vel, laoreet ullamcorper nisl.</small>
@@ -342,6 +210,6 @@
 	            </div>
 	          </div>
 			    </div>
-			  </section>
+			  </section> --}}
 			</article>
 @stop

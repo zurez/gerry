@@ -81,7 +81,7 @@
 	</head>
         <?php
 			        $services=DB::table('page')->where('category',"service")->whereNull('deleted_at')->get();
-			        $cases=DB::table('page')->where('category',"case")->whereNull('deleted_at')->get();
+			        $cases=DB::table('case')->orderBy('title')->get();
         ?>
 @if(Session::has('flash_message'))
 <p class="alert alert-info">{{ Session::get('flash_message') }}</p>

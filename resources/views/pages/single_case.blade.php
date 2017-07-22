@@ -1,7 +1,8 @@
 @extends('layout.template')
 @section('content')
 	<?php
-		$images=sort(unserialize($case->images));
+		$images=unserialize($case->images);
+		$images=asort($images);
 	?>
 	<div class="page-title title-size-lg text-light">
 	  <div class="container">

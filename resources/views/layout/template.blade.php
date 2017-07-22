@@ -98,11 +98,11 @@
 		  <!-- Visible only on mobile -->
 		  <nav class="vertical-navigation">
 			  <ul class="menu">
-			    <li class="menu-item">
+			    <li class="menu-item current-menu-item-obs">
 			      <a href="{{url('/')}}">Home<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			    </li>
 
-			    <li class="menu-item current-menu-item">
+			    <li class="menu-item ">
 			      <a href="{{url('industries')}}">Sector<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			    </li>
 
@@ -213,11 +213,11 @@
 	        		<!-- Visible only on desktop -->
 	        	  <nav class="main-navigation">
 	        	    <ul class="menu">
-	        	      <li class="menu-item">
+	        	      <li class="menu-item current-menu-item-obs">
 	        	        <a href="{{url('/')}}">Home</a>
 	        	      </li>
 
-	        	      <li class="menu-item current-menu-item">
+	        	      <li class="menu-item ">
 	        	        <a href="{{url('industries')}}">Sector</a>
 	        	      </li>
 

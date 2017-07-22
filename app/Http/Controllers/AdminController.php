@@ -193,7 +193,22 @@ class AdminController extends Controller
         }
         return response()->json($ret);
     }
+    public function action_case(Request $r)
+    {
+        $ret["long_message"]="Your action couldn't be completed";
+        try {
+           $b=Cases::find($r->case_id);
+           
+           if ($r->action=="delete") {
+                Page::destroy($r->case_id);
+            }
 
+           $ret["long_message"]="The case has been updated";
+        } catch (\Exception $e) {
+            dump($e->getMessage());
+        }
+        return response()->json($ret);
+    }
     public function save_blog(Request $r)
     {
 

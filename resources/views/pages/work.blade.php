@@ -32,7 +32,7 @@
 			  <section class="fw-section padding-top-3x padding-bottom-1x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            How We Create Value<small class="h4">Praesent convallis nibh in odio pellentesque aliquam, vestibulum ipsum felis, porttitor.</small>
+	            How We Create Value<small class="h4">Be early. Be insightful. Drive to consensus.</small>
 	          </h2>
 
 	          <div class="steps steps-dark">
@@ -105,7 +105,7 @@
 
 	                    <div class="icon-box-description">
 	                      <p class="text-gray">
-	                        Maecenas interdum orci dolor, sed faucibus tellus aliquet at.
+	                        Lorem Ipsum Dip
 	                      </p>
 	                    </div>
 	                  </div>
@@ -141,102 +141,117 @@
 	        </div>
 			  </section>
 
-			  <section class="fw-section padding-bottom-3x">
-			    <div class="container">
-	          <h2 class="block-title text-dark text-center">
-	            StartApp Services<small class="h4">Praesent convallis nibh in odio pellentesque aliquam, vestibulum ipsum felis, porttitor.</small>
+			 		  <section class="fw-section layout-full padding-top-3x padding-bottom-3x" data-offset-top="-10" id="tickets" style="background-color: #000;">
+			    <div class="container-fluid">
+	          <h2 class="block-title text-light text-center">
+	            What We Charge<small class="h4">We work on either an hourly rate, fixed fee or revenue split plus retainer basis.</small>
 	          </h2>
 
 	          <div class="row">
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-vertical icon-box-dark icon-box-bg-enabled icon-box-type-image bg-static text-center">
-	                <span class="icon-box-backdrop" style="background-color: #3f6bbe;"></span>
-	                
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-01.png">
-	                </div>
+	            <div class="col-sm-4">
+	              <div>
+	                <div class="pricing-plan pricing-plan-v3 text-center">
+	                  <div class="inner">
+	                    <h3 class="pricing-plan-name">
+	                      Under Six Months
+	                    </h3>
 
-	                <h3 class="icon-box-title">
-	                  Strategy
-	                </h3>
+	                    <div class="pricing-plan-badge-wrap">
+	                      <span class="pricing-plan-badge bg-muted">B2C/B2B</span>
+	                    </div>
 
-	                <div class="icon-box-description">
-	                  <p>
-	                    <span class="text-gray">Vestibulum massa massa, efficitur a nunc at, imperdiet placerat nisl, duis vitae aliquam ex</span>
-	                  </p>
-	                  <a class="btn btn-link btn-rounded btn-primary btn-sm" href="#">Learn More</a>
-	                </div>
-	              </div>
-	            </div>
+	                    <div class="pricing-plan-features">
+	                      <h5 class="pricing-plan-feature-title">
+	                        Features
+	                      </h5>
 
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-vertical icon-box-dark icon-box-bg-enabled icon-box-type-image bg-static text-center">
-	                <span class="icon-box-backdrop" style="background-color: #3f6bbe;"></span>
-	                
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-02.png">
-	                </div>
+	                      <ul class="text-gray">
+	                        <li>Assignments under six months we negotiate an hourly rate of fix a price for a clearly defined piece of work.
+	                        </li>
 
-	                <h3 class="icon-box-title">
-	                  Consulting
-	                </h3>
+	                        <li>Our hourly rates start from £70 plus vat with a minimum value of £2,800.
+	                        </li>
+	                        <li>Our fixed price contracts are normally between £5,000 and £20,000</li>
+	                      </ul>
+	                    </div>
 
-	                <div class="icon-box-description">
-	                  <p>
-	                    <span class="text-gray">Vestibulum massa massa, efficitur a nunc at, imperdiet placerat nisl, duis vitae aliquam ex</span>
-	                  </p>
-	                  <a class="btn btn-link btn-rounded btn-primary btn-sm" href="#">Learn More</a>
+	                    <hr>
+
+	                 
+
+	                  </div>
 	                </div>
 	              </div>
 	            </div>
 
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-vertical icon-box-dark icon-box-bg-enabled icon-box-type-image bg-static text-center">
-	                <span class="icon-box-backdrop" style="background-color: #3f6bbe;"></span>
-	                
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-03.png">
-	                </div>
+	            <div class="col-sm-4">
+	              <div>
+	                <div class="pricing-plan pricing-plan-v3 text-center">
+	                  <div class="inner">
+	                    <h3 class="pricing-plan-name">
+	                      Over Six Months
+	                    </h3>
 
-	                <h3 class="icon-box-title">
-	                  Advertising
-	                </h3>
+	                    <div class="pricing-plan-badge-wrap">
+	                      <span class="pricing-plan-badge bg-muted">B2B</span>
+	                    </div>
 
-	                <div class="icon-box-description">
-	                  <p>
-	                    <span class="text-gray">Vestibulum massa massa, efficitur a nunc at, imperdiet placerat nisl, duis vitae aliquam ex</span>
-	                  </p>
-	                  <a class="btn btn-link btn-rounded btn-primary btn-sm" href="#">Learn More</a>
-	                </div>
-	              </div>
-	            </div>
+	                    <div class="pricing-plan-features">
+	                      <h5 class="pricing-plan-feature-title">
+	                        Features
+	                      </h5>
 
-	            <div class="col-lg-3 col-md-3 col-sm-6">
-	              <div class="icon-box icon-box-vertical icon-box-dark icon-box-bg-enabled icon-box-type-image bg-static text-center">
-	                <span class="icon-box-backdrop" style="background-color: #3f6bbe;"></span>
-	                
-	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/demo-marketing-feature-04.png">
-	                </div>
+	                      <ul class="text-gray">
+	                        <li>Long term partnership deals are negotiated individually but typically include a low fixed monthly fee and a revenue split.
+	                        </li>
 
-	                <h3 class="icon-box-title">
-	                  Advanced Analytics
-	                </h3>
+	                        <li>These types of agreements are often linked to revenue performance targets.
+	                        </li>
+	                      </ul>
+	                    </div>
 
-	                <div class="icon-box-description">
-	                  <p>
-	                    <span class="text-gray">Vestibulum massa massa, efficitur a nunc at, imperdiet placerat nisl, duis vitae aliquam ex</span>
-	                  </p>
-	                  <a class="btn btn-link btn-rounded btn-primary btn-sm" href="#">Learn More</a>
+	                    <hr>
+
+	           
+	                  </div>
 	                </div>
 	              </div>
 	            </div>
-	          </div>
 
-	          <div class="text-center">
-	            <a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light" href="service-all.html">See all services&nbsp;<i class="material-icons trending_flat"></i></a>
+	            <div class="col-sm-4">
+	              <div>
+	                <div class="pricing-plan pricing-plan-v3 text-center">
+	                  <div class="inner">
+	                    <h3 class="pricing-plan-name">
+	                      Twelve Months Plus
+	                    </h3>
+
+	                    <div class="pricing-plan-badge-wrap">
+	                      <span class="pricing-plan-badge bg-muted">B2C</span>
+	                    </div>
+
+	                    <div class="pricing-plan-features">
+	                      <h5 class="pricing-plan-feature-title">
+	                        Features
+	                      </h5>
+
+	                      <ul class="text-gray">
+	                        <li>We will also work on an Enablement as a Service (EaaS) basis for certain types of SaaS product implementations that include both business consulting, technical implementation and ongoing support.
+	                        </li>
+
+	                        <li>EaaS works on a fixed monthly sum that includes all service activities.
+	                        </li>
+	                      </ul>
+	                    </div>
+
+	                    <hr>
+
+	                </div>
+	              </div>
+	            </div>
 	          </div>
 	        </div>
 			  </section>
+
 			</article>
 @stop

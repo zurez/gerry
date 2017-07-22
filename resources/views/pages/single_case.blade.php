@@ -2,7 +2,8 @@
 @section('content')
 	<?php
 		$images=unserialize($case->images);
-		$images=asort($images);
+		asort($images);
+		// dump($images)
 	?>
 	<div class="page-title title-size-lg text-light">
 	  <div class="container">

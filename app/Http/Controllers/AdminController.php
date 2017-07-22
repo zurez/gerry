@@ -177,6 +177,23 @@ class AdminController extends Controller
         return response()->json($ret);
     }
 
+    public function action_service(Request $r)
+    {
+        $ret["long_message"]="Your action couldn't be completed";
+        try {
+           $b=Page::find($r->service_id);
+           
+           if ($r->action=="delete") {
+                Page::destroy($r->service_id);
+            }
+
+           $ret["long_message"]="The service has been updated";
+        } catch (\Exception $e) {
+            dump($e->getMessage());
+        }
+        return response()->json($ret);
+    }
+
     public function save_blog(Request $r)
     {
 
@@ -363,7 +380,9 @@ class AdminController extends Controller
             case 'case':
                 $page=Cases::all();
                 break;
-            
+            case 'service':
+                return $this->service_all();
+                break;
             default:
                 $page=Page::leftJoin('users','page.user_id','=','users.id')->select('page.id as bid','page.title as title','users.display_name')->where('page.category',$category)->get();
                 break;
@@ -376,6 +395,15 @@ class AdminController extends Controller
         ;
     }
 
+    public function service_all()
+    {
+        $category="service";
+        $page=Page::leftJoin('users','page.user_id','=','users.id')->select('page.id as bid','page.title as title','users.display_name')->where('page.category','service')->get();
+        return view('dashboard.service_all')
+        ->with('page_title','All '.ucfirst($category))
+        ->with('pages',$page)
+        ;
+    }
     public function email($type)
     {
         $emails=array();

@@ -115,19 +115,19 @@
 	                </h4>
 
 	                <h2 style="text-align: center;">
-	                  <span class="text-light">Duis enim neque, scelerisque ullamcorper pretium et, accumsan vel est.</span>
+	                  <span class="text-light">We love to hear from new clients.</span>
 	                </h2>
 	              </div>
 
 	              <div class="text-block">
 	                <p class="text-lg" style="text-align: center;">
-	                  <span class="text-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</span>
+	                  <span class="text-light">If you would like us to call you back, pop in your details in the form opposite and one of our qualified professionals will be in touch.</span>
 	                </p>
 	              </div>
 
 	              <div class="text-block hide-on-1440">
 	                <p class="text-lg" style="text-align: center;">
-	                  <span class="text-light">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+	                  <span class="text-light">We offer a range of services to end user client, software vendors, corporate financiers selling businesses on behalf of their clients or companies thinking of selling their business.If you are interested in joining our team as a consultant, please feel free to use this form and we will be in touch.  </span>
 	                </p>
 	              </div>
 			        </div>

@@ -32,7 +32,7 @@
 			  <section class="fw-section padding-top-3x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            What We Can Offer You<small class="h4">Curabitur id facilisis lorem, id consequat tortor. Cras sed arcu porta, semper diam quisl.</small>
+	            What We Can Offer You<small class="h4">“the hand that rocks the cradle”</small>
 	          </h2>
 	          <?php
 	          $i=0;

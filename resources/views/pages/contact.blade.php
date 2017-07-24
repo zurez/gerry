@@ -61,8 +61,9 @@
 			                </p>
 
 			                <p style="text-align: left;">
-			                  T: 02081448696
-			             
+			                  T: 02081448696<br>
+			                  E: sales@cognitiveresearch.co.uk
+			             	
 			                </p>
 			              </div>
 			            </div>
@@ -92,7 +93,8 @@
 			                </p>
 
 			                <p style="text-align: left;">
-			                  T: 02081448696
+			                  T: 02081448696<br>
+			                  E: sales@cognitiveresearch.co.uk
 			                 
 			                </p>
 			              </div>

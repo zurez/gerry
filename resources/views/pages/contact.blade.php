@@ -33,7 +33,7 @@
 			    <div class="container">
 	          <div class="text-block">
 	            <h2>
-	              Since 2000, we have partnered with the founders of companies that now have an aggregate, public market value of over $1.4 trillion. Meet our main Offices.
+	              Since 1994, we have partnered with the founders of companies that now have a massive aggregate, public market value.  Call our main offices today.
 	            </h2>
 	          </div>
 			    </div>
@@ -46,27 +46,28 @@
 			          <div class="contacts-tile">
 			            <div class="contacts-tile-body">
 			              <div class="contacts-tile-country">
-			                <span class="country-flag"><img alt="" src="assets/img/demo-marketing-flag-01.png"></span><span class="country-name">United States</span>
+			                {{-- <span class="country-flag"><img alt="" src="assets/img/demo-marketing-flag-02.png"></span> --}}
+			                <span class="country-name">United Kingdom</span>
 			              </div>
 
 			              <h3 class="contacts-tile-title">
-			                Menlo Park
+			                Cognitive Research Limited
 			              </h3>
 
 			              <div class="contacts-tile-content">
 			                <p style="text-align: left;">
-			                  <span class="text-normal">2855 Sand Hill Road</span> <span class="text-normal">Menlo Park,<br>
-			                  CA 94025</span>
+			                  <span class="text-normal">Kemp House</span> <span class="text-normal">160 City Road<br>
+			                  EC1V 2NX</span>
 			                </p>
 
 			                <p style="text-align: left;">
-			                  T: (650) 854-9499<br>
-			                  <span class="text-normal">F: (650) 854-9397</span>
+			                  T: 02081448696
+			             
 			                </p>
 			              </div>
 			            </div>
 
-			            <div class="google-map" data-address="1125 Merrill Street, Menlo Park, CA 94025, USA" data-disable-controls="true" data-height="230" data-marker-title="StartApp Office" data-scrollwheel="false" data-styles='[{"stylers":[{"hue":"#2c3e50"},{"saturation":250}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":50},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]}]' data-zoom="14">
+			            <div class="google-map" data-address="Kemp House 160 City Road EC1V 2NX, UK" data-disable-controls="true" data-height="230" data-marker-title="CognitiveResearch Office" data-scrollwheel="false" data-styles='[{"stylers":[{"hue":"#2c3e50"},{"saturation":250}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":50},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]}]' data-zoom="14">
 			            </div>
 			          </div>
 			        </div>
@@ -75,32 +76,34 @@
 			          <div class="contacts-tile">
 			            <div class="contacts-tile-body">
 			              <div class="contacts-tile-country">
-			                <span class="country-flag"><img alt="" src="assets/img/demo-marketing-flag-01.png"></span><span class="country-name">United States</span>
+			                {{-- <span class="country-flag">	 --}}
+			                {{-- <img alt="" src="assets/img/demo-marketing-flag-01.png"></span> --}}
+			                <span class="country-name">United Kingdom</span>
 			              </div>
 
 			              <h3 class="contacts-tile-title">
-			                New York
+			                Cognitive Research Limited
 			              </h3>
 
 			              <div class="contacts-tile-content">
 			                <p style="text-align: left;">
-			                  44 West 28th Street 8th Floor,<br>
-			                  New York, NY 10001
+			                  Ocean House,Ocean Drive<br>
+			                  NP20 4UR
 			                </p>
 
 			                <p style="text-align: left;">
-			                  T: (8610) 66575566<br>
-			                  F: (8610) 66573553
+			                  T: 02081448696
+			                 
 			                </p>
 			              </div>
 			            </div>
 
-			            <div class="google-map" data-address="44 West 28th Street 8th Floor, New York, NY 10001" data-disable-controls="true" data-height="230" data-marker-title="StartApp Office" data-scrollwheel="false" data-styles='[{"stylers":[{"hue":"#2c3e50"},{"saturation":250}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":50},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]}]' data-zoom="14">
+			            <div class="google-map" data-address="Ocean House Ocean Drive NP20 4UR,UK" data-disable-controls="true" data-height="230" data-marker-title="StartApp Office" data-scrollwheel="false" data-styles='[{"stylers":[{"hue":"#2c3e50"},{"saturation":250}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":50},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]}]' data-zoom="14">
 			            </div>
 			          </div>
 			        </div>
 
-			        <div class="col-sm-4 vc_custom_1478639342812">
+			       {{--  <div class="col-sm-4 vc_custom_1478639342812">
 			          <div class="contacts-tile">
 			            <div class="contacts-tile-body">
 			              <div class="contacts-tile-country">
@@ -126,7 +129,7 @@
 			            <div class="google-map" data-address="Unit 2202, Plaza 66 1266 Nanjing West Road, Shanghai 200040" data-disable-controls="true" data-height="230" data-marker-title="StartApp Office" data-scrollwheel="false" data-styles='[{"stylers":[{"hue":"#2c3e50"},{"saturation":250}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":50},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]}]' data-zoom="14">
 			            </div>
 			          </div>
-			        </div>
+			        </div> --}}
 			      </div>
 			    </div>
 			  </section>

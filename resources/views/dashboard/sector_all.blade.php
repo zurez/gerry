@@ -5,23 +5,16 @@
 		<tr>
 		<th>ID</th>
 		<th>Title</th>
-		<th>Author</th>
 		<th>Action</th>
 		</tr>
 	</thead>
 	<tbody>
 		@foreach($pages as $b)
-			<?php
-				if ($b->published=="yes") {
-					$state="publish";
-				}else{
-					$state="unpublish";
-				}
-			?>
+
 			<tr>
 				<td>{{$b->bid}}</td>
 				<td>{{$b->title}}</td>
-				<td>{{$b->display_name}}</td>
+			
 				<td>
 					<a href="{{url('admin/page/edit',$b->bid)}}" target="_blank" class="btn btn-primary">Edit</a>
 					<button type="button" rel-id="{{$b->bid}}" action="delete" class="btn btn-danger edit">Delete</button>

@@ -322,7 +322,15 @@
                         </li>
                         {{-- Ends --}}
                         <li>
-                            <a href="tables.html"><i class="fa fa-industry fa-fw"></i>Industries</a>
+                            <a href=""><i class="fa fa-industry fa-fw"></i>Sector</a>
+                             <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{url('admin/page/all/sector')}}">All Sectors</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('admin/page/new/sector')}}">New Sector</a>
+                                </li>
+                            </ul>
                         </li>
                         
                         <li>

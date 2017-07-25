@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use App\Models\Sector;
 use App\Models\Page;
 use App\Models\Cases;
 use App\Models\Globals;
@@ -200,7 +201,7 @@ class AdminController extends Controller
            $b=Cases::find($r->case_id);
            
            if ($r->action=="delete") {
-                Page::destroy($r->case_id);
+                Cases::destroy($r->case_id);
             }
 
            $ret["long_message"]="The case has been updated";
@@ -275,6 +276,21 @@ class AdminController extends Controller
             }
         }
     }
+
+    public function delete_page(Request $r)
+    {
+        $ret=array();
+        $ret['status']="failure";
+        $ret['long_message']="Your page could not be deleted";
+        try {
+            Page::destroy($r->page_id);
+            $ret['long_message']="Your page was deleted";
+        } catch (\Exception $e) {
+            
+        }
+        
+        return response()->json($ret);
+    }
     public function edit_page($id)
     {
         $page=Page::find($id);
@@ -290,7 +306,7 @@ class AdminController extends Controller
 
         $ret=array();
         $ret['status']="failure";
-        $ret['long_message']="Your blog could not be saved";
+        $ret['long_message']="Your ".$r->category." could not be saved";
         try {
            
             $title=$r->title;
@@ -408,6 +424,33 @@ class AdminController extends Controller
         ->with('page_title','All '.ucfirst($category))
         ->with('pages',$page)
         ;
+    }
+
+    public function sector_all()
+    {
+        $category="sector";
+        $page=Sector::all();
+        return view('dashboard.sector_all')
+        ->with('page_title','All '.ucfirst($category))
+        ->with('pages',$page)
+        ;
+    }
+
+    public function action_sector(Request $r)
+    {
+        $ret["long_message"]="Your action couldn't be completed";
+        try {
+           $b=Sector::find($r->service_id);
+           
+           if ($r->action=="delete") {
+                Sector::destroy($r->service_id);
+            }
+
+           $ret["long_message"]="The sector has been updated";
+        } catch (\Exception $e) {
+            dump($e->getMessage());
+        }
+        return response()->json($ret);
     }
 
     public function service_all()

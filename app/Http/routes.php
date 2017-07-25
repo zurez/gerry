@@ -21,6 +21,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	/*SERVICE*/ 
 	Route::get('service/{action}/{id?}','AdminController@new_service');
 	Route::post('page/save','AdminController@save_page');
+	Route::post('page/delete','AdminController@delete_page');
 	Route::post('action/service','AdminController@action_service');
 	Route::get('email/{action}','AdminController@email');
 	Route::get('page/new/{category}','AdminController@show_save_page');

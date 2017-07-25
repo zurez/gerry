@@ -1,29 +1,23 @@
 @extends('layout.admin')
 @section('admincontent')
-<table class="table table-striped" id="page_all">
+<table class="table table-striped" id="case_all">
 	<thead>
 		<tr>
 		<th>ID</th>
 		<th>Title</th>
-		<th>Author</th>
+	
 		<th>Action</th>
 		</tr>
 	</thead>
 	<tbody>
 		@foreach($pages as $b)
-			<?php
-				if ($b->published=="yes") {
-					$state="publish";
-				}else{
-					$state="unpublish";
-				}
-			?>
+
 			<tr>
 				<td>{{$b->bid}}</td>
 				<td>{{$b->title}}</td>
-				<td>{{$b->display_name}}</td>
+			
 				<td>
-					<a href="{{url('admin/page/edit',$b->bid)}}" target="_blank" class="btn btn-primary">Edit</a>
+					<a href="{{url('admin/case/edit',$b->bid)}}" target="_blank" class="btn btn-primary">Edit</a>
 					<button type="button" rel-id="{{$b->bid}}" action="delete" class="btn btn-danger edit">Delete</button>
 					{{-- <button type="button" rel-id="{{$b->bid}}" action="{{$state}}" class="btn btn-warning edit">{{ucfirst($state)}}</button> --}}
 				</td>
@@ -33,17 +27,17 @@
 </table>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#page_all').DataTable();
+		$('#case_all').DataTable();
 		$('.edit').click(function(){
 			var action=$(this).attr('action');
-			var page_id=$(this).attr('rel-id');
+			var case_id=$(this).attr('rel-id');
 			// alert(action);
-			var url="{{url('admin/page/delete')}}";
+			var url="{{url('admin/case/delete')}}";
 			$.ajax({
 				url:url,
 				type:'POST',
 				data:{
-					page_id:page_id,
+					case_id:case_id,
 					action:action,
 					_token:"{{csrf_token()}}"
 				},

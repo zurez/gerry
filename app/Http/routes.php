@@ -39,7 +39,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 
 
 });
-
+Route::get('zohoverify/verifyforzoho.html',function(){
+	echo "1500995617029";
+});
 Route::get('logout','PageController@getLogout');
 Route::get('login','Auth\AuthController@getLogin');
 Route::post('login','Auth\AuthController@postLogin');

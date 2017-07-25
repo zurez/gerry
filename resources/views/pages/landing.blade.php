@@ -38,7 +38,7 @@
 			  <section class="fw-section padding-top-3x padding-bottom-1x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            Cognitive Services<small class="h4">the hand that rocks the cradle.</small>
+	            Cognitive Services<small class="h4">"the hand that rocks the cradle"</small>
 	          </h2>
 
 	         
@@ -127,7 +127,10 @@
 
 	              <div class="text-block hide-on-1440">
 	                <p class="text-lg" style="text-align: center;">
-	                  <span class="text-light">We offer a range of services to end user client, software vendors, corporate financiers selling businesses on behalf of their clients or companies thinking of selling their business.If you are interested in joining our team as a consultant, please feel free to use this form and we will be in touch.  </span>
+	                  <span class="text-light">We offer a range of services to end user client, software vendors, corporate financiers selling businesses on behalf of their clients or companies thinking of selling their business.</span>
+	                </p>
+	                <p class="text-lg" style="text-align: center;">
+	                  <span class="text-light">If you are interested in joining our team as a consultant, please feel free to use this form and we will be in touch.</span>
 	                </p>
 	              </div>
 			        </div>

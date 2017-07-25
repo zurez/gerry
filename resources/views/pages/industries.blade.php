@@ -32,15 +32,7 @@
 			  <section class="fw-section padding-top-3x padding-bottom-3x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            We Are Currently <small class="h4">interested in working with vendors who have solution in the following disciplines:
-
-Mobile property management (PMS) solutions for hotel and accommodation providers of all kinds.
-
-Customer experience management (CXM) solutions that can serve multiple industries.
-
-Customer data platform providers (CDP)
-
-Configure, Price , Quote (CPQ) that can serve professional services organisations as well as the traditional complex sales organisations. 
+	            Cognitive Research<small class="h4"> has experience in the multiple software sectors within industry sectors that include Finance, Accounting, Hospitality & Facilities Management.
 
 </small>
 	          </h2>

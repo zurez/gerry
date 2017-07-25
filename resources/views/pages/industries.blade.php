@@ -66,6 +66,9 @@ Configure, Price , Quote (CPQ) that can serve professional services organisation
 	                </p>
 	              </div>
 	            </div>
+	            <?php
+	            $i++;
+	            ?>
 	           @endforeach
 	           </div>
 	      

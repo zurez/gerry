@@ -194,7 +194,17 @@ class AdminController extends Controller
         }
         return response()->json($ret);
     }
-    public function action_case(Request $r)
+
+    public function edit_case($case_id)
+    {
+        $case=Cases::find($case_id);
+        return view('dashboard.case_new')
+        ->with('case',$case)
+        ->with('page_title','Edit Case')
+        ;
+    }
+
+    public function delete_case(Request $r)
     {
         $ret["long_message"]="Your action couldn't be completed";
         try {
@@ -355,31 +365,50 @@ class AdminController extends Controller
 
     public function save_case(Request $r)
     {
-        // dd($r);
+        
         try {
-            $all_files=$r->file;
+            
             // $pdf=$r->file('document');
             $images=array();
             $title=$r->title;
-            $c= new Cases;
+            // dd($r->case_id);
+            if ($r->case_id !=0) {
+                $c=Cases::find($r->case_id);
+            }else{
+                   $c= new Cases;
+            }
+         
             $c->title=$title;
             $c->description=$r->description;
             $i=0;
             $time=time();
-            foreach ($all_files as $af) {
-        
-                $filename=$time."_".$i.".png";
-                $filepath=public_path('page_images');
-                $af->move($filepath,$filename);
-                array_push($images,$filename);
-                $i++;
+            try {
+                $all_files=$r->file;
+                if (isset($all_files) and !is_null($all_files)) {
+                    foreach ($all_files as $af) {
+                    if (!is_null($af)) {
+                    $filename=$time."_".$i.".png";
+                    $filepath=public_path('page_images');
+                    $af->move($filepath,$filename);
+                    array_push($images,$filename);
+                    $i++;
+                    }
+                    
+                }
+                if (!is_null($images) and !empty($images)) {
+                    # code...
+                    dump("lol");
+                    $c->images=serialize($images);
+                }
+                
+                $pdfname=str_random(10).".pdf";
+
+                }
+            } catch (\Exception $e) {
+            
             }
-            $c->images=serialize($images);
-            $pdfname=str_random(10).".pdf";
-            // $pdfpath=public_path('page_images');
-            // dd($pdf);
-            // $pdf->move($pdfpath,$pdfname);
-            // $c->pdf=$pdf;
+
+
             $c->save();
 
         } catch (\Exception $e) {
@@ -409,7 +438,7 @@ class AdminController extends Controller
     {
         switch ($category) {
             case 'case':
-                $page=Cases::all();
+                return $this->case_all();
                 break;
             case 'service':
                 return $this->service_all();
@@ -426,6 +455,16 @@ class AdminController extends Controller
         ;
     }
 
+    public function case_all()
+    {
+        $category="case";
+        $page=Cases::all();
+        // dd($page);
+        return view('dashboard.case_all')
+        ->with('page_title','All '.ucfirst($category))
+        ->with('pages',$page)
+        ;
+    }
     public function sector_all()
     {
         $category="sector";

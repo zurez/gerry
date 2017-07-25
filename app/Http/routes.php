@@ -34,6 +34,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	Route::post('settings/profile','AdminController@save_profile_settings'); 
 	Route::post('send/mail','EmailController@send_mail');
 	Route::post('case/save','AdminController@save_case');
+	Route::post('case/delete','AdminController@delete_case');
+	Route::get('case/edit/{case_id}','AdminController@edit_case');
 
 
 });

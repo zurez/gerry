@@ -43,7 +43,12 @@
 	            <div class="grid-item case-study cloud financial">
 	              <article class="portfolio-tile">
 	              <?php
-	              $rawi=unserialize($c->images)[0];
+	              try {
+	              	$rawi=unserialize($c->images)[0];
+	              } catch (\Exception $e) {
+	              	$rawi="";
+	              }
+	              
 	              $img=asset('page_images/'.$rawi);
 	              $title=$c->title;
 	              ?>

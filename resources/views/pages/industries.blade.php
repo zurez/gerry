@@ -45,87 +45,31 @@ Configure, Price , Quote (CPQ) that can serve professional services organisation
 </small>
 	          </h2>
 
+	          
+	          <?php
+	          $i=0;
+	          ?>
+	       
 	          <div class="row">
+	          @foreach($sectors as $s)
+
+	          	@if($i%3==0)</div><div class="row">@endif
 	            <div class="col-sm-4">
-	              <img alt="" src="assets/img/demo-marketing-industry-01.png">
+	              <img alt="{{$s->title}}" src="{{asset('page_images/'.$s->logo)}}">
 	              <div class="text-block margin-top-1x">
 	                <h4 style="text-align: center;">
-	                  Financial&nbsp;&&nbsp;Professional&nbsp;Services
+	                  {{$s->title}}
 	                </h4>
 
 	                <p style="text-align: center;">
-	                  <span class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sapien sapien. Morbi elementum molestie.</span>
+	                  <span class="text-gray">{{$s->short_desc}}</span>
 	                </p>
 	              </div>
 	            </div>
-
-	            <div class="col-sm-4">
-	              <img alt="" src="assets/img/demo-marketing-industry-02.png">
-	              <div class="text-block margin-top-1x">
-	                <h4 style="text-align: center;">
-	                  Food &amp; Beverages 
-	                </h4>
-
-	                <p style="text-align: center;">
-	                  <span class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sapien sapien. Morbi elementum molestie.</span>
-	                </p>
-	              </div>
-	            </div>
-
-	            <div class="col-sm-4">
-	              <img alt="" src="assets/img/demo-marketing-industry-03.png">
-	              <div class="text-block margin-top-1x">
-	                <h4 style="text-align: center;">
-	                  Hotel &amp; Tourism
-	                </h4>
-
-	                <p style="text-align: center;">
-	                  <span class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sapien sapien. Morbi elementum molestie.</span>
-	                </p>
-	              </div>
-	            </div>
-	          </div>
-
-	          <div class="row margin-top-1x">
-	            <div class="col-sm-4">
-	              <img alt="" src="assets/img/demo-marketing-industry-04.png">
-	              <div class="text-block margin-top-1x">
-	                <h4 style="text-align: center;">
-	                  Student &amp; Accomodation
-	                </h4>
-
-	                <p style="text-align: center;">
-	                  <span class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sapien sapien. Morbi elementum molestie.</span>
-	                </p>
-	              </div>
-	            </div>
-
-	          {{--   <div class="col-sm-4">
-	              <img alt="" src="assets/img/demo-marketing-industry-05.png">
-	              <div class="text-block margin-top-1x">
-	                <h4 style="text-align: center;">
-	                  Aviation &amp; Travel
-	                </h4>
-
-	                <p style="text-align: center;">
-	                  <span class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sapien sapien. Morbi elementum molestie.</span>
-	                </p>
-	              </div>
-	            </div>
-
-	            <div class="col-sm-4">
-	              <img alt="" src="assets/img/demo-marketing-industry-06.png">
-	              <div class="text-block margin-top-1x">
-	                <h4 style="text-align: center;">
-	                  Natural Resources
-	                </h4>
-
-	                <p style="text-align: center;">
-	                  <span class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sapien sapien. Morbi elementum molestie.</span>
-	                </p>
-	              </div>
-	            </div> --}}
-	          </div>
+	           @endforeach
+	           </div>
+	      
+	          
 	        </div>
 			  </section>
 

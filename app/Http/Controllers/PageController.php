@@ -17,7 +17,10 @@ class PageController extends Controller
     //
     public function show_industries()
     {
-    	return view('pages.industries');
+        $sectors=DB::table('page')->where('category',"sector")->whereNull('deleted_at')->get();
+    	return view('pages.industries')
+        ->with('sectors',$sectors)
+        ;
     }
     public function landing()
     {

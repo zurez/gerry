@@ -4,6 +4,7 @@
 		<title>Cognitive Research(UK)</title>
 		<?php
 		$g= DB::table('global')->first();
+
 		?>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -84,7 +85,9 @@
 	</head>
         <?php
 			        $services=DB::table('page')->where('category',"service")->whereNull('deleted_at')->get();
+			        $sectors=DB::table('page')->where('category',"sector")->whereNull('deleted_at')->get();
 			        $cases=DB::table('case')->orderBy('title')->get();
+
         ?>
 @if(Session::has('flash_message'))
 <p class="alert alert-info">{{ Session::get('flash_message') }}</p>
@@ -106,7 +109,7 @@
 			    </li>
 
 			    <li class="menu-item ">
-			      <a href="{{url('industries')}}">Sector<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			      <a href="{{url('sector')}}">Sector<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			    </li>
 
 			    <li class="menu-item menu-item-has-children">
@@ -221,7 +224,7 @@
 	        	      </li>
 
 	        	      <li class="menu-item ">
-	        	        <a href="{{url('industries')}}">Sector</a>
+	        	        <a href="{{url('sector')}}">Sector</a>
 	        	      </li>
 
 	        	      <li class="menu-item menu-item-has-children">
@@ -390,21 +393,12 @@
 
 		              <div class="menu-footer-menu-1-container">
 		                <ul class="menu">
+		                 @foreach($sectors as $s)
 		                  <li class="menu-item">
-		                    <a href="#">Financial & Professional Services </a>
+		                    <a href="#">{{$s->title}}</a>
 		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Food & Beverages</a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Hotel & Tourism </a>
-		                  </li>
-
-		                  <li class="menu-item">
-		                    <a href="#">Student & Accomodation </a>
-		                  </li>
+		                 @endforeach
+		                
 
 
 		                </ul>

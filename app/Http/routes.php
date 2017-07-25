@@ -41,7 +41,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 Route::get('logout','PageController@getLogout');
 Route::get('login','Auth\AuthController@getLogin');
 Route::post('login','Auth\AuthController@postLogin');
-Route::get('industries','PageController@show_industries');
+Route::get('sector','PageController@show_industries');
 Route::get('case/{id?}','PageController@show_cases');
 Route::get('mission','PageController@show_mission');
 Route::get('team','PageController@show_team');

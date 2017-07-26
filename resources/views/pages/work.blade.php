@@ -32,7 +32,7 @@
 			  <section class="fw-section padding-top-3x padding-bottom-1x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            How We Create Value<small class="h4">Be early. Be insightful. Drive to consensus.</small>
+	            We Can Do It For You <small class="h4">Listen  Communicate  Deliver </small>
 	          </h2>
 
 	          <div class="steps steps-dark">
@@ -46,18 +46,18 @@
 	                  <div class="icon-box icon-box-bg-enabled hover-fade text-center">
 	                    <span class="icon-box-backdrop" style="background-color: #000000;"></span>
 	                    <div class="icon-box-icon">
-	                      <img alt="" src="http://startapp.8guild.com/consulting/wp-content/uploads/sites/8/2016/11/demo-marketing-steps-icon-1.png">
+	                      <img alt="" src="{{asset('logos/Vision.png')}}">
 	                    </div>
 
 	                    <h3 class="icon-box-title">
-	                      Inputs
+	                      Vision
 	                    </h3>
 
-	                    <div class="icon-box-description">
+	                {{--     <div class="icon-box-description">
 	                      <p class="text-gray">
 	                        Maecenas interdum orci dolor, sed faucibus tellus aliquet at.
 	                      </p>
-	                    </div>
+	                    </div> --}}
 	                  </div>
 	                </div>
 	              </div>
@@ -71,23 +71,23 @@
 	                  <div class="icon-box icon-box-bg-enabled hover-fade text-center">
 	                    <span class="icon-box-backdrop" style="background-color: #000000;"></span>
 	                    <div class="icon-box-icon">
-	                      <img alt="" src="http://startapp.8guild.com/consulting/wp-content/uploads/sites/8/2016/11/demo-marketing-steps-icon-2.png">
+	                      <img alt="" src="{{asset('logos/process.png')}}">
 	                    </div>
 
 	                    <h3 class="icon-box-title">
-	                      Our Businesses
+	                      Process
 	                    </h3>
 
-	                    <div class="icon-box-description">
+	                   {{--  <div class="icon-box-description">
 	                      <p class="text-gray">
 	                        Maecenas interdum orci dolor, sed faucibus tellus aliquet at.
 	                      </p>
-	                    </div>
+	                    </div> --}}
 	                  </div>
 	                </div>
 	              </div>
 
-	              <div class="step">
+	             <div class="step">
 	                <h4 class="step-label">
 	                  Step 3
 	                </h4>
@@ -96,23 +96,22 @@
 	                  <div class="icon-box icon-box-bg-enabled hover-fade text-center">
 	                    <span class="icon-box-backdrop" style="background-color: #000000;"></span>
 	                    <div class="icon-box-icon">
-	                      <img alt="" src="http://startapp.8guild.com/consulting/wp-content/uploads/sites/8/2016/11/demo-marketing-steps-icon-3.png">
+	                      <img alt="" src="{{asset('logos/understanding.png')}}">
 	                    </div>
 
 	                    <h3 class="icon-box-title">
-	                      Our Operations
+	                      Understanding
 	                    </h3>
 
-	                    <div class="icon-box-description">
+	                   {{--  <div class="icon-box-description">
 	                      <p class="text-gray">
 	                        Lorem Ipsum Dip
 	                      </p>
-	                    </div>
+	                    </div> --}}
 	                  </div>
 	                </div>
 	              </div>
-
-	              <div class="step">
+	             <div class="step">
 	                <h4 class="step-label">
 	                  Step 4
 	                </h4>
@@ -121,18 +120,115 @@
 	                  <div class="icon-box icon-box-bg-enabled hover-fade text-center">
 	                    <span class="icon-box-backdrop" style="background-color: #000000;"></span>
 	                    <div class="icon-box-icon">
-	                      <img alt="" src="http://startapp.8guild.com/consulting/wp-content/uploads/sites/8/2016/11/demo-marketing-steps-icon-4.png">
+	                      <img alt="" src="{{asset('logos/Communicate.png')}}">
 	                    </div>
 
 	                    <h3 class="icon-box-title">
-	                      Results
+	                      Communication
 	                    </h3>
 
-	                    <div class="icon-box-description">
+	                   {{--  <div class="icon-box-description">
+	                      <p class="text-gray">
+	                        Lorem Ipsum Dip
+	                      </p>
+	                    </div> --}}
+	                  </div>
+	                </div>
+	              </div>
+
+	              <div class="step">
+	                <h4 class="step-label">
+	                  Step 5
+	                </h4>
+
+	                <div class="step-body">
+	                  <div class="icon-box icon-box-bg-enabled hover-fade text-center">
+	                    <span class="icon-box-backdrop" style="background-color: #000000;"></span>
+	                    <div class="icon-box-icon">
+	                      <img alt="" src="{{asset('logos/Feedback.png')}}">
+	                    </div>
+
+	                    <h3 class="icon-box-title">
+	                      Feedback
+	                    </h3>
+
+	                 {{--    <div class="icon-box-description">
+	                      <p class="text-gray">
+	                        Lorem Ipsum Dip
+	                      </p>
+	                    </div> --}}
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="step">
+	                <h4 class="step-label">
+	                  Step 6
+	                </h4>
+
+	                <div class="step-body">
+	                  <div class="icon-box icon-box-bg-enabled hover-fade text-center">
+	                    <span class="icon-box-backdrop" style="background-color: #000000;"></span>
+	                    <div class="icon-box-icon">
+	                      <img alt="" src="{{asset('logos/plan.png')}}">
+	                    </div>
+
+	                    <h3 class="icon-box-title">
+	                      Planning
+	                    </h3>
+
+	                  {{--   <div class="icon-box-description">
+	                      <p class="text-gray">
+	                        Lorem Ipsum Dip
+	                      </p>
+	                    </div> --}}
+	                  </div>
+	                </div>
+	              </div>
+	            <div class="step">
+	                <h4 class="step-label">
+	                  Step 7
+	                </h4>
+
+	                <div class="step-body">
+	                  <div class="icon-box icon-box-bg-enabled hover-fade text-center">
+	                    <span class="icon-box-backdrop" style="background-color: #000000;"></span>
+	                    <div class="icon-box-icon">
+	                      <img alt="" src="{{asset('logos/Deliver.png')}}">
+	                    </div>
+
+	                    <h3 class="icon-box-title">
+	                      Deliver
+	                    </h3>
+
+	                    {{-- <div class="icon-box-description">
+	                      <p class="text-gray">
+	                        Lorem Ipsum Dip
+	                      </p>
+	                    </div> --}}
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="step">
+	                <h4 class="step-label">
+	                  Step 8
+	                </h4>
+
+	                <div class="step-body">
+	                  <div class="icon-box icon-box-bg-enabled hover-fade text-center">
+	                    <span class="icon-box-backdrop" style="background-color: #000000;"></span>
+	                    <div class="icon-box-icon">
+	                      <img alt="" src="{{asset('logos/Support.png')}}">
+	                    </div>
+
+	                    <h3 class="icon-box-title">
+	                      Support
+	                    </h3>
+
+	                  {{--   <div class="icon-box-description">
 	                      <p class="text-gray">
 	                        Maecenas interdum orci dolor, sed faucibus tellus aliquet at.
 	                      </p>
-	                    </div>
+	                    </div> --}}
 	                  </div>
 	                </div>
 	              </div>

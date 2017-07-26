@@ -64,51 +64,36 @@
                 <a class="navbar-brand" href="{{url('admin/stats')}}">Admin Panel</a>
             </div>
             <!-- /.navbar-header -->
-
+            <?php
+                $emails=DB::table('usercontact')->orderBy('created_at','DESC')->limit(5)->get();
+            ?>
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-messages">
+                        @foreach($emails as $e)
+                         <?php
+                                $s= strtotime($e->created_at);
+                                $date= date("M d, Y ",$s);
+                      ?>
                         <li>
                             <a href="#">
                                 <div>
-                                    <strong>John Smith</strong>
+                                    <strong>{{$e->name}}</strong>
                                     <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
+                                        <em>{{$date}}</em>
                                     </span>
                                 </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                <div>{{substr($e->message,100)}}...</div>
                             </a>
                         </li>
                         <li class="divider"></li>
+                        @endforeach
+                     
                         <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
+                            <a class="text-center" href="{{url('admin/email/inbound')}}">
                                 <strong>Read All Messages</strong>
                                 <i class="fa fa-angle-right"></i>
                             </a>
@@ -116,7 +101,7 @@
                     </ul>
                     <!-- /.dropdown-messages -->
                 </li>
-                <!-- /.dropdown -->
+{{--                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -194,9 +179,9 @@
                         </li>
                     </ul>
                     <!-- /.dropdown-tasks -->
-                </li>
+                </li> --}}
                 <!-- /.dropdown -->
-                <li class="dropdown">
+               {{--  <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
@@ -254,7 +239,7 @@
                         </li>
                     </ul>
                     <!-- /.dropdown-alerts -->
-                </li>
+                </li> --}}
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">

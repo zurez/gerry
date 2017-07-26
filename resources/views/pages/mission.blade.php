@@ -32,12 +32,12 @@
 			  <section class="fw-section padding-top-3x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            We Can Do It For You <small class="h4">Praesent convallis nibh in odio pellentesque aliquam, vestibulum ipsum felis, porttitor.</small>
+	            We Can Do It For You <small class="h4">Our mission is to helps application vendors and their investors, SMEs and their professional advisors to grow by utilising technology and providing experienced commercial advice.</small>
 	          </h2>
 			    </div>
 			  </section>
 
-			  <section class="fw-section">
+			{{--   <section class="fw-section">
 			    <div class="container">
 			      <div class="row">
 			        <div class="col-sm-4">
@@ -80,7 +80,7 @@
 			        </div>
 			      </div>
 			    </div>
-			  </section>
+			  </section> --}}
 
 			  <section class="fw-section padding-top-2x padding-bottom-1x">
 			    <div class="container">

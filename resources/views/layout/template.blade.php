@@ -84,8 +84,8 @@
 		</script>
 	</head>
         <?php
-			        $services=DB::table('page')->where('category',"service")->whereNull('deleted_at')->get();
 			        $sectors=DB::table('page')->where('category',"sector")->whereNull('deleted_at')->get();
+			        $services=DB::table('page')->where('category',"service")->whereNull('deleted_at')->get();
 			        $cases=DB::table('case')->orderBy('title')->get();
 
         ?>
@@ -461,11 +461,11 @@
 			      <div class="row">
 			        <div class="col-sm-6">
 			          <p class="copyright-text">
-			           {{-- Text --}}
+			           © All rights reserved Cognitive Research Limited 2017
 			          </p>
 			        </div>
 
-			        <div class="col-sm-6 text-right"></div>
+			        <div class="col-sm-6 text-right"><a href="{{url('privacy')}}">Privacy Policy</a></div>
 			      </div>
 			    </div>
 			  </div>

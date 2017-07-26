@@ -54,6 +54,11 @@ class PageController extends Controller
     	}
     }
 
+    public function show_privacy()
+    {
+        return view("pages.privacy");
+    }
+
     public function show_work()
     {
         return view('pages.work');

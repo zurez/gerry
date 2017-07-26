@@ -28,7 +28,7 @@
 			  </div>
 			</div>
 			<article class="page">
-			  <section class="fw-section bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url({{asset('assets/img/ms-careers-hero.jpg')}}); height: 100vh;">
+			  <section class="fw-section bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url({{asset('logos/TEAM2.png')}}); height: 100vh;">
 
 			    <div class="container">
 			      <div class="row">
@@ -84,7 +84,9 @@
 			  <section class="fw-section layout-full-equal section-no-gap" style="background-color: #f5f5f5">
 			    <div class="container-fluid">
 			      <div class="row">
-			        <div class="col-lg-6 col-md-6 col-sm-12 split-image" style="background-image: url(assets/img/ms-split-01.jpg);"></div>
+			        <div class="col-lg-6 col-md-6 col-sm-12 split-image" style="background-image: url(assets/img/ms-split-01.jpg);">
+			        	<img src="{{asset('logos/TEAMPIC.png')}}">
+			        </div>
 
 			        <div class="col-lg-6 col-md-6 col-sm-12 " style="padding-left: 3% !important; padding-right: 3% !important;">
 			          <div class="row padding-top-4x padding-bottom-4x split-section">
@@ -101,6 +103,7 @@
 			            </div>
 			          </div>
 			        </div>
+
 			      </div>
 			    </div>
 			  </section>
@@ -134,7 +137,9 @@
 			          </div>
 			        </div>
 
-			        <div class="col-lg-6 col-md-6 col-sm-12 split-image " style="background-image: url(assets/img/ms-split-02.jpg)"></div>
+			        <div class="col-lg-6 col-md-6 col-sm-12 split-image " style="background-image: url(assets/img/ms-split-02.jpg)">
+			        	<img src="{{asset('logos/TEAM1.png')}}">
+			        </div>
 			      </div>
 			    </div>
 			  </section>

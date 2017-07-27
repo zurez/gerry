@@ -34,7 +34,7 @@
 	          <h2 class="block-title text-dark text-center">
 	            Cognitive Research<small class="h4"> has experience in the multiple software sectors within industry sectors that include Finance, Accounting, Hospitality & Facilities Management.
 
-</small>
+				</small>
 	          </h2>
 
 	          
@@ -181,5 +181,190 @@
 			      </div>
 			    </div>
 			  </section> --}}
+
+			   <section class="fw-section padding-top-2x padding-bottom-4x">
+			    <div class="container">
+	          <h2 class="block-title text-dark text-center">
+	            Our Featured Clients<small class="h4">Cras ligula velit, mattis nec ligula vel, laoreet ullamcorper nisl.</small>
+	          </h2>
+
+	          <div class="row vc_custom_1478638009824">
+	            <div class="col-sm-12">
+	              <div class="logo-carousel carousel-navs-ghost carousel-navs-top-outside carousel-dark" data-items-lg="6" data-items-md="5" data-items-sm="3" data-items-xs="1" data-slick='{"dots":true,"arrows":false,"infinite":true,"autoplay":true,"autoplaySpeed":3000}'>
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/blueconic_logo.jpg')}}">
+	                  <h4 class="logo-item-title">
+	                    Blueconic
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    blueconic.com
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/burrito_logo.png')}}">
+	                  <h4 class="logo-item-title">
+	                    Burrito
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/daspalla_logo.png')}}" >
+	                  <h4 class="logo-item-title">
+	                    Daspalla
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/ginger_logo.png')}}">
+	                  <h4 class="logo-item-title">
+	                    Ginger
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/Deputy_logo.png')}}">
+	                  <h4 class="logo-item-title">
+	                    Deputy
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/la_marvella_logo.png')}}">
+	                  <h4 class="logo-item-title">
+	                    La Marvella
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/mango_logo.png')}}">
+	                  <h4 class="logo-item-title">
+	                    Mango
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/mistay_logo.png')}}">
+	                  <h4 class="logo-item-title">
+
+	                    Mistay
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/octave_logo.png')}}">
+	                  <h4 class="logo-item-title">
+
+	                    Octave
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/qikstay_logo.png')}}">
+	                  <h4 class="logo-item-title">
+
+	                    Qikstay
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/residency_logo.jpg')}}">
+	                  <h4 class="logo-item-title">
+
+	                    Residency
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+	                	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/tamara_logo.png')}}">
+	                  <h4 class="logo-item-title">
+
+	                    Tamara
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+	                	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/tgm_logo.png')}}">
+	                  <h4 class="logo-item-title">
+
+	                    TGM
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+	                	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/xero_logo.png')}}">
+	                  <h4 class="logo-item-title">
+
+	                    Xero
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+	                {{--  --}}
+
+	                <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/receipt_bank_logo.png')}}">
+	                  <h4 class="logo-item-title">
+
+	                    Receipt Bank
+	                  </h4>
+
+	                  <p class="logo-item-description">
+	                    Sed fermentum in felis feugiat
+	                  </p>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+			    </div>
+			  </section>
 			</article>
 @stop

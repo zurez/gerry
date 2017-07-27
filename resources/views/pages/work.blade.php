@@ -50,7 +50,7 @@
 	                    </div>
 
 	                    <h3 class="icon-box-title">
-	                      Vision
+	                      Vision&nbsp;&nbsp;&nbsp;&nbsp;
 	                    </h3>
 
 	                {{--     <div class="icon-box-description">

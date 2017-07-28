@@ -353,15 +353,41 @@
 
 	                <div class="logo-item">
 	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/receipt_bank_logo.png')}}">
-	                  {{-- <h4 class="logo-item-title">
-
-	                    Receipt Bank
-	                  </h4>
-
-	                  <p class="logo-item-description">
-	                    Sed fermentum in felis feugiat
-	                  </p> --}}
-	                </div>
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/cin7_logo.png')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/citi_logo.jpg
+	                  pg')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/kpmg_logo.png')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/lloyds_logo.png')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/mailchimp_logo.jpg')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/meltwater_logo.png')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/onepage_crm_logo.jpg')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/profitsee_logo.jpg')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/quickbooks_logo.png')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/raffingers_logo.png')}}">
+	          	    </div>
+	          	    <div class="logo-item">
+	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/sage_logo.png')}}">
+	          	    </div>
 	              </div>
 	            </div>
 	          </div>

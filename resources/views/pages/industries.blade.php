@@ -185,7 +185,8 @@
 			   <section class="fw-section padding-top-2x padding-bottom-4x">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
-	            Our Featured Clients<small class="h4">Cras ligula velit, mattis nec ligula vel, laoreet ullamcorper nisl.</small>
+	            Our Featured Clients
+	            {{-- <small class="h4">Cras ligula velit, mattis nec ligula vel, laoreet ullamcorper nisl.</small> --}}
 	          </h2>
 
 	          <div class="row vc_custom_1478638009824">

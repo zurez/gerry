@@ -9,6 +9,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<script type="text/javascript" src="{{asset('assets/js/vendor/jquery.js')}}"></script>
+		
 		<!-- Favicon Images -->
 		<link rel="icon" href="{{asset('assets/img/favicon/logo.ico')}}" />
 		{{-- <link rel="icon" href="{{asset('assets/img/favicon/cropped-favicon-192x192.png')}}" /> --}}
@@ -89,9 +90,7 @@
 			        $cases=DB::table('case')->orderBy('title')->get();
 
         ?>
-@if(Session::has('flash_message'))
-<p class="alert alert-info">{{ Session::get('flash_message') }}</p>
-@endif
+
 <body class="{{$body_class or "n"}}">
 	<!-- It Is Preloader Markup -->
 		<div class="loading-screen"><div class="spinner-wrap"><div class="spinner" id="spinner_one"></div><div class="spinner" id="spinner_two"></div><div class="spinner" id="spinner_three"></div><div class="spinner" id="spinner_four"></div></div></div>
@@ -494,7 +493,7 @@
 			<!-- *************************************************************************************** -->
 		<script type="text/javascript" src="{{asset('assets/js/startapp-theme.js')}}"></script>
 		<!-- **************************************************************************************************************************** -->
-		<script src="//cdn.blueconic.net/cgntvrsrchlmtd.js"></script>
+
 
 </body>
 </html>

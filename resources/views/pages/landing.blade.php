@@ -87,25 +87,33 @@
 			    <div class="container-fluid">
 			      <div class="row">
 			        <div class="col-lg-6 col-md-6 col-sm-12 padding-top-3x padding-bottom-2x" style="background-color: #183978; padding-left: 96px !important; padding-right: 96px !important;">
+			    @if(Session::has('flash_message'))
+				<div class="text-block">
+				  <h4 class="text-light">{{Session::get('flash_message')}}</h4>
+				</div>
+
+			    @else
               {!! Form::open(array('url'=>'contactus','method'=>'POST')) !!}
                   <div class="row home-contact-form">
                     <div class="col-sm-6" style="padding-right: 15px !important;">
-                      <input name="name" placeholder="Your name" size="40" type="text" value="">
+                      <input name="name" placeholder="Your name" size="40" type="text" value="" required="required">
                     </div>
 
                     <div class="col-sm-6" style="padding-left: 15px !important;">
-                      <input name="phone" placeholder="Your phone" size="40" type="text" value="">
+                      <input name="phone" placeholder="Your phone" size="40" type="text" value="" required="required">
                     </div>
                   </div>
 
                   <p>
-                    <input name="email" placeholder="Your email" size="40" type="email" value="">
+                    <input name="email" placeholder="Your email" size="40" type="email" value="" required="required">
 
                     <textarea cols="40" name="message" placeholder="Your message" rows="4"></textarea>
 
                     <input type="submit"  class="btn btn-ghost btn-light" style="margin-top: 0; outline: none;" type="submit">Send Message <i class="material-icons send"></i></a>
                   </p>
                 </form>
+
+                @endif
 			        </div>
 
 			        <div class="col-lg-6 col-md-6 col-sm-12 padding-top-3x padding-bottom-2x" style="background-color: #3f6bbe; padding-left: 96px !important; padding-right: 96px !important;">
@@ -351,6 +359,7 @@
 			    </div>
 			  </section>
 			</article>
+
 <script type="text/javascript">
 jQuery(function($) {
 

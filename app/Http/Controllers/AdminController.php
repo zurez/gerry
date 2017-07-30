@@ -382,13 +382,14 @@ class AdminController extends Controller
             $c->description=$r->description;
             $i=0;
             $time=time();
+            $filepath=public_path('page_images');
             try {
                 $all_files=$r->file;
-                if (isset($all_files) and !is_null($all_files)) {
+                if (isset($all_files) and !is_null($all_files) and !empty($all_files)) {
                     foreach ($all_files as $af) {
                     if (!is_null($af)) {
                     $filename=$time."_".$i.".png";
-                    $filepath=public_path('page_images');
+                    
                     $af->move($filepath,$filename);
                     array_push($images,$filename);
                     $i++;
@@ -397,11 +398,19 @@ class AdminController extends Controller
                 }
                 if (!is_null($images) and !empty($images)) {
                     # code...
-                    dump("lol");
+                   
                     $c->images=serialize($images);
                 }
+                $pdfname=$time.".pdf";
+                $pdf=$r->file('document');
+                if (!is_null($pdf)) {
+                    # code...
+                $pdf->move($filepath,$pdfname);
+                $c->pdf=$pdfname;
+                }
+
                 
-                $pdfname=str_random(10).".pdf";
+                
 
                 }
             } catch (\Exception $e) {
@@ -523,6 +532,11 @@ class AdminController extends Controller
         ->with('emails',$emails)
         ->with('page_title',ucfirst($type)." Emails")
         ;
+    }
+
+    public function save_file(Request $r)
+    {
+        # code...
     }
 }
 

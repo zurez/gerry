@@ -22,6 +22,15 @@ class PageController extends Controller
         ->with('sectors',$sectors)
         ;
     }
+    public function download_pdf($case_id)
+    {
+        $pdf=CaseStudies::find($case_id);
+        if (!is_null($pdf)) {
+            $pdf=$pdf->pdf;
+            $path=public_path('page_images/'.$pdf);
+            return response()->download($path);
+        }
+    }
     public function landing()
     {
         $news=Blog::join('users','users.id','=','blog.user_id')->orderBy('blog.created_at','DESC')->where('blog.published','!=','0')->whereNull('blog.deleted_at')->limit(3)

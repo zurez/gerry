@@ -37,6 +37,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	Route::post('case/delete','AdminController@delete_case');
 	Route::get('case/edit/{case_id}','AdminController@edit_case');
 
+	Route::post('save/file','AdminController@save_file');
+
 
 });
 Route::get('zohoverify/verifyforzoho.html',function(){
@@ -56,3 +58,4 @@ Route::get('blog/{id?}','PageController@show_blog');
 Route::get('contact','PageController@show_contact');
 Route::post('contactus','PageController@save_contact');
 Route::get('work','PageController@show_work');
+Route::get('case/pdf/download/{id}','PageController@download_pdf');

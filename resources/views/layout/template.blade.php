@@ -394,7 +394,7 @@
 		                <ul class="menu">
 		                 @foreach($sectors as $s)
 		                  <li class="menu-item">
-		                    <a href="#">{{$s->title}}</a>
+		                    <a href="{{url('sector')}}">{{$s->title}}</a>
 		                  </li>
 		                 @endforeach
 		                

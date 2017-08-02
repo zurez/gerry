@@ -191,7 +191,7 @@
 
 	          <div class="row vc_custom_1478638009824">
 	            <div class="col-sm-12">
-	              <div class="logo-carousel carousel-navs-ghost carousel-navs-top-outside carousel-dark" data-items-lg="6" data-items-md="5" data-items-sm="3" data-items-xs="1" data-slick='{"dots":true,"arrows":false,"infinite":true,"autoplay":true,"autoplaySpeed":3000}'>
+	              <div class="logo-carousel carousel-navs-ghost carousel-navs-top-outside carousel-dark" data-items-lg="6" data-items-md="5" data-items-sm="3" data-items-xs="1" data-slick='{"dots":true,"arrows":false,"infinite":true,"autoplay":true,"autoplaySpeed":300}'>
 	                <div class="logo-item">
 	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/blueconic_logo.jpg')}}">
 	                 {{--  <h4 class="logo-item-title">

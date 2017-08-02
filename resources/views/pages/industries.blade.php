@@ -351,9 +351,9 @@
 	                </div>
 	                {{--  --}}
 
-	                <div class="logo-item">
+	                {{-- <div class="logo-item">
 	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/receipt_bank_logo.png')}}">
-	          	    </div>
+	          	    </div> --}}
 	          	    <div class="logo-item">
 	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/cin7_logo.png')}}">
 	          	    </div>
@@ -385,9 +385,9 @@
 	          	    <div class="logo-item">
 	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/raffingers_logo.png')}}">
 	          	    </div>
-	          	    <div class="logo-item">
+	          	   {{--  <div class="logo-item">
 	                  <img alt="" sizes="(max-width: 340px) 100vw, 340px" src="{{asset('logos/roller/sage_logo.png')}}">
-	          	    </div>
+	          	    </div> --}}
 	              </div>
 	            </div>
 	          </div>

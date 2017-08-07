@@ -22,9 +22,10 @@
 				</div>
 				<div class="form-group">
 			    <label for="blog_title">Custom URL</label>
-			   
+			   <div class="col-sm-10">
 			    <input class="form-control" id="custom_url" value="{{$service->custom_url or 'Enter a url..'}}" type="text" name="custom_url">
 			    <p class="help-block">Should be unique,without space and all lower caps.</p>
+			    </div>
 			</div>
 				<!-- Textarea http://getbootstrap.com/css/#textarea -->
 				<div class="form-group">

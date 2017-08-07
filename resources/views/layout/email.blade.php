@@ -612,7 +612,7 @@ a.label:hover,a.badge:hover{color:#fff;text-decoration:none;cursor:pointer}
 		<tr>
 			<td align="">
 				
-				{{$body}}
+				{!! $body !!}
 
 			</td>
 		</tr>

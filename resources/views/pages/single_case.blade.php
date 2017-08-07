@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="col-sm-12 text-block">
 				<h2>@if($case->pdf!="")
-					<a href="{{url('case/pdf/download',$case->custom_url)}}" class="btn btn-ghost btn-pill btn-primary btn-nl waves-effect waves-light">Download</a>
+					<a href="{{url('case/pdf/download',$case->id)}}" class="btn btn-ghost btn-pill btn-primary btn-nl waves-effect waves-light">Download</a>
 				@else Insight @endif</h2>
 				<p class="text-gray" style="padding: 10px;">{{$case->description}}</p>
 				

@@ -84,6 +84,7 @@
 				var page_id=$('#page_id').val();
 				formdata=new FormData();
 				formdata.append('title',$('#title').val());
+				formdata.append('custom_url',$('#custom_url').val());
 				formdata.append('short_desc',$('#short_desc').val());
 				formdata.append('long_desc',$('#long_desc').val());
 				formdata.append('category',$('#category').val());

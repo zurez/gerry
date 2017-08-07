@@ -98,6 +98,7 @@
 				var service_id=$('#service_id').val();
 				formdata=new FormData();
 				formdata.append('title',$('#title').val());
+				formdata.append('custom_url',$('#custom_url').val());
 				formdata.append('column1',$('#column1').val());
 				formdata.append('column2',$('#column2').val());
 				formdata.append('footer1',$('#footer1').val());

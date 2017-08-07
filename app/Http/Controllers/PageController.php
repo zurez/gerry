@@ -103,13 +103,13 @@ class PageController extends Controller
     public function show_sector($id="")
     {
         if ($id=="") {
-            $sectors=Sector::all();
+            $sectors=Page::where('category','sector')->get();
             return view('pages.industries')
             ->with('sectors',$sectors)
             ;
         }else{
-            $page=Sector::find($id);
-            $services=Sector::where('id','!=',$id)->get();
+            $page=Page::find($id);
+            $services=Page::where('category','sector')->where('id','!=',$id)->get();
             return view('pages.service')
             ->with('page',$page)
             ->with('services',$services)

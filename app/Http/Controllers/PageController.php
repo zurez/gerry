@@ -90,7 +90,7 @@ class PageController extends Controller
         if ($id=="") {
             return view('pages.all_services');
         }else{
-            $page=Page::find($id);
+            $page=Page::where('custom_url',$id)->first();
             $services=Page::where('category','service')->where('id','!=',$id)->get();
             return view('pages.service')
             ->with('page',$page)
@@ -108,8 +108,8 @@ class PageController extends Controller
             ->with('sectors',$sectors)
             ;
         }else{
-            $page=Page::find($id);
-            $services=Page::where('category','sector')->where('id','!=',$id)->get();
+            $page=Page::where('custom_url',$id)->first();
+            $services=Page::where('category','sector')->where('custom_url','!=',$id)->get();
             return view('pages.service')
             ->with('page',$page)
             ->with('services',$services)
@@ -129,7 +129,7 @@ class PageController extends Controller
             ->with('older',$older)
             ;
         }else{
-            $blog=Blog::find($id);
+            $blog=Blog::where('custom_url',$id)->first();
             return view('pages.blog')
             ->with('blog',$blog)
             ;

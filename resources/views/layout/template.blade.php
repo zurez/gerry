@@ -366,7 +366,7 @@ Student hotel software
 
 			        @foreach($sectors as $s)
 			       	 <li class="menu-item">
-			          <a href="{{url('sector',$s->id)}}">{{$s->title}}</a>
+			          <a href="{{url('sector',$s->custom_url)}}">{{$s->title}}</a>
 			        </li>
 			        @endforeach
 
@@ -384,7 +384,7 @@ Student hotel software
 
 			        @foreach($services as $s)
 			       	 <li class="menu-item">
-			          <a href="{{url('service',$s->id)}}">{{$s->title}}</a>
+			          <a href="{{url('service',$s->custom_url)}}">{{$s->title}}</a>
 			        </li>
 			        @endforeach
 
@@ -493,7 +493,7 @@ Student hotel software
 	        	          </li>
   			        @foreach($sectors as $s)
 			       	 <li class="menu-item">
-			          <a href="{{url('sector',$s->id)}}">{{$s->title}}</a>
+			          <a href="{{url('sector',$s->custom_url)}}">{{$s->title}}</a>
 			        </li>
 			        @endforeach
 	        	        
@@ -510,7 +510,7 @@ Student hotel software
 	        	          </li>
   			        @foreach($services as $s)
 			       	 <li class="menu-item">
-			          <a href="{{url('service',$s->id)}}">{{$s->title}}</a>
+			          <a href="{{url('service',$s->custom_url)}}">{{$s->title}}</a>
 			        </li>
 			        @endforeach
 	        	        
@@ -527,7 +527,7 @@ Student hotel software
 	        	          </li>
 	        	          @foreach($cases as $c)
 	        	          <li class="menu-item">
-	        	            <a href="{{url('case',$c->id)}}">{{$c->title}}</a>
+	        	            <a href="{{url('case',$c->custom_url)}}">{{$c->title}}</a>
 	        	          </li>
 	        	          @endforeach
 	        	        </ul>
@@ -669,7 +669,7 @@ Student hotel software
 		                <ul class="menu">
 		                 @foreach($sectors as $s)
 		                  <li class="menu-item">
-		                    <a href="{{url('sector',$s->id)}}">{{$s->title}}</a>
+		                    <a href="{{url('sector',$s->custom_url)}}">{{$s->title}}</a>
 		                  </li>
 		                 @endforeach
 		                
@@ -693,7 +693,7 @@ Student hotel software
 		                <ul class="menu">
 		                      @foreach($services as $s)
 					       	 <li class="menu-item">
-					          <a href="{{url('service',$s->id)}}">{{$s->title}}</a>
+					          <a href="{{url('service',$s->custom_url)}}">{{$s->title}}</a>
 					        </li>
 					        @endforeach
 
@@ -718,7 +718,7 @@ Student hotel software
         						$date= date("M d, Y ",$s);
 		              ?>
 		              			                <li>
-		                  <a href="{{url('blog',$n->id)}}">{{$n->title}}</a> <span class="post-date">{{$date}}</span>
+		                  <a href="{{url('blog',$n->custom_url)}}">{{$n->title}}</a> <span class="post-date">{{$date}}</span>
 		                </li>
 		              @endforeach
 

@@ -162,6 +162,6 @@ class PageController extends Controller
             // dump($e);
         }
         
-        // return redirect()->back();
+        return redirect()->back();
     }
 }

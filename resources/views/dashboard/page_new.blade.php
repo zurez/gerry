@@ -20,8 +20,9 @@
 				    <p class="help-block">Please enter a descriptive title.</p>
 				  </div>
 				</div>
+
 				<div class="form-group" >
-			    <label for="custom_url">Custom URL</label>
+			    <label for="custom_url" class="control-label col-sm-2">Custom URL</label>
 			   <div class="col-sm-10">
 			    <input class="form-control" id="custom_url" value="{{$page->custom_url or 'Enter a url ..'}}" type="text" name="custom_url">
 			    <p class="help-block">Should be unique,without space and all lower caps.</p>

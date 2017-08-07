@@ -60,7 +60,7 @@ class PageController extends Controller
     	}
     	else{
 
-    		$case=CaseStudies::where('id',$id)->first();
+    		$case=CaseStudies::where('custom_url',$id)->first();
     		return view('pages.single_case')
     		->with('case',$case);
     	}

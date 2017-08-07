@@ -96,7 +96,7 @@
 	                  <ul class="menu">
 	                  @foreach($services as $s)
 	                    <li class="menu-item">
-	                      <a href="{{url('service',$s->id)}}">{{$s->title}}</a>
+	                      <a href="{{url('service',$s->custom_url)}}">{{$s->title}}</a>
 	                    </li>
 	                   @endforeach
 	                  </ul>

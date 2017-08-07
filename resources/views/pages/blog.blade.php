@@ -144,13 +144,13 @@ $user=DB::table('users')->leftJoin('userdetails as ud','ud.user_id','=','users.i
         						$date= date("M d, Y ",$s);
 		              ?>
 				        <div class="post-item">
-				         <a class="post-item-thumb" href="{{url('blog',$n->id)}}">
+				         <a class="post-item-thumb" href="{{url('blog',$n->custom_url)}}">
                   			<img alt="" src="{{asset('blog_images/'.$n->imagefilepath)}}">
                   		</a>
 		                  <div class="post-item-info">
 		                    <span class="post-item-date">{{$date}}</span>
 		                    <h3 class="post-item-title">
-		                       <a href="{{url('blog',$n->id)}}" rel="bookmark">{{$n->title}}</a>
+		                       <a href="{{url('blog',$n->custom_url)}}" rel="bookmark">{{$n->title}}</a>
 		                    </h3>
 		                  </div>
 

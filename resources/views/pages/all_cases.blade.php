@@ -59,7 +59,7 @@
 	                    <a href="#">{{$title}}</a>
 	                  </h3>
 	                  
-	                  <a class="btn btn-sm btn-primary btn-ghost" href="{{url('case',$c->id)}}">View Project</a>
+	                  <a class="btn btn-sm btn-primary btn-ghost" href="{{url('case',$c->custom_url)}}">View Project</a>
 	                </div>
 	              </article>
 	            </div>

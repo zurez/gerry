@@ -59,7 +59,7 @@
 	                  <div class="icon-box-description">
 	                    <p>
 	                      <span class="text-gray">{{$s->short_desc}}.</span><br>
-	                      <a class="btn btn-sm btn-primary btn-link" href="{{url('service',$s->id)}}" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
+	                      <a class="btn btn-sm btn-primary btn-link" href="{{url('service',$s->custom_url)}}" style="padding: 0;">Learn More <i class="material-icons trending_flat"></i></a>
 	                    </p>
 	                  </div>
 	                </div>

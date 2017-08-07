@@ -59,7 +59,7 @@ $user=DB::table('users')->leftJoin('userdetails as ud','ud.user_id','=','users.i
 			              </header>
 
 			              <h3 class="post-title">
-			                <a href="{{url('blog',$n->id)}}">{{$n->title}}</a>
+			                <a href="{{url('blog',$n->custom_url)}}">{{$n->title}}</a>
 			              </h3>
 
 			              <p class="post-excerpt">
@@ -121,7 +121,7 @@ $user=DB::table('users')->leftJoin('userdetails as ud','ud.user_id','=','users.i
         						$date= date("M d, Y ",$s);
 		              ?>
 				            <li>
-			              <a href="{{url('blog',$n->id)}}">{{$n->title}}</a> <span class="post-date">{{$date}}</span>
+			              <a href="{{url('blog',$n->custom_url)}}">{{$n->title}}</a> <span class="post-date">{{$date}}</span>
 			            </li>
 			          @endforeach
 

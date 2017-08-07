@@ -67,7 +67,7 @@
 	                  <p>
 	                    <span class="text-gray">{{$s->short_desc}}</span>
 	                  </p>
-	                  <a class="btn btn-link btn-rounded btn-primary btn-sm" href="{{url('service',$s->id)}}">Learn More</a>
+	                  <a class="btn btn-link btn-rounded btn-primary btn-sm" href="{{url('service',$s->custom_url)}}">Learn More</a>
 	                </div>
 	              </div>
 	            </div>
@@ -342,7 +342,7 @@
 	                    </header>
 
 	                    <h3 class="post-title">
-	                      <a href="{{url('blog',$n->id)}}">{{$n->title}}</a>
+	                      <a href="{{url('blog',$n->custom_url)}}">{{$n->title}}</a>
 	                    </h3>
 
 

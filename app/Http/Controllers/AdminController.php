@@ -91,6 +91,7 @@ class AdminController extends Controller
             $g->phone=$request->phone;
             $g->linkedin=$request->linkedin;
             $g->email=$request->email;
+            $g->forwarding_email=$request->forwarding_email;
             /*Image Handling*/
             $file=$request->file('landing_image');
 
@@ -274,14 +275,18 @@ class AdminController extends Controller
         if ($action=="new" and $id=="") {
             return view('dashboard.service_new')
             ->with('page_title','New Service')
+
             ;
         }else{
             $page=Page::find($id);
+            $custom_url=$page->custom_url;
+            $custom_url="f";
             if (!is_null($page)) {
             return view('dashboard.service_new')
             ->with('page_title','Edit Service')
             ->with('service_id',$id)
             ->with('service',$page)
+            ->with('custom_url',$custom_url)
             ;
             }
         }

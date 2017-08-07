@@ -75,7 +75,7 @@
 			              </div>
 			            </div>
 			          </div>
-			          <img alt=" " src="assets/img/ms-quote-signature-300x115.png">
+			          {{-- <img alt=" " src="assets/img/ms-quote-signature-300x115.png"> --}}
 			        </div>
 			      </div>
 			    </div>

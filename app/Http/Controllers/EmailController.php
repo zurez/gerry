@@ -43,5 +43,13 @@ class EmailController extends Controller
     	return redirect()->back();
     }
     
+    public function forward_email($content,$email)
+    {
+        $body="You have an email from ".$content->name."<br><b>Mail Content</b><br>".$content->message;
+        $subject="You have a new mail on the website.";
+        Mail::send('layout.email',['body'=>$body],function($message) use($email,$subject){
+                $message->to($email)->subject($subject);
+                    });
+    }
 }
 

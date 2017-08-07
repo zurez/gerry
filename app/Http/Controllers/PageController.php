@@ -28,9 +28,9 @@ class PageController extends Controller
         $pdf=CaseStudies::find($case_id);
         if (!is_null($pdf)) {
             $pdf=$pdf->pdf;
-            dump($pdf);
+            // dump($pdf);
             $path=public_path('page_images/'.$pdf);
-            dump($path);
+            // dump($path);
             return response()->download($path);
         }
     }

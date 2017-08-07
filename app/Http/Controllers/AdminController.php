@@ -386,6 +386,7 @@ class AdminController extends Controller
          
             $c->title=$title;
             $c->description=$r->description;
+            $c->custom_url=$r->custom_url;
             $i=0;
             $time=time();
             $filepath=public_path('page_images');

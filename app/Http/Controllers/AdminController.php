@@ -280,7 +280,7 @@ class AdminController extends Controller
         }else{
             $page=Page::find($id);
             $custom_url=$page->custom_url;
-            $custom_url="f";
+         
             if (!is_null($page)) {
             return view('dashboard.service_new')
             ->with('page_title','Edit Service')
@@ -355,6 +355,7 @@ class AdminController extends Controller
             $page->title=$title;
             $page->long_desc=$long_desc;
             $page->category=$category;
+            $page->custom_url=$r->custom_url;
             // $page->foot2=$footer2;
             $page->user_id=Auth::user()->id;
             $page->deleted_at=Null;

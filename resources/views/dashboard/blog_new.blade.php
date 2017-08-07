@@ -10,6 +10,12 @@
             <p class="help-block">Should be short and concise.</p>
         </div>
         <div class="form-group" style="position: static;">
+            <label for="blog_title">Custom URL</label>
+           
+            <input class="form-control" id="custom_url" value="{{$custom_url or 'Enter a url for your blog..'}}" type="text">
+            <p class="help-block">Should be unique,without space and all lower caps.</p>
+        </div>
+        <div class="form-group" style="position: static;">
          	<div id="summernote">{!! $content or 'Write a new blog' !!}</div>
         </div>
         <div class="checkbox" style="position: static;">
@@ -45,6 +51,7 @@
 				var description=m.innerHTML;
 				
 				var title=$('#blog_title').val();
+				var custom_url=$('#custom_url').val();
 				var publish=0;
 				var imagefile=$('#blog_image')[0].files[0];
 
@@ -58,6 +65,7 @@
 				formdata.append('published',publish);
 				formdata.append('imagefile',imagefile);
 				formdata.append('description',description);
+				formdata.append('custom_url',custom_url);
 				formdata.append('_token',"{{csrf_token()}}");
 				if (blog_id==0) {
 	

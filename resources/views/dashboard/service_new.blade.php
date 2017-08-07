@@ -20,6 +20,12 @@
 				    <p class="help-block">The title of your service.</p>
 				  </div>
 				</div>
+				<div class="form-group" style="position: static;">
+			    <label for="blog_title">Custom URL</label>
+			   
+			    <input class="form-control" id="custom_url" value="{{$service->custom_url or 'Enter a url..'}}" type="text" name="custom_url">
+			    <p class="help-block">Should be unique,without space and all lower caps.</p>
+			</div>
 				<!-- Textarea http://getbootstrap.com/css/#textarea -->
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="column1">Column 1</label>

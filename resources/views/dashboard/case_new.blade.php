@@ -19,7 +19,12 @@ $ignore=["created_at","deleted_at","id","updated_at","landing_image"];
     
   </div>
 </div>
-
+<div class="form-group" style="position: static;">
+    <label for="blog_title">Custom URL</label>
+   
+    <input class="form-control" id="custom_url" value="{{$case->custom_url or 'Enter a url f..'}}" type="text" name="custom_url">
+    <p class="help-block">Should be unique,without space and all lower caps.</p>
+</div>
 <!-- Textarea -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="description">Company's Description</label>

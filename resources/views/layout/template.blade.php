@@ -357,8 +357,21 @@ Student hotel software
 			      <a href="{{url('/')}}">Home<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
 			    </li>
 
-			    <li class="menu-item ">
+			    <li class="menu-item menu-item-has-children">
 			      <a href="{{url('sector')}}">Sector<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			    <ul class="sub-menu">
+			        <li class="menu-item">
+			          <a href="{{url('sector')}}">All Sectors<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
+			        </li>
+
+			        @foreach($sectors as $s)
+			       	 <li class="menu-item">
+			          <a href="{{url('sector',$s->id)}}">{{$s->title}}</a>
+			        </li>
+			        @endforeach
+
+
+			      </ul>
 			    </li>
 
 			    <li class="menu-item menu-item-has-children">
@@ -472,8 +485,20 @@ Student hotel software
 	        	        <a href="{{url('/')}}">Home</a>
 	        	      </li>
 
-	        	      <li class="menu-item ">
+	        	      <li class="menu-item menu-item-has-children">
 	        	        <a href="{{url('sector')}}">Sector</a>
+	        	         <ul class="sub-menu">
+	        	          <li class="menu-item">
+	        	            <a href="{{url('sector')}}">All Sectors</a>
+	        	          </li>
+  			        @foreach($sectors as $s)
+			       	 <li class="menu-item">
+			          <a href="{{url('sector',$s->id)}}">{{$s->title}}</a>
+			        </li>
+			        @endforeach
+	        	        
+	        	          
+	        	        </ul>
 	        	      </li>
 
 	        	      <li class="menu-item menu-item-has-children">
@@ -644,7 +669,7 @@ Student hotel software
 		                <ul class="menu">
 		                 @foreach($sectors as $s)
 		                  <li class="menu-item">
-		                    <a href="{{url('sector')}}">{{$s->title}}</a>
+		                    <a href="{{url('sector',$s->id)}}">{{$s->title}}</a>
 		                  </li>
 		                 @endforeach
 		                

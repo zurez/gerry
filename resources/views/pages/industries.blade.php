@@ -50,7 +50,7 @@
 	              <img alt="{{$s->title}}" src="{{asset('page_images/'.$s->logo)}}">
 	              <div class="text-block margin-top-1x">
 	                <h4 style="text-align: center;">
-	                  {{$s->title}}
+	                  <a href="{{url('sector',$s->id)}}">{{$s->title}}</a>
 	                </h4>
 
 	                <p style="text-align: center;">

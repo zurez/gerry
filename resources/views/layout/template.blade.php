@@ -16,7 +16,257 @@
 		<link rel="apple-touch-icon-precomposed" href="{{asset('assets/img/favicon/cropped-favicon-180x180.png')}}" />
 		<meta name="msapplication-TileImage" content="{{asset('assets/img/favicon/cropped-favicon-270x270.png')}}" />
 		<meta name="Description" content="Cognitive Research is an enterprise that supports four basic services, new gathering service, business development for technology companies opening new markets either geographically or in new business sector, financial platform services for small businesses and acquisition activities in the SME sector.">
-		<meta name="Keywords" content="consulting,Acquisitions,Value-Add-Technology,News Monitoring & Curation,funding,united kingdom,finance,service,analytics,hotel, student,accomodations,business">
+		<meta name="Keywords" content="consulting,Acquisitions,Value-Add-Technology,News Monitoring & Curation,funding,united kingdom,finance,service,analytics,hotel, student,accomodations,business,Invoice Finance,Trade Finance,Spot Finance,Asset Finance,Property Finance,Cashflow Finance,Vat Finance,Wages Finance,
+Secured lending,
+Unsecured lending,
+Overdraft,
+Revolving credit facility,
+
+Collateralise lending,
+
+Commercial lending,
+
+Small business lending,
+
+SME loans,
+
+Survaider,
+
+Customer experience management,
+
+CX,
+
+CXM,
+
+VoC,
+
+Voice of the customer,
+
+CEM,
+
+Customer Review management,
+
+Client review management,
+
+Digital feedbackIn,
+
+Moment,
+
+Medallia,
+
+NICE,
+
+Qualtrics,
+
+Satmetrix,
+
+Verint,
+
+SMG management,
+
+Market research,
+
+CFM platforms,
+
+TripAdvisor reviews,
+
+Booking.com reviews,
+
+Managing reviews,
+
+AI in CFM,
+
+AI in CXM,
+
+AI in CUM,
+
+AI in CX,
+
+NPS in customer review management,
+
+NPS,
+
+Net Promoter Score,
+
+Consulting,
+
+Strategic consulting,
+
+Advisory,
+
+Business development,
+
+Ebook development,
+
+Infographic creation,
+
+Marketing automation,
+
+Campaign management,
+
+Acquisitions,
+
+Funding business acquisitions,
+
+Succession management,
+
+Retirement sale,
+
+Selling your business,
+
+Buying businesses,
+
+Selling your sme,
+
+SME sales,
+
+SME purchases,
+
+Distress business sales,
+
+Tower growth management,
+
+Preferential shares,
+
+Business disposal,
+
+Business acquisition,
+
+Succession planning,
+
+Commercial business sales,
+
+Commercial business purchase,
+
+Vendor finance,
+
+Structured finance in business purchase,
+
+GDPR,
+
+GDPR compliant,
+
+Put your customers first,
+
+Use encrypted channels for sending information,
+
+Right to data portability,
+
+GDPR for hotels,
+
+GDPR for Accommodation providers,
+
+GDPR for hotel groups,
+
+GDPR for hotel chains,
+
+GDPR for private operators,
+
+Right to data portability,
+
+Right to forget,
+
+Data processors,
+
+Data collectors,
+
+4% fine,
+
+May 2018,
+
+GDPR outside Europe,
+
+GDPR and Brexit,
+
+GDPR and unstructured data,
+
+GDPR and structured data,
+
+Value Added Reseller,
+
+VaR,
+
+SaaS solutions,
+
+Xero Ecosystems,
+
+Xero intergrations,
+
+Xero Add-ons,
+
+QB solutions,
+
+Quick Books,
+
+Exact,
+
+Sage,
+
+EaaS,
+
+CDP,
+
+Customer Data Platform,
+
+Smart Cities,
+
+Configure-Price- quote,
+
+CPQ,
+
+FPX,
+
+Quotation software,
+
+Omni channel sales,
+
+Hetras,
+
+PMS,
+
+Property management systems,
+
+Mobile pms,
+
+Mobile property management system,
+
+UK partnership in technology,
+
+Hotel software,
+
+CCh,
+
+Iris,
+
+Digita,
+
+Receipt bank,
+
+CXM in health care,
+
+CX in health care,
+
+Cxm in Food technology,
+
+Cx in food technology,
+
+CXM in restaurants,
+
+CX in restaurants,
+
+PMS for serviced apartments,
+
+PMS for student hotels,
+
+Cloud accounting,
+
+Student hotels,
+
+Student hotel software
+
+ 
+
+ ">
 		<meta charset="utf-8" name="Author" content="https://github.com/zurez">
 
 		<!-- Google Font Import -->

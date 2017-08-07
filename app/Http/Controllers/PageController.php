@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Models\Blog;
 use App\Models\Page;
+use App\Models\Sector;
 use App\Models\Cases as CaseStudies;
 use App\Models\UserContact;
 use Session;
@@ -91,6 +92,24 @@ class PageController extends Controller
         }else{
             $page=Page::find($id);
             $services=Page::where('category','service')->where('id','!=',$id)->get();
+            return view('pages.service')
+            ->with('page',$page)
+            ->with('services',$services)
+
+            ;
+        }
+    }
+
+    public function show_sector($id="")
+    {
+        if ($id=="") {
+            $sectors=Sector::all();
+            return view('pages.industries')
+            ->with('sectors',$sectors)
+            ;
+        }else{
+            $page=Sector::find($id);
+            $services=Sector::where('id','!=',$id)->get();
             return view('pages.service')
             ->with('page',$page)
             ->with('services',$services)

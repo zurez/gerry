@@ -150,6 +150,9 @@ class PageController extends Controller
             $n->email=$r->email;
             $n->message=$r->message;
             $n->save();
+            $femail=DB::table('global')->pluck('forwarding_email');
+            $e=new EmailController;
+            $e->($r,$femail);
             Session::flash('flash_message','Your message has been sent. Thank you for contacting');
         } catch (\Exception $e) {
             

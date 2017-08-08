@@ -231,6 +231,7 @@ class AdminController extends Controller
 	    	$content=$r->content;
     		$title=$r->title;
             $published=$r->published;
+
             $file = $r->file('imagefile');
             if ($r->has('blog_id')) {
                 $blog=Blog::find($r->blog_id);
@@ -252,7 +253,7 @@ class AdminController extends Controller
             $blog->content=$content;
             $blog->title=$title;
             $blog->published=1;
-            
+            $blog->custom_url=$r->custom_url;
             $blog->description=$r->description;
             $blog->user_id=Auth::user()->id;
             $blog->save();

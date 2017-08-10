@@ -283,6 +283,12 @@
 			  </section>
  --}} 
 			{{--  --}}
+			<section class="fw-section layout-full padding-top-3x padding-bottom-3x " style="background-color: #3C4252">
+				<div class="row">
+					<img src="{{asset('logos/work_trans.png')}}">
+				</div>
+			 </section>
+
  		  	<section class="fw-section layout-full padding-top-3x padding-bottom-3x" data-offset-top="-10" id="tickets" style="background-color: #000;">
 			    <div class="container-fluid">
 	          <h2 class="block-title text-light text-center">

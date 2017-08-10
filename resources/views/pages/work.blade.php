@@ -237,7 +237,7 @@
 	        </div>
 			  </section>
 			{{--WORK SO FAR  --}}
-			 <section class="fw-section padding-top-2x padding-bottom-1x" style="background-color:#FAEBD7;">
+{{-- 			<section class="fw-section padding-top-2x padding-bottom-1x" style="background-color:#FAEBD7;">
 			    <div class="container">
 	          <h2 class="block-title text-dark text-center">
 	            Our Work So Far{{-- <small class="h4">Praesent convallis nibh in odio pellentesque aliquam, vestibulum ipsum felis, porttitor.</small> --}}
@@ -249,7 +249,7 @@
 				<li>NZW based operational risk software marketed throughout the world over a three-year period before being acquired.</li>
 				<li>Business plan development to raise capital for new restaurant.</li>
 				<li>    Business plan development to raise capital for a hotel and conference centre.
-</li>
+{{-- </li>
 				<li>Business plan development to raise capital for a cloud integration company.</li>
 				<li>Business plan development to raise capital for an iBPM/CRM solution.</li>
 				<li>Sales & marketing activity and product development of a NOPCommerce based quotation solution.</li>
@@ -281,7 +281,7 @@
 	          </ul>
 	        </div>
 			  </section>
-
+ --}} 
 			{{--  --}}
  		  	<section class="fw-section layout-full padding-top-3x padding-bottom-3x" data-offset-top="-10" id="tickets" style="background-color: #000;">
 			    <div class="container-fluid">

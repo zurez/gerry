@@ -133,6 +133,10 @@ class AdminController extends Controller
                 ->with('page_title','New Blog')
             ;
     	}
+        elseif ($action=="delete") {
+            Blog::destroy($id);
+            return "The blog has been deleted";
+        }
         elseif ($action =="all") {
             return $this->get_blog();
         }

@@ -238,9 +238,9 @@
 			  </section>
 			{{--WORK SO FAR  --}}
 
-			<section class="fw-section layout-full padding-top-3x padding-bottom-3x " style="background-color: #3C4252">
+			<section class="fw-section layout-full padding-top-3x padding-bottom-3x " >
 				<div class="row">
-					<img src="{{asset('logos/work_trans.png')}}">
+					<img src="{{asset('logos/work.png')}}" class="single-image">
 				</div>
 			 </section>
 

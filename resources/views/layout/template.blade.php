@@ -577,7 +577,7 @@ Student hotel software
 		          <!-- Header Toolbar, search, offcanvas toggle etc -->
 		          <div class="toolbar">
 		          	<!-- SIte Search Toggle -->
-		            <a class="site-search-btn tool" href="#"><i class="material-icons search"></i></a>
+		           {{--  <a class="site-search-btn tool" href="#"><i class="material-icons search"></i></a> --}}
 
 		          
 

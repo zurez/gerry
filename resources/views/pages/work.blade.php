@@ -236,8 +236,54 @@
 	          </div>
 	        </div>
 			  </section>
+			{{--WORK SO FAR  --}}
+			 <section class="fw-section padding-top-2x padding-bottom-1x" style="background-color:#FAEBD7;">
+			    <div class="container">
+	          <h2 class="block-title text-dark text-center">
+	            Our Work So Far{{-- <small class="h4">Praesent convallis nibh in odio pellentesque aliquam, vestibulum ipsum felis, porttitor.</small> --}}
+	          </h2>
+	          <ul class="list-unordered list-bordered text-normal text-bold" style="font-weight:bolder;">
+	          	<li> US based Asset Liability Management modelling software marketed throughout Europe for three years before the company was acquired.
+				</li>
+				<li>US based in-memory multi-dimensional reporting tool marketed in the UK subsequently acquired.</li>
+				<li>NZW based operational risk software marketed throughout the world over a three-year period before being acquired.</li>
+				<li>Business plan development to raise capital for new restaurant.</li>
+				<li>    Business plan development to raise capital for a hotel and conference centre.
+</li>
+				<li>Business plan development to raise capital for a cloud integration company.</li>
+				<li>Business plan development to raise capital for an iBPM/CRM solution.</li>
+				<li>Sales & marketing activity and product development of a NOPCommerce based quotation solution.</li>
+				<li>    Sales & marketing activity for an Indian based Hospitality PMS .
+</li>
+				<li>    Research into the ‘student hotel’ market in preparation for marketing campaign for a Germany PMS company.
+</li>
+				<li>Initial partner and marketer for a large iBPM company prior to them setting up an office in the UK.</li>
+				<li>Marketing campaign for a cloud based bookkeeping solution.</li>
+				<li>Marketing campaign for a SAP based solution.Web site creation for a specialist silver trading company.</li>
+				<li>    Business process mapping for a start-up water treatment company.
+</li>
+				<li>    Systems architect on banking software.
+</li>
 
-			 		  <section class="fw-section layout-full padding-top-3x padding-bottom-3x" data-offset-top="-10" id="tickets" style="background-color: #000;">
+				<li>Product Director for a risk management solution.</li>
+				<li>Founder and product designer for an operational risk management solution. </li>
+				<li>Marketing campaign for an applied cloud based educational service to accountants.</li>
+				<li>Marketing campaign for an accountant’s onboarding solution.</li>
+				<li>Building Ecosystems around Xero and Receipt Bank cloud solutions.</li>
+				<li>Feasibility study into a Configure-Price-Quote solution for professional services.</li>
+				<li>CXM market review and building a marketing strategy for the introduction of a VC backed start-up (Cloud/SaaS/AI/NPS)</li>
+
+				<li>Infographic creation for cloud based accountants, profitability forecasting, real-time bookkeeping, student hotels, CXM, Applied cloud educational concept.</li>
+				<li>Ebook and articles on cloud based accounting practices.</li>
+				<li>Ebook on CXM.</li>
+				<li>   Acquisition planning and implementation for four companies with average turnover of £1.5m</li>
+				
+	          </ul>
+	        </div>
+			  </section>
+
+			{{--  --}}
+ 		  	<section class="fw-section layout-full padding-top-3x padding-bottom-3x" data-offset-top="-10" id="tickets" style="background-color: #000;">
 			    <div class="container-fluid">
 	          <h2 class="block-title text-light text-center">
 	            What We Charge<small class="h4">We work on either an hourly rate, fixed fee or revenue split plus retainer basis.</small>

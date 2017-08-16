@@ -1,5 +1,13 @@
 @extends('layout.template')
 @section('content')
+<style type="text/css">
+	.text-dark{
+		color:white;
+	}
+	.white{
+		color: white !important;
+	}
+</style>
  <section class="fw-section bg-parallax padding-top-10x padding-bottom-10x full-height" data-parallax-speed="0.4" data-parallax-type="scale" id="home" style="background-image: url({{asset('assets/img/funding.jpeg')}}); height: 100vh;">
 		      <div class="container">
 		        <div class="row">
@@ -36,7 +44,7 @@
               <div class="col-sm-4">
                 <div class="icon-box icon-box-vertical icon-box-dark icon-box-type-image bg-no text-center" data-aos="zoom-in">
                   <div class="icon-box-icon">
-                    <img alt="" src="assets/img/app-feature-1.png">
+                    <img alt="" src="{{asset('assets/img/credit.png')}}">
                   </div>
 
                   <h3 class="icon-box-title">
@@ -54,7 +62,7 @@
               <div class="col-sm-4">
                 <div class="icon-box icon-box-vertical icon-box-dark icon-box-type-image bg-no text-center" data-aos="zoom-in">
                   <div class="icon-box-icon">
-                    <img alt="" src="assets/img/app-feature-2.png">
+                    <img alt="" src="{{asset('assets/img/form.png')}}">
                   </div>
 
                   <h3 class="icon-box-title">
@@ -72,7 +80,7 @@
               <div class="col-sm-4">
                 <div class="icon-box icon-box-vertical icon-box-dark icon-box-type-image bg-no text-center" data-aos="zoom-in">
                   <div class="icon-box-icon">
-                    <img alt="" src="assets/img/app-feature-3.png">
+                    <img alt="" src="{{asset('assets/img/advisor.png')}}">
                   </div>
 
                   <h3 class="icon-box-title">
@@ -89,27 +97,27 @@
             </div>
           </div>
 		    </section>
-		     <section class="fw-section padding-top-3x padding-bottom-2x" data-offset-top="180" style="background-image: url(assets/img/cw-bg-1.jpg)">
+		     <section class="fw-section padding-top-3x padding-bottom-2x" data-offset-top="180" style="background-image: url({{asset('assets/img/funding2.jpeg')}})">
 			    <div class="container">
 			      <div class="row">
 			        <div class="col-lg-8 col-md-9 col-sm-10">
 			          <h2 class="block-title text-dark text-left mobile-center">
-			            The Cogntive Advantage
+			            The Cognitive Advantage
 			          </h2>
 
 			          <div class="row">
 			            <div class="col-sm-6">
 			              <ul class="list-icon list-bordered text-lg text-dark">
 			                <li>
-			                  <i class="material-icons check_box text-primary"></i>Adpatible<small>Cognitive Research works with SME’s to help grow their business we are professional corporate advisors and as such introducers to a range of lending institutions.</small>
+			                  <i class="material-icons check_box text-primary"></i>Adpatible<small class="white">Cognitive Research works with SME’s to help grow their business we are professional corporate advisors and as such introducers to a range of lending institutions.</small>
 			                </li>
 
 			                <li>
-			                  <i class="material-icons check_box text-primary"></i>Compatible<small> Lending is based on the borrower’s ability to service the loan payments, the type of security available if any, business expertise, together with credit checks on the individuals involved in the application, poor or adverse credit will be considered .</small>
+			                  <i class="material-icons check_box text-primary"></i>Compatible<small class="white"> Lending is based on the borrower’s ability to service the loan payments, the type of security available if any, business expertise, together with credit checks on the individuals involved in the application, poor or adverse credit will be considered .</small>
 			                </li>
 
 			                <li>
-			                  <i class="material-icons check_box text-primary"></i>Dedicated<small>A dedicated professional advisor will manage your application and help develop the best possible business case and associated documentation to assist in the loan application process.</small>
+			                  <i class="material-icons check_box text-primary"></i>Dedicated<small class="white">A dedicated professional advisor will manage your application and help develop the best possible business case and associated documentation to assist in the loan application process.</small>
 			                </li>
 			              </ul>
 			            </div>
@@ -117,11 +125,11 @@
 			            <div class="col-sm-6">
 			              <ul class="list-icon list-bordered text-lg text-dark">
 			                <li>
-			                  <i class="material-icons check_box text-primary"></i>Speciazilation<small>We specialise in lending transactions over £75,000 that are not property related.</small>
+			                  <i class="material-icons check_box text-primary"></i>Speciazilation<small class="white">We specialise in lending transactions over £75,000 that are not property related.</small>
 			                </li>
 
 			                <li>
-			                  <i class="material-icons check_box text-primary"></i>Security<small>We can complete rapid eligibility checks and identify possible source of funding in a matter of minutes without leaving a credit application footprint.</small>
+			                  <i class="material-icons check_box text-primary"></i>Security<small class="white">We can complete rapid eligibility checks and identify possible source of funding in a matter of minutes without leaving a credit application footprint.</small>
 			                </li>
 			              </ul>
 			            </div>

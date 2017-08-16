@@ -23,6 +23,12 @@ class PageController extends Controller
         ->with('sectors',$sectors)
         ;
     }
+
+    public function show_funding()
+    {
+        return view('pages.funding');
+    }
+
     public function download_pdf($case_id)
     {
         $pdf=CaseStudies::find($case_id);

@@ -60,3 +60,4 @@ Route::get('contact','PageController@show_contact');
 Route::post('contactus','PageController@save_contact');
 Route::get('work','PageController@show_work');
 Route::get('case/pdf/download/{id}','PageController@download_pdf');
+Route::get('funding','PageController@show_funding');

@@ -144,25 +144,25 @@
 			    <div class="container">
 	          <hr class="hr-solid hr-primary" style="border-top-color: ; border-top-width: 1px; opacity: 0.25;">
 
-	          <h2 class="block-title text-dark text-right padding-top-2x mobile-center">
-	            Amenities
+	          <h2 class="block-title  padding-top-2x mobile-center">
+	            Products Offered <small>Some of the products Capitalise offers include:</small>
 	          </h2>
 
 	          <div class="row">
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/cw-icon-05.png">
+	                  <img alt="" src="{{asset('assets/img/capitalise/asset.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Unlimited Access
+	                    Asset Finance
 	                  </h3>
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut, sodales orci.</span>
+	                      <span class="text-gray">Fund any asset, from telephones to forklift trucks, through asset finance.</span>
 	                    </p>
 	                  </div>
 	                </div>
@@ -172,17 +172,17 @@
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/cw-icon-07.png">
+	                  <img alt="" src="{{asset('assets/img/capitalise/invoice.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Fast Internet
+	                    Invoice Finance
 	                  </h3>
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut, sodales orci.</span>
+	                      <span class="text-gray">f you invoice other businesses, use your invoices to get funding.</span>
 	                    </p>
 	                  </div>
 	                </div>
@@ -197,12 +197,12 @@
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Conference Rooms
+	                    Merchant Cash Advance
 	                  </h3>
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut, sodales orci.</span>
+	                      <span class="text-gray">Use your credit card transactions to get funding.</span>
 	                    </p>
 	                  </div>
 	                </div>
@@ -217,12 +217,12 @@
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Online Memeber Base
+	                    Trade finance
 	                  </h3>
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut, sodales orci.</span>
+	                      <span class="text-gray">Pay for goods based on an order using trade finance.</span>
 	                    </p>
 	                  </div>
 	                </div>
@@ -239,12 +239,12 @@
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Printing Galore
+	                    Working Capital
 	                  </h3>
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">In cursus sit amet metus a fermentum. Sed ornare metus ut elit placerat sodales. Donec et mattis lectus.</span>
+	                      <span class="text-gray">Get a working capital loan to finance every day operations.</span>
 	                    </p>
 	                  </div>
 	                </div>
@@ -259,12 +259,12 @@
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Physical Mailbox
+	                    Property Finance
 	                  </h3>
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">In cursus sit amet metus a fermentum. Sed ornare metus ut elit placerat sodales. Donec et mattis lectus.</span>
+	                      <span class="text-gray">Get access to bridging loans, development and commercial finance.</span>
 	                    </p>
 	                  </div>
 	                </div>
@@ -291,7 +291,7 @@
 	              </div>
 	            </div>
 
-	            <div class="col-lg-3 col-md-3 col-sm-6">
+	           {{--  <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
 	                  <img alt="" src="assets/img/cw-icon-08.png">
@@ -309,7 +309,7 @@
 	                  </div>
 	                </div>
 	              </div>
-	            </div>
+	            </div --}}>
 	          </div>
 			    </div>
 			  </section>

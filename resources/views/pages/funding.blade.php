@@ -152,7 +152,7 @@
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="{{asset('assets/img/capitalise/asset.png')}}">
+	                  <img alt="" src="{{asset('assets/img/asset.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
@@ -172,7 +172,7 @@
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="{{asset('assets/img/capitalise/invoice.png')}}">
+	                  <img alt="" src="{{asset('assets/img/invoice.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
@@ -192,7 +192,7 @@
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/cw-icon-04.png">
+	                  <img alt="" src="{{asset('assets/img/cash.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
@@ -212,12 +212,12 @@
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/cw-icon-02.png">
+	                  <img alt="" src="{{asset('assets/img/trading.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Trade finance
+	                    Trade Finance
 	                  </h3>
 
 	                  <div class="icon-box-description">
@@ -234,7 +234,7 @@
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/cw-icon-03.png">
+	                  <img alt="" src="{{asset('assets/img/working.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
@@ -254,7 +254,7 @@
 	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/cw-icon-01.png">
+	                  <img alt="" src="{{asset('assets/img/property.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
@@ -271,7 +271,7 @@
 	              </div>
 	            </div>
 
-	            <div class="col-lg-3 col-md-3 col-sm-6">
+	        {{--     <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
 	                  <img alt="" src="assets/img/cw-icon-06.png">
@@ -289,7 +289,7 @@
 	                  </div>
 	                </div>
 	              </div>
-	            </div>
+	            </div> --}}
 
 	           {{--  <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
@@ -313,12 +313,69 @@
 	          </div>
 			    </div>
 			  </section>
+			  {{-- Capitalise partner --}}
+			      <section class="fw-section layout-full section-no-gap padding-top-3x" data-offset-top="180">
+		      <div class="container-fluid">
+		        <div class="row">
+		          <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0" data-aos="fade-right">
+		            <div class="row vc_custom_1476452768081">
+		              <div class="col-sm-12 mobile-center">
+		                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		                  <div class="wpb_wrapper">
+		                    <div class="padding-top-4x visible-lg visible-md">
+		                    </div>
+		                  </div>
+		                </div>
 
-			  <section class="fw-section layout-full section-no-gap" data-offset-top="180">
-			    <div class="container-fluid">
+		                <h2 class="block-title text-dark text-left mobile-center" style="color: black">
+		                  We have parterned with Capitalise<small class="h4">Find the right funding for your business</small>
+		                </h2>
+
+		                <div class="text-block padding-bottom-1x">
+		                  <p>
+		                    <span class="text-gray">Cognitive Research has partnered with Capitalise to make it easy for businesses to access funding. Capitalise created a platform where businesses can find, compare and select the right lender in less than 3 minutes.  Not only will you find lenders who specialise in your industry but you’ll also find lenders most likely to give you an offer.</span>
+		                  </p>
+		                </div>
+		                <a class="market-btn btn-appstore" href="#"><span>Visit us at</span><img src="{{asset('assets/img/capitalise.png')}}"></a>
+		                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		                  <div class="wpb_wrapper">
+		                    <div class="padding-bottom-3x visible-xs">
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+
+		          <div class="col-sm-6" data-aos="fade-left">
+		            <img alt="" data-aos="" src="{{asset('assets/img/rocketman.png')}}">
+		          </div>
+		        </div>
+		      </div>
+		    </section>
+
+		    <section class="fw-section layout-full section-no-gap vc_custom_1476466696938" data-offset-top="180">
+		      <div class="container-fluid">
+          	<hr class="hr-solid hr-primary" data-aos="none" style="border-top-color: ; border-top-width: 1px; opacity: 0.25;">
+		      </div>
+		    </section>
+			  {{-- END --}}
+			  {{-- Lender --}}
+			  <section class="fw-section padding-top-3x padding-bottom-3x" data-offset-top="82" id="clients">
+			    <div class="container">
 			      <div class="row">
 			        <div class="col-sm-12">
-			          <img alt="" data-aos="" src="assets/img/cw-people.jpg">
+			          <h2 class="block-title text-dark text-center" style="color: black;">
+			            Lenders we have worked with
+			          </h2>
+
+			          <div class="row">
+			            <div class="col-sm-12 col-xs-12">
+			              <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{asset('assets/img/lenders.png')}}">
+			            </div>
+
+			          
+			          </div>
 			        </div>
 			      </div>
 			    </div>

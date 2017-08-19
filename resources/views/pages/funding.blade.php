@@ -20,11 +20,11 @@
 		                  </h1>
 
 		                  <h1>
-		                    <span class="text-light opacity-75">Find the right finance or your business</span>
+		                    <span class="text-light opacity-75">Find the right finance for your business</span>
 		                  </h1>
 
 		                  <h5 class="p1">
-		                    <span class="s1 text-light opacity-50">We had the opportunity for growth and needed to find appropriate finance, Capitilise’s single application really helped speed up the process.</span>
+		                    <span class="s1 text-light opacity-50">“We had the opportunity for growth and needed to find appropriate finance, Capitilise’s single application really helped speed up the process.” MD - Medical Distribution Company</span>
 		                  </h5>
 		                </div>
 		              </div>
@@ -182,7 +182,7 @@
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">f you invoice other businesses, use your invoices to get funding.</span>
+	                      <span class="text-gray">If you invoice other businesses, use your invoices to get funding.</span>
 	                    </p>
 	                  </div>
 	                </div>
@@ -309,7 +309,7 @@
 	                  </div>
 	                </div>
 	              </div>
-	            </div --}}>
+	            </div> --}}
 	          </div>
 			    </div>
 			  </section>
@@ -336,7 +336,7 @@
 		                    <span class="text-gray">Cognitive Research has partnered with Capitalise to make it easy for businesses to access funding. Capitalise created a platform where businesses can find, compare and select the right lender in less than 3 minutes.  Not only will you find lenders who specialise in your industry but you’ll also find lenders most likely to give you an offer.</span>
 		                  </p>
 		                </div>
-		                <a class="market-btn btn-appstore" href="#"><span>Visit us at</span><img src="{{asset('assets/img/capitalise.png')}}"></a>
+		                <a class="market-btn btn-appstore" href="https://capitalise.com/partners/cognitive-research" target="_blank"><span>Visit us at</span><img src="{{asset('assets/img/capitalise.png')}}"></a>
 		                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
 		                  <div class="wpb_wrapper">
 		                    <div class="padding-bottom-3x visible-xs">
@@ -366,7 +366,7 @@
 			      <div class="row">
 			        <div class="col-sm-12">
 			          <h2 class="block-title text-dark text-center" style="color: black;">
-			            Lenders we have worked with
+			            We work with a panel of over 80 Lenders including: 
 			          </h2>
 
 			          <div class="row">
@@ -375,6 +375,55 @@
 			            </div>
 
 			          
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </section>
+
+			    <section class="fw-section layout-full section-no-gap" data-offset-top="82" id="contacts">
+			    <div class="container-fluid">
+			      <div class="row" style="background-color: #f5f5f5;">
+			        <div class="col-sm-6">
+			        	<div class="text-block padding-bottom-1x">
+			       		<p class="text-gray">Funding success requires more than just completing an application. You’ll need to provide information that is easily understood and attractive to lenders. We can support you in all stages of the funding process and position your company in the best possible light for securing finance. </p>
+			       		</div>
+			        </div>
+
+			        <div class="col-sm-6" style="padding: 5% 5% !important;">
+			          <div class="row split-section">
+			            <div class="col-sm-12">
+			              <div class="text-block">
+			                <h2>
+			                  We can help!
+			                </h2>
+			              </div>
+
+			              <div class="contacts-tile custom-contacts">
+			                <div class="contacts-tile-body">
+			                  <div class="contacts-tile-country">
+			                    <span class="country-flag"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIuMDAyIDUxMi4wMDIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMi4wMDIgNTEyLjAwMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM0MTQ3OUI7IiBkPSJNNTAzLjE3Miw0MjMuNzI1SDguODI4Yy00Ljg3NSwwLTguODI4LTMuOTUzLTguODI4LTguODI4Vjk3LjEwNGMwLTQuODc1LDMuOTUzLTguODI4LDguODI4LTguODI4ICBoNDk0LjM0NWM0Ljg3NSwwLDguODI4LDMuOTUzLDguODI4LDguODI4djMxNy43OTNDNTEyLDQxOS43NzIsNTA4LjA0Nyw0MjMuNzI1LDUwMy4xNzIsNDIzLjcyNXoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0Y1RjVGNTsiIGQ9Ik01MTIsOTcuMTA0YzAtNC44NzUtMy45NTMtOC44MjgtOC44MjgtOC44MjhoLTM5LjQ5NWwtMTYzLjU0LDEwNy4xNDdWODguMjc2aC04OC4yNzZ2MTA3LjE0NyAgTDQ4LjMyMiw4OC4yNzZIOC44MjhDMy45NTMsODguMjc2LDAsOTIuMjI5LDAsOTcuMTA0djIyLjgzMWwxNDAuMzA5LDkxLjkyN0gwdjg4LjI3NmgxNDAuMzA5TDAsMzkyLjA2NnYyMi44MzEgIGMwLDQuODc1LDMuOTUzLDguODI4LDguODI4LDguODI4aDM5LjQ5NWwxNjMuNTQtMTA3LjE0N3YxMDcuMTQ3aDg4LjI3NlYzMTYuNTc4bDE2My41NCwxMDcuMTQ3aDM5LjQ5NSAgYzQuODc1LDAsOC44MjgtMy45NTMsOC44MjgtOC44Mjh2LTIyLjgzMWwtMTQwLjMwOS05MS45MjdINTEydi04OC4yNzZIMzcxLjY5MUw1MTIsMTE5LjkzNVY5Ny4xMDR6Ii8+CjxnPgoJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGNEI1NTsiIHBvaW50cz0iNTEyLDIyOS41MTggMjgyLjQ4MywyMjkuNTE4IDI4Mi40ODMsODguMjc2IDIyOS41MTcsODguMjc2IDIyOS41MTcsMjI5LjUxOCAwLDIyOS41MTggICAgMCwyODIuNDgzIDIyOS41MTcsMjgyLjQ4MyAyMjkuNTE3LDQyMy43MjUgMjgyLjQ4Myw0MjMuNzI1IDI4Mi40ODMsMjgyLjQ4MyA1MTIsMjgyLjQ4MyAgIi8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkY0QjU1OyIgZD0iTTE3OC45NDgsMzAwLjEzOEwwLjI1LDQxNi4xMzVjMC42MjUsNC4yNjMsNC4xNCw3LjU5LDguNTc3LDcuNTloMTIuMTU5bDE5MC4zOS0xMjMuNTg2aC0zMi40MjggICBWMzAwLjEzOHoiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRjRCNTU7IiBkPSJNMzQ2LjM4OCwzMDAuMTM4SDMxMy45NmwxOTAuMTEzLDEyMy40MDRjNC40MzEtMC40NzIsNy45MjgtNC4wOSw3LjkyOC04LjY0NnYtNy4yNTggICBMMzQ2LjM4OCwzMDAuMTM4eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGNEI1NTsiIGQ9Ik0wLDEwNi44NDlsMTYxLjc3OSwxMDUuMDE0aDMyLjQyOEw1LjE0Myw4OS4xMzdDMi4xMjMsOTAuNTQsMCw5My41NTUsMCw5Ny4xMDRWMTA2Ljg0OXoiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRjRCNTU7IiBkPSJNMzMyLjU2NiwyMTEuODYzTDUxMS42OTMsOTUuNTg2Yy0wLjc0NC00LjEyMi00LjE4NC03LjMwOS04LjUyMS03LjMwOWgtMTIuNjQ3TDMwMC4xMzgsMjExLjg2MyAgIEgzMzIuNTY2eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></span><span class="country-name">United Kingdom</span>
+			                  </div>
+
+			                  <h3 class="contacts-tile-title">
+			                    New York
+			                  </h3>
+
+			                  <div class="contacts-tile-content">
+			                    {{-- <p>
+			                      <span class="text-gray">44 West 28th Street 8th Floor,</span><br>
+			                      <span class="text-gray">New York, USA 10001</span>
+			                    </p> --}}
+
+			                    <p>
+			                      <a href="#">gerard@cognires.co.uk</a><br>
+			                      <span class="text-gray">T: (07)  770-552-703</span>
+			                      {{-- <span class="text-gray">F: (8610) 66573553</span> --}}
+			                    </p>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
 			          </div>
 			        </div>
 			      </div>

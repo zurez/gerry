@@ -12,7 +12,7 @@
         <div class="form-group" style="position: static;">
             <label for="blog_title">Custom URL</label>
            
-            <input class="form-control" id="custom_url" value="{{$custom_url or 'Enter a url for your blog..'}}" type="text">
+            <input class="form-control" id="custom_url" value="{{$blog->custom_url or 'Enter a url for your blog..'}}" type="text">
             <p class="help-block">Should be unique,without space and all lower caps.</p>
         </div>
         <div class="form-group" style="position: static;">

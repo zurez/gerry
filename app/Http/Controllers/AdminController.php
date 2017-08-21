@@ -144,6 +144,7 @@ class AdminController extends Controller
     		$blog=Blog::find($id);
     		return view('dashboard.blog_new')
             ->with('page_title','Edit Blog')
+            ->with('blog',$blog)
     		->with('content',$blog->content)
     		->with('title',$blog->title)
             ->with('blog_id',$blog->id)

@@ -264,7 +264,7 @@ class AdminController extends Controller
             $ret["status"]="success";
             $ret['long_message']="Your blog was saved";
     	} catch (\Exception $e) {
-    		return $e->getMessage();
+    		$ret['long_message']= $e->getMessage();
     	}
 
     	return response()->json($ret);

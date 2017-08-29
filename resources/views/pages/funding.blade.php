@@ -396,12 +396,12 @@
 			    {{-- </div> --}}
 			  </section>
 			  {{--new capitalise partner  --}}
-			    <section class="fw-section with-overlay bg-parallax padding-top-5x padding-bottom-5x" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url({{asset('assets/img/funding3.jpg')}});">
+			    <section class="fw-section with-overlay bg-parallax padding-top-5x padding-bottom-5x" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url({{asset('assets/img/funding4.jpg')}});">
 			    <span class="overlay" style="opacity: 0.25; background-color: #000000;"></span>
 
 			    <div class="container">
 			      <div class="row">
-			        <div class="col-sm-3"></div>
+			        <div class="col-sm-2"></div>
 
 			        <div class="col-sm-6">
 			          <div class="text-block">
@@ -410,12 +410,12 @@
 			            </h1>
 
 			            <p style="text-align: center;">
-			              <span class="text-light opacity-50">Cognitive Research has partnered with Capitalise to make it easy for businesses to access funding. Capitalise created a platform where businesses can find, compare and select the right lender in less than 3 minutes. Not only will you find lenders who specialise in your industry but you’ll also find lenders most likely to give you an offer.</span>
+			              <span class="text-light opacity-90 white">Cognitive Research has partnered with Capitalise to make it easy for businesses to access funding. Capitalise created a platform where businesses can find, compare and select the right lender in less than 3 minutes. Not only will you find lenders who specialise in your industry but you’ll also find lenders most likely to give you an offer.</span>
 			            </p>
 			          </div>
 
 			          <div class="text-center">
-			            <a class="btn btn-solid btn-primary btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Apply Now</a>
+			            <a class="btn btn-transparent btn-primary btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Apply Now</a>
 			          </div>
 			        </div>
 

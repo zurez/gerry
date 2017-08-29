@@ -97,7 +97,11 @@ class PageController extends Controller
     {
         if ($id=="") {
             return view('pages.all_services');
-        }else{
+        }
+        elseif ($id=="funding") {
+            return $this->show_funding();
+        }
+        else{
             $page=Page::where('custom_url',$id)->first();
             $services=Page::where('category','service')->where('id','!=',$id)->get();
             return view('pages.service')

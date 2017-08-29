@@ -148,7 +148,7 @@
 			                </li>
 			                <li>
 			                <i class="material-icons check_box text-primary"></i>Take a step<br>
-			                <a class="btn btn-solid btn-rounded btn-light btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now</a>
+			                <a class="btn btn-solid btn-primary btn-rounded btn-light btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now</a>
 			                </li>
 			              </ul>
 			            </div>
@@ -160,7 +160,7 @@
 
 		    {{-- Products Offered --}}
 	  <section class="fw-section" style="background-color: #f5f5f5" data-offset-top="70" id="amenities">
-			    <div class="container">
+		<div class="container">
 	          <hr class="hr-solid hr-primary" style="border-top-color: ; border-top-width: 1px; opacity: 0.25;">
 
 	          <h2 class="block-title  padding-top-2x mobile-center">
@@ -290,47 +290,110 @@
 	              </div>
 	            </div>
 
-	        {{--     <div class="col-lg-3 col-md-3 col-sm-6">
+	             <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/cw-icon-06.png">
+	                  <img alt="" src="{{asset('assets/img/franchise.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Coffeine
+	                    Franchise Expansion
 	                  </h3>
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">In cursus sit amet metus a fermentum. Sed ornare metus ut elit placerat sodales. Donec et mattis lectus.</span>
+	                      <span class="text-gray">Buying into a new franchise or buying out an existing one.</span>
 	                    </p>
 	                  </div>
 	                </div>
 	              </div>
-	            </div> --}}
+	            </div>
 
-	           {{--  <div class="col-lg-3 col-md-3 col-sm-6">
+	            <div class="col-lg-3 col-md-3 col-sm-6">
 	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
 	                <div class="icon-box-icon">
-	                  <img alt="" src="assets/img/cw-icon-08.png">
+	                  <img alt="" src="{{asset('assets/img/expansion.png')}}">
 	                </div>
 
 	                <div class="icon-box-info-wrap">
 	                  <h3 class="icon-box-title">
-	                    Community
+	                    Business Expansion
 	                  </h3>
 
 	                  <div class="icon-box-description">
 	                    <p>
-	                      <span class="text-gray">In cursus sit amet metus a fermentum. Sed ornare metus ut elit placerat sodales. Donec et mattis lectus.</span>
+	                      <span class="text-gray">Expanding your existing business with new equipment, staff or property.</span>
 	                    </p>
 	                  </div>
 	                </div>
 	              </div>
-	            </div> --}}
+	            </div>
+
+	           <div class="row">
+	           	<div class="col-lg-3 col-md-3 col-sm-6">
+	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
+	                <div class="icon-box-icon">
+	                  <img alt="" src="{{asset('assets/img/management.png')}}">
+	                </div>
+
+	                <div class="icon-box-info-wrap">
+	                  <h3 class="icon-box-title">
+	                    Management Buy Outs
+	                  </h3>
+
+	                  <div class="icon-box-description">
+	                    <p>
+	                      <span class="text-gray">Succession acquisition or a spin-off from a existing business.</span>
+	                    </p>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+
+	            <div class="col-lg-3 col-md-3 col-sm-6">
+	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
+	                <div class="icon-box-icon">
+	                  <img alt="" src="{{asset('assets/img/overdraft.png')}}">
+	                </div>
+
+	                <div class="icon-box-info-wrap">
+	                  <h3 class="icon-box-title">
+	                    Business Overdrafts
+	                  </h3>
+
+	                  <div class="icon-box-description">
+	                    <p>
+	                      <span class="text-gray">Borrowing based on a revolving line of credit.</span>
+	                    </p>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-lg-3 col-md-3 col-sm-6">
+	              <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
+	                <div class="icon-box-icon">
+	                  <img alt="" src="{{asset('assets/img/acq.png')}}">
+	                </div>
+
+	                <div class="icon-box-info-wrap">
+	                  <h3 class="icon-box-title">
+	                    Business Acquisition
+	                  </h3>
+
+	                  <div class="icon-box-description">
+	                    <p>
+	                      <span class="text-gray">Buying your first business or adding to your current portfolio.</span>
+	                    </p>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	        
+
+	           </div>
 	          </div>
-			    </div>
+			    {{-- </div> --}}
 			  </section>
 			  {{--new capitalise partner  --}}
 			    <section class="fw-section with-overlay bg-parallax padding-top-5x padding-bottom-5x" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url({{asset('assets/img/funding3.jpg')}});">
@@ -352,7 +415,7 @@
 			          </div>
 
 			          <div class="text-center">
-			            <a class="btn btn-transparent btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Apply Now</a>
+			            <a class="btn btn-solid btn-primary btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Apply Now</a>
 			          </div>
 			        </div>
 
@@ -446,8 +509,8 @@
 
 			        <div class="col-sm-3 text-right mobile-center margin-top-1x">
 			          <div class="text-inline" data-aos="fade-up-right">
-			            <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now&nbsp;<i class="material-icons trending_up"></i></a>
-			            <div class="text-center white">-OR-</div>
+			            <a class="btn btn-solid btn-primary btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now&nbsp;<i class="material-icons trending_up"></i></a>
+			            <div class="text-center white">&nbsp;&nbsp;-OR-</div>
 			            <div class="text-inline">
 			            <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="{{url('contact')}}">Contact Us&nbsp;<i class="material-icons email"></i></a>
 			                      {{-- <span class="text-gray">F: (8610) 66573553</span> --}}

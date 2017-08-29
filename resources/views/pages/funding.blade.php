@@ -29,7 +29,7 @@
 		                  </h1>
 
 		                  <h5 class="p1">
-		                    <span class="s1 text-light opacity-50 black">“We had the opportunity for growth and needed to find appropriate finance, Capitilise’s single application really helped speed up the process.” MD - Medical Distribution Company</span>
+		                    <span class="s1 text-light opacity-50 black">“We had the opportunity for growth and needed to find appropriate finance, Capitalise’s single application really helped speed up the process.” MD - Medical Distribution Company</span>
 		                    <div class="text-center">
 		                    	<a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now&nbsp;<i class="material-icons trending_up"></i></a>
 		                    </div>
@@ -140,7 +140,7 @@
 			            <div class="col-sm-6">
 			              <ul class="list-icon list-bordered text-lg text-dark">
 			                <li>
-			                  <i class="material-icons check_box text-primary"></i>Speciazilation<small class="white">We specialise in lending transactions over £75,000 that are not property related.</small>
+			                  <i class="material-icons check_box text-primary"></i>Specialization<small class="white">We specialise in lending transactions over £75,000 that are not property related.</small>
 			                </li>
 
 			                <li>
@@ -406,7 +406,7 @@
 			        <div class="col-sm-6">
 			          <div class="text-block">
 			            <h1 style="text-align: center;">
-			              <span class="text-light">We have parterned with Capitalise</span>
+			              <span class="text-light">We have partnered with Capitalise</span>
 			            </h1>
 
 			            <p style="text-align: center;">

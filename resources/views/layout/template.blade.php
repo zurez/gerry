@@ -529,6 +529,9 @@ Student hotel software
 	        	          <li class="menu-item">
 	        	            <a href="{{url('service')}}">All Services</a>
 	        	          </li>
+	        	           <li class="menu-item">
+			          <a href="{{url('funding')}}">Funding</a>
+			        </li>
   			        @foreach($services as $s)
 			       	 <li class="menu-item">
 			          <a href="{{url('service',$s->custom_url)}}">{{$s->title}}</a>

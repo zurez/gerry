@@ -11,7 +11,9 @@
 		/*color: black !important;*/
 	}
 </style>
- <section class="fw-section bg-parallax padding-top-10x padding-bottom-10x full-height" data-parallax-speed="0.4" data-parallax-type="scale" id="home" style="background-image: url({{asset('assets/img/funding.jpeg')}}); height: 100vh;">
+
+
+ <section class="fw-section bg-parallax padding-top-10x padding-bottom-10x full-height" data-parallax-speed="0.4" data-parallax-type="scale" id="home" style="background-image: url({{asset('assets/img/funding.jpeg')}});">
 		      <div class="container">
 		        <div class="row">
 		          <div class="col-sm-12">
@@ -28,24 +30,28 @@
 
 		                  <h5 class="p1">
 		                    <span class="s1 text-light opacity-50 black">“We had the opportunity for growth and needed to find appropriate finance, Capitilise’s single application really helped speed up the process.” MD - Medical Distribution Company</span>
+		                    <div class="text-center">
+		                    	<a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now&nbsp;<i class="material-icons trending_up"></i></a>
+		                    </div>
 		                  </h5>
 
 		                </div>
 		              </div>
 		            </div>
+		            
+		            
+		        		
+		      
 		          </div>
+
 		        </div>
-		        <div class="row">
-		        	<div class="col-sm-6 col-sm-offset-5">
-		        		<a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now&nbsp;<i class="material-icons trending_up"></i></a>
-		        	</div>
-		        </div>
+		        
 		      </div>
 	</section>
   <section class="fw-section"  id="features">
 		      <div class="container">
             <h2 class="block-title text-dark text-center" data-aos="fade-up">
-             ‘How it works
+             How it works
               {{-- <small class="h4">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut, sodales orci.</small> --}}
             </h2>
 
@@ -62,7 +68,7 @@
 
                   <div class="icon-box-description">
                     <p style="text-align: center;">
-                      <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut.</span>
+                      {{-- <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut.</span> --}}
                     </p>
                   </div>
                 </div>
@@ -80,7 +86,7 @@
 
                   <div class="icon-box-description">
                     <p style="text-align: center;">
-                      <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut.</span>
+                      {{-- <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut.</span> --}}
                     </p>
                   </div>
                 </div>
@@ -98,7 +104,7 @@
 
                   <div class="icon-box-description">
                     <p style="text-align: center;">
-                      <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut.</span>
+                     {{--  <span class="text-gray">Aliquam ac mi et ante vestibulum convallis. Fusce non orci elementum, egestas enim ut.</span> --}}
                     </p>
                   </div>
                 </div>
@@ -142,7 +148,7 @@
 			                </li>
 			                <li>
 			                <i class="material-icons check_box text-primary"></i>Take a step<br>
-			                <a class="btn btn-solid btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Apply Now</a>
+			                <a class="btn btn-solid btn-rounded btn-light btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now</a>
 			                </li>
 			              </ul>
 			            </div>

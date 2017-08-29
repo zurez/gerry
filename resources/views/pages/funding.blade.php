@@ -37,7 +37,7 @@
 		        </div>
 		        <div class="row">
 		        	<div class="col-sm-6 col-sm-offset-5">
-		        		<a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Visit us at Capitalise&nbsp;<i class="material-icons trending_up"></i></a>
+		        		<a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now&nbsp;<i class="material-icons trending_up"></i></a>
 		        	</div>
 		        </div>
 		      </div>
@@ -142,7 +142,7 @@
 			                </li>
 			                <li>
 			                <i class="material-icons check_box text-primary"></i>Take a step<br>
-			                <a class="btn btn-solid btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Visit us at Capitalise</a>
+			                <a class="btn btn-solid btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Apply Now</a>
 			                </li>
 			              </ul>
 			            </div>
@@ -346,7 +346,7 @@
 			          </div>
 
 			          <div class="text-center">
-			            <a class="btn btn-transparent btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Visit us at Capitalise</a>
+			            <a class="btn btn-transparent btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Apply Now</a>
 			          </div>
 			        </div>
 
@@ -379,7 +379,7 @@
 		                  </p>
 		                </div>
 		               
-		                <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Visit us at Capitalise&nbsp;<i class="material-icons trending_up"></i></a>
+		                <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now&nbsp;<i class="material-icons trending_up"></i></a>
 		             
 		                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
 		                  <div class="wpb_wrapper">
@@ -440,10 +440,10 @@
 
 			        <div class="col-sm-3 text-right mobile-center margin-top-1x">
 			          <div class="text-inline" data-aos="fade-up-right">
-			            <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Visit us at Capitalise&nbsp;<i class="material-icons trending_up"></i></a>
+			            <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now&nbsp;<i class="material-icons trending_up"></i></a>
 			            <div class="text-center white">-OR-</div>
 			            <div class="text-inline">
-			            <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="{{url('contact')}}">Contact Us Via Form&nbsp;<i class="material-icons email"></i></a>
+			            <a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="{{url('contact')}}">Contact Us&nbsp;<i class="material-icons email"></i></a>
 			                      {{-- <span class="text-gray">F: (8610) 66573553</span> --}}
 			            </div>
 

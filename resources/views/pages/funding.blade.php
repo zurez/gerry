@@ -415,7 +415,7 @@
 			          </div>
 
 			          <div class="text-center">
-			            <a class="btn btn-transparent btn-primary btn-rounded btn-light btn-nl waves-effect waves-light" href="#">Apply Now</a>
+			            <a class="btn btn-transparent btn-primary btn-rounded btn-light btn-nl waves-effect waves-light" href="https://capitalise.com/partners/cognitive-research">Apply Now</a>
 			          </div>
 			        </div>
 
@@ -479,7 +479,7 @@
 			      <div class="row">
 			        <div class="col-sm-12">
 			          <h2 class="block-title text-dark text-center" style="color: black;">
-			            We work with a panel of over 80 Lenders including: 
+			            We have access to over 80+ lenders!
 			          </h2>
 
 			          <div class="row">

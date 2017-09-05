@@ -62,7 +62,7 @@
 
 			                <p style="text-align: left;">
 			                  T: 02081448696<br>
-			                  E: sales@cognitiveresearch.co.uk
+			                  E: gerard@cognires.co.uk
 			             	
 			                </p>
 			              </div>
@@ -94,7 +94,7 @@
 
 			                <p style="text-align: left;">
 			                  T: 02081448696<br>
-			                  E: sales@cognitiveresearch.co.uk
+			                  E: gerard@cognires.co.uk
 			                 
 			                </p>
 			              </div>

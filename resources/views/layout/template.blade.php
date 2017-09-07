@@ -335,6 +335,7 @@ Student hotel software
 		 
 
 		</script>
+		<script src="//cdn.blueconic.net/cgntvrsrchlmtd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
 		<!-- Modernizr Scripts -->
 		<script type="text/javascript" src="{{asset('assets/js/vendor/modernizr.custom.js')}}"></script>

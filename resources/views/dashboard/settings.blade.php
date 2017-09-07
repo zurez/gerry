@@ -26,6 +26,14 @@ $ignore=["created_at","deleted_at","id","updated_at","landing_image"];
 				<input type="file" name="landing_image">
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<label>Downloadable PDF File</label>
+			</div>
+			<div class="col-sm-6">
+				<input type="file" name="pdf">
+			</div>
+		</div>
 		<input type="submit" name="" class="btn-primary" value="Update">
 	@endif
 

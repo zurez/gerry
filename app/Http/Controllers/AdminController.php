@@ -94,7 +94,8 @@ class AdminController extends Controller
             $g->forwarding_email=$request->forwarding_email;
             /*Image Handling*/
             $file=$request->file('landing_image');
-
+            /*pdf*/ 
+            $pdf=$request->file('pdf');
             if (!is_null($file)) {
                     # code...
 
@@ -102,6 +103,15 @@ class AdminController extends Controller
                 $filepath=public_path('page_images');
 
                 $file->move($filepath,$filename);
+                $g->landing_image=$filename;
+            }
+            if (!is_null($pdf)) {
+                    # code...
+
+                $filename="brochure_".str_random(10).".pdf";
+                $filepath=public_path('page_images');
+
+                $pdf->move($filepath,$filename);
                 $g->landing_image=$filename;
             }
             $g->save();

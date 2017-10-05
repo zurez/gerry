@@ -681,13 +681,13 @@ Student hotel software
 		            <section class="widget widget_startapp_subscribe">
 			      <h2 class="widget-title">Newsletter</h2>
 
-			      <form method="post" target="_blank" novalidate="" autocomplete="off">
+			      <form  novalidate="" autocomplete="off" action="{{url('newsletter')}}" method="POST">
 				      		      <p>Subscribe to our newspaper. Be informed about all new news and updates.</p>
-
+				      {!! Form::token() !!}
 				      <div class="input-group">
 				        <i class="material-icons mail_outline"></i>
-				        <input name="EMAIL" placeholder="Enter email" type="email" id="newsletter">
-				        <button type="submit_newsletter"><i class="material-icons send"></i></button>
+				        <input name="email" placeholder="Enter email" type="email" id="newsletter">
+				        <button type="submit" id="submit_newsletter"><i class="material-icons send"></i></button>
 				      </div>
 			      </form>
 			    </section>
@@ -803,10 +803,10 @@ Student hotel software
 		<script type="text/javascript" src="{{asset('assets/js/startapp-theme.js')}}"></script>
 		<!-- **************************************************************************************************************************** -->
 		{{-- TAWK --}}
-
-<script type="text/javascript">
+{{-- <script type="text/javascript">
 	$(document).ready(function(){
-		$('#submit_newsletter').click(function(){
+		$('#submit_newsletter').click(function(e){
+			e.preventDefault();
 			url="{{url('newsletter')}}";
 			type='POST';
 			$.ajax({
@@ -822,7 +822,7 @@ Student hotel software
 			});
 		});
 	});
-</script>
+</script> --}}
 		<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

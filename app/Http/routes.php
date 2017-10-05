@@ -61,5 +61,9 @@ Route::post('contactus','PageController@save_contact');
 Route::get('work','PageController@show_work');
 Route::get('case/pdf/download/{id}','PageController@download_pdf');
 Route::get('funding','PageController@show_funding');
-Route::post('newsletter'.'NewsLetterController@add');
+
+
+
+Route::post('newsletter','NewsLetterController@add');
+Route::get('newsletter','NewsLetterController@post_add');
 Route::get('newsletter/unsubscribe/{email}','NewsLetterController@unsubscribe');

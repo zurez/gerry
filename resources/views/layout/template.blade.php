@@ -678,6 +678,19 @@ Student hotel software
 		                </div>
 		              </div>
 		            </section>
+		            <section class="widget widget_startapp_subscribe">
+			      <h2 class="widget-title">Newsletter</h2>
+
+			      <form method="post" target="_blank" novalidate="" autocomplete="off">
+				      		      <p>Subscribe to our newspaper. Be informed about all new news and updates.</p>
+
+				      <div class="input-group">
+				        <i class="material-icons mail_outline"></i>
+				        <input name="EMAIL" placeholder="Enter email" type="email" id="newsletter">
+				        <button type="submit_newsletter"><i class="material-icons send"></i></button>
+				      </div>
+			      </form>
+			    </section>
 		          </div>
 
 		          <div class="col-md-3 col-sm-6">
@@ -790,6 +803,26 @@ Student hotel software
 		<script type="text/javascript" src="{{asset('assets/js/startapp-theme.js')}}"></script>
 		<!-- **************************************************************************************************************************** -->
 		{{-- TAWK --}}
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#submit_newsletter').click(function(){
+			url="{{url('newsletter')}}";
+			type='POST';
+			$.ajax({
+				url:url,
+				type:type,
+				data:{'email':$('#newsletter').val()},
+				sucess:function(r){
+					if (r.status=="success") {alert("You have been added to our newsletter. Thank You!");}
+				},
+				error:function(){
+					alert("Action failed");
+				}
+			});
+		});
+	});
+</script>
 		<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
